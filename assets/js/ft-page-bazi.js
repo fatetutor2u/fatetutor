@@ -467,5 +467,8 @@
     },
 
     demo: { setup: setup, steps: steps, draw: draw },
+
+    // The professional chart (ft-bazi-pro.js) redraws whenever the reading or the language changes.
+    after: (r, api) => { if (window.FTBaziPro) window.FTBaziPro.draw(r, api); },
   });
 })();

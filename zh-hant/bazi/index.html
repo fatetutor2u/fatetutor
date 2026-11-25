@@ -27,6 +27,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500&display=swap">
 <link rel="stylesheet" href="../../assets/css/ft.css?v=75770d3cb2">
 <link rel="stylesheet" href="../../assets/css/ft-page-bazi.css?v=e5426dbf2b">
+<link rel="stylesheet" href="../../assets/css/ft-bazi-pro.css?v=6b51b129a1">
 </head>
 <body class="lesson">
 
@@ -174,6 +175,52 @@
   </div>
 </section>
 
+<section class="band" id="pro">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow" data-i18n="pg.bazi.pro.eyebrow">專業排盤</span>
+      <h2 data-i18n="pg.bazi.pro.title">您的命盤全貌</h2>
+      <p class="soft" data-i18n="pg.bazi.pro.lead">專業八字命盤會顯示的內容都在這裡：藏干、納音、十二長生、空亡、神煞、各柱之間的刑沖合會，以及大運、流年和流月。點擊任何一項，即可看到它是什麼、怎樣推算，以及規則出自哪裡。</p>
+    </div>
+    <p class="pro-none" id="pro-none" data-i18n="pg.bazi.pro.none">在上方輸入出生日期，即可看到您的完整命盤。填寫出生時間和城鎮會更準確；選擇性別後會顯示大運。</p>
+    <div id="pro-body" hidden>
+      <div class="pro-head" id="pro-head"></div>
+      <div class="pro-tabs" id="pro-tabs" role="tablist">
+        <button type="button" role="tab" data-tab="grid" class="on" data-i18n="pg.bazi.pro.tab.grid">命盤</button>
+        <button type="button" role="tab" data-tab="wheel" data-i18n="pg.bazi.pro.tab.wheel">刑沖合會關係圖</button>
+        <button type="button" role="tab" data-tab="star" data-i18n="pg.bazi.pro.tab.star">五行十神</button>
+      </div>
+      <div class="pro-layout">
+        <div class="pro-main">
+          <div id="pro-view-grid" class="pro-box">
+            <div class="pro-scroll"><table class="pro-table" id="pro-grid"></table></div>
+            <p class="pro-note" data-i18n="pg.bazi.pro.hint">點擊任何一格。在下方選一步大運、一個流年和一個流月：它們會作為額外的欄加入命盤，關係圖會顯示它們與您出生四柱之間的關係。</p>
+          </div>
+          <div id="pro-view-wheel" class="pro-box" hidden>
+            <div class="toggles" id="pro-reltoggles"></div>
+            <div id="pro-wheel"></div>
+            <div class="rellist" id="pro-rellist"></div>
+          </div>
+          <div id="pro-view-star" class="pro-box" hidden>
+            <div class="toggles" id="pro-counttoggles"></div>
+            <div id="pro-star"></div>
+          </div>
+          <div class="pro-box pro-time">
+            <span class="eyebrow jade" data-i18n="pg.bazi.pro.luck.title">大運</span>
+            <div class="luckrow" id="pro-luck"></div>
+            <p class="pro-note" id="pro-luck-note"></p>
+            <span class="eyebrow" id="pro-years-title" data-i18n="pg.bazi.pro.years.title" hidden>本步大運的流年</span>
+            <div class="yearrow" id="pro-years"></div>
+            <span class="eyebrow" id="pro-months-title" hidden></span>
+            <div class="monthrow" id="pro-months"></div>
+          </div>
+        </div>
+        <aside class="pro-explain" id="pro-explain" aria-live="polite"></aside>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="band lowest">
   <div class="wrap about-cols">
     <div>
@@ -201,6 +248,7 @@
 
 <script src="../../assets/js/ft-engine.js?v=ce9455bcdf"></script>
 <script src="../../assets/js/ft-lesson.js?v=a7b862f34b"></script>
-<script src="../../assets/js/ft-page-bazi.js?v=42f2c0bb4b"></script>
+<script src="../../assets/js/ft-bazi-pro.js?v=a9146d5d2f"></script>
+<script src="../../assets/js/ft-page-bazi.js?v=3f19434b21"></script>
 </body>
 </html>
