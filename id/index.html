@@ -25,7 +25,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500&display=swap">
-<link rel="stylesheet" href="../assets/css/ft.css">
+<link rel="stylesheet" href="../assets/css/ft.css?v=9019d3528c">
 </head>
 <body>
 
@@ -94,10 +94,10 @@
       <h2 data-i18n="trad.title">Setiap tradisi, menurut aturannya sendiri</h2>
     </div>
     <div class="trads">
-      <div class="trad"><span class="pill live" data-i18n="trad.live">Tersedia sekarang</span><h3 data-i18n="trad.bazi.name">BaZi 八字</h3><p data-i18n="trad.bazi.body">Empat Pilar: tahun, bulan, hari, dan jam lahir, dibaca lewat lima elemen.</p></div>
-      <div class="trad"><span class="pill live" data-i18n="trad.live">Tersedia sekarang</span><h3 data-i18n="trad.numerology.name">Numerologi</h3><p data-i18n="trad.numerology.body">Angka yang diambil dari tanggal lahir dan huruf-huruf nama Anda.</p></div>
-      <div class="trad"><span class="pill live" data-i18n="trad.live">Tersedia sekarang</span><h3 data-i18n="trad.zodiac.name">Shio 生肖</h3><p data-i18n="trad.zodiac.body">Hewan dan elemen tahun lahir Anda.</p></div>
-      <div class="trad"><span class="pill live" data-i18n="trad.live">Tersedia sekarang</span><h3 data-i18n="trad.weton.name">Weton Jawa</h3><p data-i18n="trad.weton.body">Pertemuan minggu tujuh hari dan minggu pasaran lima hari pada hari lahir Anda.</p></div>
+      <a class="trad open" href="#read" data-trad="bazi"><span class="pill live" data-i18n="trad.live">Tersedia sekarang</span><h3 data-i18n="trad.bazi.name">BaZi 八字</h3><p data-i18n="trad.bazi.body">Empat Pilar: tahun, bulan, hari, dan jam lahir, dibaca lewat lima elemen.</p><span class="go" data-i18n="trad.go">Hitung sekarang →</span></a>
+      <a class="trad open" href="#read" data-trad="numerology"><span class="pill live" data-i18n="trad.live">Tersedia sekarang</span><h3 data-i18n="trad.numerology.name">Numerologi</h3><p data-i18n="trad.numerology.body">Angka yang diambil dari tanggal lahir dan huruf-huruf nama Anda.</p><span class="go" data-i18n="trad.go">Hitung sekarang →</span></a>
+      <a class="trad open" href="#read" data-trad="zodiac"><span class="pill live" data-i18n="trad.live">Tersedia sekarang</span><h3 data-i18n="trad.zodiac.name">Shio 生肖</h3><p data-i18n="trad.zodiac.body">Hewan dan elemen tahun lahir Anda.</p><span class="go" data-i18n="trad.go">Hitung sekarang →</span></a>
+      <a class="trad open" href="#read" data-trad="weton"><span class="pill live" data-i18n="trad.live">Tersedia sekarang</span><h3 data-i18n="trad.weton.name">Weton Jawa</h3><p data-i18n="trad.weton.body">Pertemuan minggu tujuh hari dan minggu pasaran lima hari pada hari lahir Anda.</p><span class="go" data-i18n="trad.go">Hitung sekarang →</span></a>
       <div class="trad next"><span class="pill" data-i18n="trad.next">Berikutnya</span><h3 data-i18n="trad.ziwei.name">Zi Wei Dou Shu 紫微斗数</h3></div>
       <div class="trad next"><span class="pill" data-i18n="trad.next">Berikutnya</span><h3 data-i18n="trad.iching.name">I Ching 易经</h3></div>
       <div class="trad next"><span class="pill" data-i18n="trad.next">Berikutnya</span><h3 data-i18n="trad.indian.name">Astrologi India</h3></div>
@@ -113,6 +113,7 @@
       <h2 data-i18n="form.title">Baca bagan saya</h2>
     </div>
     <form id="birth" class="form-card" novalidate autocomplete="off">
+      <p class="chosen-trad" id="f-trad" hidden></p>
       <p class="privacy" data-i18n="form.privacy">Semuanya dihitung di perangkat Anda sendiri. Data kelahiran Anda tidak dikirim kepada kami atau siapa pun.</p>
 
       <div class="grid2">
@@ -224,7 +225,7 @@
   </div>
 </footer>
 
-<script src="../assets/js/ft-engine.js"></script>
-<script src="../assets/js/ft-app.js"></script>
+<script src="../assets/js/ft-engine.js?v=ce9455bcdf"></script>
+<script src="../assets/js/ft-app.js?v=fb30b25db5"></script>
 </body>
 </html>

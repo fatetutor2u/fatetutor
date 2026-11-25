@@ -49,7 +49,9 @@
   }
 
   async function loadDict(lang) {
-    const response = await fetch(new URL("assets/i18n/" + lang + ".json", SITE_ROOT));
+    // "no-cache" asks the server whether the wording changed (cheap), so a new
+    // page never shows an old wording file's missing sentences.
+    const response = await fetch(new URL("assets/i18n/" + lang + ".json", SITE_ROOT), { cache: "no-cache" });
     if (!response.ok) throw new Error("no wording for " + lang);
     return response.json();
   }
@@ -71,6 +73,7 @@
     const canonical = document.querySelector('link[rel="canonical"]');
     if (canonical) canonical.href = PUBLIC_ROOT + FOLDER[state.lang];
     showChosenPlace();
+    if (state.engine) showChosenTrad();
   }
 
   // Keeps the address bar in step with the language without reloading the
@@ -139,8 +142,8 @@
     return el("div", { class: "fact" }, [el("small", { text: label }), el("b", { text: value }), sub ? el("span", { text: sub }) : null]);
   }
 
-  function panel(titleKey, introKey, children) {
-    return el("section", { class: "panel" }, [
+  function panel(titleKey, introKey, children, id) {
+    return el("section", { class: "panel", id: id || null }, [
       el("header", null, [el("h3", { text: t(titleKey) }), el("p", { text: t(introKey) })]),
     ].concat(children));
   }
@@ -287,7 +290,7 @@
         closes: b.month_closes_at.name_zh, closes_time: formatClock(b.month_closes_at.beijing),
       }) }),
     ]));
-    return panel("bazi.title", "bazi.intro", out);
+    return panel("bazi.title", "bazi.intro", out, "res-bazi");
   }
 
   function zodiacLine(z) {
@@ -305,7 +308,7 @@
       ]));
     }
     out.push(el("div", { style: "margin-top:18px" }, [statementsFor(r, "zodiac")]));
-    return panel("zodiac.title", "zodiac.intro", out);
+    return panel("zodiac.title", "zodiac.intro", out, "res-zodiac");
   }
 
   function drawNumerology(r) {
@@ -330,7 +333,7 @@
     } else if (n.name_skipped) {
       out.push(el("p", { class: "plain", style: "margin-top:12px", text: t("numerology.name." + n.name_skipped) }));
     }
-    return panel("numerology.title", "numerology.intro", out);
+    return panel("numerology.title", "numerology.intro", out, "res-numerology");
   }
 
   function drawWeton(r) {
@@ -346,13 +349,64 @@
       out.push(el("h4", { text: t("weton.next") }));
       out.push(el("div", { class: "dates" }, w.next_dates.map((d) => el("span", { text: formatDate(d) }))));
     }
-    return panel("weton.title", "weton.intro", out);
+    return panel("weton.title", "weton.intro", out, "res-weton");
+  }
+
+  // The four calculators a visitor can open from the cards at the top.
+  const TRADS = ["bazi", "numerology", "zodiac", "weton"];
+
+  function jumpBar() {
+    return el("nav", { class: "jump", "aria-label": t("result.jump") }, [el("span", { text: t("result.jump") })].concat(
+      TRADS.map((k) => {
+        const b = el("button", { type: "button", class: k === state.focus ? "on" : null, text: t("trad." + k + ".name") });
+        b.addEventListener("click", () => showResult(k));
+        return b;
+      })
+    ));
   }
 
   function drawRecord(r) {
     const host = $("record");
     host.textContent = "";
-    [drawWhen(r), drawBazi(r), drawZodiac(r), drawNumerology(r), drawWeton(r)].forEach((node) => host.appendChild(node));
+    [jumpBar(), drawWhen(r), drawBazi(r), drawZodiac(r), drawNumerology(r), drawWeton(r)].forEach((node) => host.appendChild(node));
+    markCards();
+  }
+
+  // Scrolls to one tradition's result and lights it up for a moment.
+  function showResult(key) {
+    state.focus = key;
+    const target = $("res-" + key);
+    if (!target) return;
+    document.querySelectorAll("#record .jump button").forEach((b, i) => b.classList.toggle("on", TRADS[i] === key));
+    target.scrollIntoView({ behavior: "smooth", block: "start" });
+    target.classList.remove("flash");
+    void target.offsetWidth; // restarts the glow if the same card is chosen twice
+    target.classList.add("flash");
+  }
+
+  // A card at the top was pressed: open that tradition's result, or the form first.
+  function openTradition(key) {
+    state.focus = key;
+    if (state.record) { showResult(key); return; }
+    showChosenTrad();
+    $("read").scrollIntoView({ behavior: "smooth", block: "start" });
+    setTimeout(() => { try { $("f-date").focus({ preventScroll: true }); } catch (e) { $("f-date").focus(); } }, 450);
+  }
+
+  function showChosenTrad() {
+    const note = $("f-trad");
+    if (!state.focus || state.record) { note.hidden = true; return; }
+    note.textContent = t("form.trad_chosen", { name: t("trad." + state.focus + ".name") });
+    note.hidden = false;
+  }
+
+  // Once there is a reading, the cards say so and take the visitor straight to it.
+  function markCards() {
+    document.querySelectorAll("a.trad.open").forEach((card) => {
+      const go = card.querySelector(".go");
+      go.dataset.i18n = state.record ? "trad.go.done" : "trad.go";
+      go.textContent = t(go.dataset.i18n);
+    });
   }
 
   // ------------------------------------------------------------ the form
@@ -472,7 +526,9 @@
     }
     drawRecord(state.record);
     $("results").hidden = false;
-    $("results").scrollIntoView({ behavior: "smooth", block: "start" });
+    showChosenTrad();
+    if (state.focus) showResult(state.focus);
+    else $("results").scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
   function setView(expert) {
@@ -498,6 +554,9 @@
     $("f-place").addEventListener("keydown", placeKeys);
     $("f-place").addEventListener("blur", () => setTimeout(closePlaces, 120));
     $("birth").addEventListener("submit", submit);
+    document.querySelectorAll("a.trad.open").forEach((card) => {
+      card.addEventListener("click", (ev) => { ev.preventDefault(); openTradition(card.dataset.trad); });
+    });
     $("view-plain").addEventListener("click", () => setView(false));
     $("view-expert").addEventListener("click", () => setView(true));
     try {

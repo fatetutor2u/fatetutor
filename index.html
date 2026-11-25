@@ -25,7 +25,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500&display=swap">
-<link rel="stylesheet" href="assets/css/ft.css">
+<link rel="stylesheet" href="assets/css/ft.css?v=9019d3528c">
 </head>
 <body>
 
@@ -94,10 +94,10 @@
       <h2 data-i18n="trad.title">Each tradition, on its own terms</h2>
     </div>
     <div class="trads">
-      <div class="trad"><span class="pill live" data-i18n="trad.live">Available now</span><h3 data-i18n="trad.bazi.name">BaZi 八字</h3><p data-i18n="trad.bazi.body">The Four Pillars: year, month, day and hour of birth, read through the five elements.</p></div>
-      <div class="trad"><span class="pill live" data-i18n="trad.live">Available now</span><h3 data-i18n="trad.numerology.name">Numerology</h3><p data-i18n="trad.numerology.body">Numbers drawn from your birth date and the letters of your name.</p></div>
-      <div class="trad"><span class="pill live" data-i18n="trad.live">Available now</span><h3 data-i18n="trad.zodiac.name">Chinese zodiac 生肖</h3><p data-i18n="trad.zodiac.body">The animal and element of your birth year.</p></div>
-      <div class="trad"><span class="pill live" data-i18n="trad.live">Available now</span><h3 data-i18n="trad.weton.name">Javanese Weton</h3><p data-i18n="trad.weton.body">The meeting of the seven-day week and the five-day market week on your birthday.</p></div>
+      <a class="trad open" href="#read" data-trad="bazi"><span class="pill live" data-i18n="trad.live">Available now</span><h3 data-i18n="trad.bazi.name">BaZi 八字</h3><p data-i18n="trad.bazi.body">The Four Pillars: year, month, day and hour of birth, read through the five elements.</p><span class="go" data-i18n="trad.go">Work it out →</span></a>
+      <a class="trad open" href="#read" data-trad="numerology"><span class="pill live" data-i18n="trad.live">Available now</span><h3 data-i18n="trad.numerology.name">Numerology</h3><p data-i18n="trad.numerology.body">Numbers drawn from your birth date and the letters of your name.</p><span class="go" data-i18n="trad.go">Work it out →</span></a>
+      <a class="trad open" href="#read" data-trad="zodiac"><span class="pill live" data-i18n="trad.live">Available now</span><h3 data-i18n="trad.zodiac.name">Chinese zodiac 生肖</h3><p data-i18n="trad.zodiac.body">The animal and element of your birth year.</p><span class="go" data-i18n="trad.go">Work it out →</span></a>
+      <a class="trad open" href="#read" data-trad="weton"><span class="pill live" data-i18n="trad.live">Available now</span><h3 data-i18n="trad.weton.name">Javanese Weton</h3><p data-i18n="trad.weton.body">The meeting of the seven-day week and the five-day market week on your birthday.</p><span class="go" data-i18n="trad.go">Work it out →</span></a>
       <div class="trad next"><span class="pill" data-i18n="trad.next">Coming next</span><h3 data-i18n="trad.ziwei.name">Zi Wei Dou Shu 紫微斗数</h3></div>
       <div class="trad next"><span class="pill" data-i18n="trad.next">Coming next</span><h3 data-i18n="trad.iching.name">I Ching 易经</h3></div>
       <div class="trad next"><span class="pill" data-i18n="trad.next">Coming next</span><h3 data-i18n="trad.indian.name">Indian astrology</h3></div>
@@ -113,6 +113,7 @@
       <h2 data-i18n="form.title">Read my chart</h2>
     </div>
     <form id="birth" class="form-card" novalidate autocomplete="off">
+      <p class="chosen-trad" id="f-trad" hidden></p>
       <p class="privacy" data-i18n="form.privacy">Everything is worked out on your own device. Your birth details are not sent to us or anyone else.</p>
 
       <div class="grid2">
@@ -224,7 +225,7 @@
   </div>
 </footer>
 
-<script src="assets/js/ft-engine.js"></script>
-<script src="assets/js/ft-app.js"></script>
+<script src="assets/js/ft-engine.js?v=ce9455bcdf"></script>
+<script src="assets/js/ft-app.js?v=fb30b25db5"></script>
 </body>
 </html>

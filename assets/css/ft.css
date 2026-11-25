@@ -139,6 +139,18 @@ button, input, select { font: inherit; color: inherit; }
 .trad { background: var(--surface-mid); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px; display: grid; gap: 8px; align-content: start; }
 .trad h3 { font-size: 1.12rem; }
 .trad p { color: var(--text-soft); font-size: 0.9rem; }
+a.trad.open { color: inherit; text-decoration: none; cursor: pointer; transition: border-color 0.15s, transform 0.15s, box-shadow 0.15s; }
+a.trad.open:hover, a.trad.open:focus-visible { border-color: var(--gold); transform: translateY(-2px); box-shadow: 0 6px 22px -8px rgba(212, 175, 55, 0.45); outline: none; }
+.trad .go { margin-top: 4px; font-family: var(--font-data); font-size: 0.8rem; letter-spacing: 0.04em; color: var(--gold); }
+a.trad.open:hover .go { text-decoration: underline; }
+.chosen-trad { color: var(--gold); border: 1px solid rgba(212, 175, 55, 0.45); background: rgba(212, 175, 55, 0.07); border-radius: var(--radius); padding: 10px 14px; font-size: 0.92rem; }
+.jump { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-bottom: 18px; }
+.jump span { font-family: var(--font-data); font-size: 0.74rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-dim); margin-right: 4px; }
+.jump button { font: inherit; font-size: 0.86rem; color: var(--text); background: var(--surface-mid); border: 1px solid var(--line); border-radius: 999px; padding: 6px 14px; cursor: pointer; }
+.jump button:hover, .jump button.on { border-color: var(--gold); color: var(--gold); }
+.panel { scroll-margin-top: 84px; }
+.panel.flash { animation: ft-flash 1.6s ease-out; }
+@keyframes ft-flash { 0% { box-shadow: 0 0 0 2px var(--gold), 0 0 30px -4px rgba(212, 175, 55, 0.6); } 100% { box-shadow: 0 0 0 0 transparent; } }
 .trad.next { border-color: var(--line-soft); background: transparent; }
 .trad.next h3 { color: var(--text-soft); font-weight: 500; }
 @media (max-width: 900px) { .trads { grid-template-columns: 1fr 1fr; } }

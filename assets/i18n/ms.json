@@ -50,6 +50,8 @@
   "trad.zodiac.body": "Haiwan dan unsur tahun lahir anda.",
   "trad.weton.name": "Weton Jawa",
   "trad.weton.body": "Pertemuan minggu tujuh hari dan minggu pasaran lima hari pada hari lahir anda.",
+  "trad.go": "Kira sekarang →",
+  "trad.go.done": "Lihat keputusan anda →",
   "trad.ziwei.name": "Zi Wei Dou Shu 紫微斗数",
   "trad.iching.name": "I Ching 易经",
   "trad.indian.name": "Astrologi India",
@@ -57,6 +59,7 @@
 
   "form.eyebrow": "Butiran kelahiran anda",
   "form.title": "Baca carta saya",
+  "form.trad_chosen": "Anda memilih {name}. Isi butiran kelahiran anda di bawah dan tekan “Baca carta saya”: halaman akan terus membuka {name}.",
   "form.privacy": "Semuanya dikira pada peranti anda sendiri. Butiran kelahiran anda tidak dihantar kepada kami atau sesiapa pun.",
   "form.date": "Tarikh lahir",
   "form.time": "Waktu lahir mengikut jam",
@@ -90,6 +93,7 @@
 
   "result.eyebrow": "Rekod Takdir Anda",
   "result.title": "Apa kata setiap tradisi",
+  "result.jump": "Terus ke",
   "result.view.plain": "Paparan ringkas",
   "result.view.expert": "Paparan pakar",
   "result.when": "Detik kelahiran",

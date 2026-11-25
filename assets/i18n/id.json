@@ -50,6 +50,8 @@
   "trad.zodiac.body": "Hewan dan elemen tahun lahir Anda.",
   "trad.weton.name": "Weton Jawa",
   "trad.weton.body": "Pertemuan minggu tujuh hari dan minggu pasaran lima hari pada hari lahir Anda.",
+  "trad.go": "Hitung sekarang →",
+  "trad.go.done": "Lihat hasil Anda →",
   "trad.ziwei.name": "Zi Wei Dou Shu 紫微斗数",
   "trad.iching.name": "I Ching 易经",
   "trad.indian.name": "Astrologi India",
@@ -57,6 +59,7 @@
 
   "form.eyebrow": "Data kelahiran Anda",
   "form.title": "Baca bagan saya",
+  "form.trad_chosen": "Anda memilih {name}. Isi data kelahiran Anda di bawah lalu tekan “Baca bagan saya”: halaman akan langsung membuka {name}.",
   "form.privacy": "Semuanya dihitung di perangkat Anda sendiri. Data kelahiran Anda tidak dikirim kepada kami atau siapa pun.",
   "form.date": "Tanggal lahir",
   "form.time": "Waktu lahir menurut jam",
@@ -90,6 +93,7 @@
 
   "result.eyebrow": "Catatan Takdir Anda",
   "result.title": "Apa kata setiap tradisi",
+  "result.jump": "Langsung ke",
   "result.view.plain": "Tampilan sederhana",
   "result.view.expert": "Tampilan ahli",
   "result.when": "Saat kelahiran",

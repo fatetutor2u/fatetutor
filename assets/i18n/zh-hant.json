@@ -50,6 +50,8 @@
   "trad.zodiac.body": "你出生那一年的動物和五行。",
   "trad.weton.name": "爪哇 Weton",
   "trad.weton.body": "七天一週與五天一輪的市集週，在你生日那天交會。",
+  "trad.go": "開始計算 →",
+  "trad.go.done": "查看您的結果 →",
   "trad.ziwei.name": "紫微斗數",
   "trad.iching.name": "易經",
   "trad.indian.name": "印度占星",
@@ -57,6 +59,7 @@
 
   "form.eyebrow": "你的出生資料",
   "form.title": "看我的命盤",
+  "form.trad_chosen": "您選擇了{name}。請在下方填寫出生資料，然後按「看我的命盤」，頁面會直接打開{name}的結果。",
   "form.privacy": "一切都在你自己的裝置上計算。你的出生資料不會傳送給我們或任何人。",
   "form.date": "出生日期",
   "form.time": "出生時間（時鐘上的時間）",
@@ -90,6 +93,7 @@
 
   "result.eyebrow": "你的命運紀錄",
   "result.title": "每種傳統怎麼說",
+  "result.jump": "跳到",
   "result.view.plain": "簡明模式",
   "result.view.expert": "專業模式",
   "result.when": "出生的時刻",

@@ -25,7 +25,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500&display=swap">
-<link rel="stylesheet" href="../assets/css/ft.css">
+<link rel="stylesheet" href="../assets/css/ft.css?v=9019d3528c">
 </head>
 <body>
 
@@ -94,10 +94,10 @@
       <h2 data-i18n="trad.title">每种传统，各按各的规则</h2>
     </div>
     <div class="trads">
-      <div class="trad"><span class="pill live" data-i18n="trad.live">现已开放</span><h3 data-i18n="trad.bazi.name">八字</h3><p data-i18n="trad.bazi.body">四柱：出生的年、月、日、时，用五行来解读。</p></div>
-      <div class="trad"><span class="pill live" data-i18n="trad.live">现已开放</span><h3 data-i18n="trad.numerology.name">数字命理</h3><p data-i18n="trad.numerology.body">从出生日期和名字的字母中得出的数字。</p></div>
-      <div class="trad"><span class="pill live" data-i18n="trad.live">现已开放</span><h3 data-i18n="trad.zodiac.name">生肖</h3><p data-i18n="trad.zodiac.body">你出生那一年的动物和五行。</p></div>
-      <div class="trad"><span class="pill live" data-i18n="trad.live">现已开放</span><h3 data-i18n="trad.weton.name">爪哇 Weton</h3><p data-i18n="trad.weton.body">七天一周与五天一轮的市集周，在你生日那天交会。</p></div>
+      <a class="trad open" href="#read" data-trad="bazi"><span class="pill live" data-i18n="trad.live">现已开放</span><h3 data-i18n="trad.bazi.name">八字</h3><p data-i18n="trad.bazi.body">四柱：出生的年、月、日、时，用五行来解读。</p><span class="go" data-i18n="trad.go">开始计算 →</span></a>
+      <a class="trad open" href="#read" data-trad="numerology"><span class="pill live" data-i18n="trad.live">现已开放</span><h3 data-i18n="trad.numerology.name">数字命理</h3><p data-i18n="trad.numerology.body">从出生日期和名字的字母中得出的数字。</p><span class="go" data-i18n="trad.go">开始计算 →</span></a>
+      <a class="trad open" href="#read" data-trad="zodiac"><span class="pill live" data-i18n="trad.live">现已开放</span><h3 data-i18n="trad.zodiac.name">生肖</h3><p data-i18n="trad.zodiac.body">你出生那一年的动物和五行。</p><span class="go" data-i18n="trad.go">开始计算 →</span></a>
+      <a class="trad open" href="#read" data-trad="weton"><span class="pill live" data-i18n="trad.live">现已开放</span><h3 data-i18n="trad.weton.name">爪哇 Weton</h3><p data-i18n="trad.weton.body">七天一周与五天一轮的市集周，在你生日那天交会。</p><span class="go" data-i18n="trad.go">开始计算 →</span></a>
       <div class="trad next"><span class="pill" data-i18n="trad.next">即将推出</span><h3 data-i18n="trad.ziwei.name">紫微斗数</h3></div>
       <div class="trad next"><span class="pill" data-i18n="trad.next">即将推出</span><h3 data-i18n="trad.iching.name">易经</h3></div>
       <div class="trad next"><span class="pill" data-i18n="trad.next">即将推出</span><h3 data-i18n="trad.indian.name">印度占星</h3></div>
@@ -113,6 +113,7 @@
       <h2 data-i18n="form.title">看我的命盘</h2>
     </div>
     <form id="birth" class="form-card" novalidate autocomplete="off">
+      <p class="chosen-trad" id="f-trad" hidden></p>
       <p class="privacy" data-i18n="form.privacy">一切都在你自己的设备上计算。你的出生信息不会发送给我们或任何人。</p>
 
       <div class="grid2">
@@ -224,7 +225,7 @@
   </div>
 </footer>
 
-<script src="../assets/js/ft-engine.js"></script>
-<script src="../assets/js/ft-app.js"></script>
+<script src="../assets/js/ft-engine.js?v=ce9455bcdf"></script>
+<script src="../assets/js/ft-app.js?v=fb30b25db5"></script>
 </body>
 </html>

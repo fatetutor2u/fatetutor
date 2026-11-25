@@ -50,6 +50,8 @@
   "trad.zodiac.body": "The animal and element of your birth year.",
   "trad.weton.name": "Javanese Weton",
   "trad.weton.body": "The meeting of the seven-day week and the five-day market week on your birthday.",
+  "trad.go": "Work it out →",
+  "trad.go.done": "See your result →",
   "trad.ziwei.name": "Zi Wei Dou Shu 紫微斗数",
   "trad.iching.name": "I Ching 易经",
   "trad.indian.name": "Indian astrology",
@@ -57,6 +59,7 @@
 
   "form.eyebrow": "Your birth details",
   "form.title": "Read my chart",
+  "form.trad_chosen": "You chose {name}. Enter your birth details below and press “Read my chart”: the page then opens at {name}.",
   "form.privacy": "Everything is worked out on your own device. Your birth details are not sent to us or anyone else.",
   "form.date": "Birth date",
   "form.time": "Birth time on the clock",
@@ -90,6 +93,7 @@
 
   "result.eyebrow": "Your Destiny Record",
   "result.title": "What each tradition says",
+  "result.jump": "Go to",
   "result.view.plain": "Plain view",
   "result.view.expert": "Expert view",
   "result.when": "The moment of birth",
