@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i18n="pg.zodiac.meta.title">Chinese Zodiac: Your Animal and Element, Step by Step — Fate Tutor</title>
+<meta name="description" content="Find your Chinese zodiac animal and element, watch how the year is counted, and explore all twelve animals with their traditional sources." data-i18n-content="pg.zodiac.meta.description">
+<!-- ft:head — written by engine/ft_build_pages.py, do not edit by hand -->
+<link rel="canonical" href="https://www.fatetutor.com/zodiac/">
+<link rel="alternate" hreflang="en" href="https://www.fatetutor.com/zodiac/">
+<link rel="alternate" hreflang="zh-Hans" href="https://www.fatetutor.com/zh-hans/zodiac/">
+<link rel="alternate" hreflang="zh-Hant" href="https://www.fatetutor.com/zh-hant/zodiac/">
+<link rel="alternate" hreflang="id" href="https://www.fatetutor.com/id/zodiac/">
+<link rel="alternate" hreflang="ms" href="https://www.fatetutor.com/ms/zodiac/">
+<link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/zodiac/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Fate Tutor">
+<meta property="og:title" content="Chinese Zodiac: Your Animal and Element, Step by Step — Fate Tutor">
+<meta property="og:description" content="Find your Chinese zodiac animal and element, watch how the year is counted, and explore all twelve animals with their traditional sources.">
+<meta property="og:url" content="https://www.fatetutor.com/zodiac/">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<!-- /ft:head -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500&display=swap">
+<link rel="stylesheet" href="../assets/css/ft.css?v=75770d3cb2">
+</head>
+<body class="lesson">
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="../" data-page="">
+      <b>FATETUTOR</b>
+      <span data-i18n="brand.tagline">Global Life Intelligence Platform</span>
+    </a>
+    <nav class="topnav">
+      <a href="../bazi/" data-page="bazi/" data-i18n="nav.bazi">BaZi</a>
+      <a href="../numerology/" data-page="numerology/" data-i18n="nav.numerology">Numerology</a>
+      <a href="../zodiac/" data-page="zodiac/" class="here" aria-current="page" data-i18n="nav.zodiac">Zodiac</a>
+      <a href="../weton/" data-page="weton/" data-i18n="nav.weton">Weton</a>
+      <select id="lang" class="lang" aria-label="Language" data-i18n-aria-label="nav.language">
+        <option value="en" selected>English</option>
+        <option value="zh-hans">简体中文</option>
+        <option value="zh-hant">繁體中文</option>
+        <option value="id">Bahasa Indonesia</option>
+        <option value="ms">Bahasa Melayu</option>
+      </select>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="lhero">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <a href="../" data-page="" data-i18n="lesson.crumb.home">Fate Tutor</a> /
+      <a href="../#traditions" data-page="#traditions" data-i18n="nav.traditions">Traditions</a> /
+      <span data-i18n="trad.zodiac.name">Chinese zodiac 生肖</span>
+    </nav>
+    <div class="lhero-row">
+      <div class="badge"><span class="badge-han">生肖</span><b>12</b></div>
+      <div>
+        <span class="eyebrow" data-i18n="pg.zodiac.eyebrow">Chinese tradition · 12 animals · 5 elements</span>
+        <h1 data-i18n="pg.zodiac.title">Chinese Zodiac: Your Animal and Element</h1>
+        <p class="lead" data-i18n="pg.zodiac.lead">Every year belongs to one of twelve animals, and each year also carries one of the five elements. Enter your birth date to see yours, watch how it is counted, then explore all twelve.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band low birth-band">
+  <div class="wrap">
+    <form class="birth-panel" id="birth-panel" novalidate autocomplete="off" onsubmit="return false">
+      <div class="bp-head">
+        <span class="eyebrow" data-i18n="lesson.birth.title">Your birth</span>
+        <span class="bp-live" id="b-status" data-i18n="form.loading">Loading the calculators…</span>
+        <span class="bp-hint" data-i18n="lesson.birth.live">Results update as you type. Details you entered on another Fate Tutor page are filled in for you.</span>
+      </div>
+      <div class="bp-fields">
+        <div class="field">
+          <label for="b-date" data-i18n="form.date">Birth date</label>
+          <input class="input" type="date" id="b-date" min="1900-01-01" max="2100-12-31">
+        </div>
+      </div>
+      <p class="bp-privacy" data-i18n="lesson.birth.privacy">Worked out on your own device. Your details are never sent anywhere; they stay in this browser tab until you close it.</p>
+      <div class="bp-keep">
+        <label class="check"><input type="checkbox" id="b-keep"><span data-i18n="lesson.birth.keep">Remember on this device</span></label>
+        <button type="button" class="linkbtn" id="b-forget" data-i18n="lesson.birth.forget">Forget my details</button>
+        <span class="form-error" id="b-error" role="alert"></span>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="tiles" id="tiles"></div>
+  </div>
+</section>
+
+<section class="band low">
+  <div class="wrap">
+    <div class="cards-head">
+      <div>
+        <span class="eyebrow" id="cards-count">01 – 12</span>
+        <h2 data-i18n="pg.zodiac.cards.title">Pick an animal</h2>
+        <p class="soft" data-i18n="lesson.cards.hint">Click a card or use the ← / → keys.</p>
+      </div>
+    </div>
+    <div class="lesson-grid">
+      <div class="lcards" id="cards" role="tablist"></div>
+      <aside class="inspector" id="inspector" aria-live="polite">
+        <span class="eyebrow jade" data-i18n="lesson.inspector">Inspector</span>
+        <div id="inspector-body"></div>
+        <div class="i-actions">
+          <button type="button" class="btn btn-sm" id="i-read">Mark as read</button>
+          <span class="soft small" data-i18n="lesson.read.saved">Kept in this browser only</span>
+          <span class="i-nav">
+            <button type="button" class="ghost" id="i-prev" aria-label="Previous card" data-i18n-aria-label="lesson.prev">←</button>
+            <button type="button" class="ghost" id="i-next" aria-label="Next card" data-i18n-aria-label="lesson.next">→</button>
+          </span>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="demo">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow" data-i18n="lesson.demo.eyebrow">How it is worked out</span>
+      <h2 data-i18n="pg.zodiac.demo.title">How your animal is found</h2>
+      <p class="soft" id="demo-who"></p>
+    </div>
+    <div class="demo">
+      <div class="stage" id="stage" role="img" aria-label="How your animal is found" data-i18n-aria-label="pg.zodiac.demo.title"></div>
+      <div class="demo-side">
+        <div class="player">
+          <button type="button" class="btn btn-sm" id="p-play">Pause</button>
+          <button type="button" class="ghost" id="p-prev" aria-label="Previous step" data-i18n-aria-label="lesson.step.prev">◂</button>
+          <button type="button" class="ghost" id="p-next" aria-label="Next step" data-i18n-aria-label="lesson.step.next">▸</button>
+          <span class="speeds">
+            <button type="button" class="ghost" data-speed="0.5">0.5×</button>
+            <button type="button" class="ghost on" data-speed="1">1×</button>
+            <button type="button" class="ghost" data-speed="2">2×</button>
+          </span>
+        </div>
+        <ol class="steps" id="steps"></ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band lowest">
+  <div class="wrap about-cols">
+    <div>
+      <span class="eyebrow jade" data-i18n="lesson.about">About this tradition</span>
+      <h2 data-i18n="pg.zodiac.about.title">What is the Chinese zodiac?</h2>
+    </div>
+    <div class="legal">
+      <p data-i18n="pg.zodiac.about.p1">The twelve animals (生肖) name the twelve Earthly Branches, an ancient Chinese way of counting years, months and hours. Combined with the ten Heavenly Stems, they make a cycle of sixty years that is still printed on Chinese calendars.</p>
+      <p data-i18n="pg.zodiac.about.p2">Popular tradition gives each animal a character. These associations are folk tradition, with no single classical source, and Fate Tutor labels them that way.</p>
+      <p data-i18n="pg.zodiac.about.p3">Two calendars give two start dates for the year: Lunar New Year (the popular way) and Start of Spring, 立春 (the way BaZi counts). For most birthdays they agree; for births between late January and mid February they can differ, and this page shows both.</p>
+      <p data-i18n="legal.tradition">These are traditional systems of belief. They are not science and they do not predict the future. Fate Tutor shows what each tradition says and where it says it, in the language of tendencies.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p data-i18n="legal.credits">City data: GeoNames (geonames.org), CC BY 4.0. Classical texts read from Chinese Wikisource. Calculators checked against NASA JPL Horizons.</p>
+    <p><a href="../third-party-notices.txt" data-i18n="footer.notices">Open-source notices</a></p>
+    <p data-i18n="footer.rights">Fate Tutor · www.fatetutor.com</p>
+  </div>
+</footer>
+
+<script src="../assets/js/ft-engine.js?v=ce9455bcdf"></script>
+<script src="../assets/js/ft-lesson.js?v=a7b862f34b"></script>
+<script src="../assets/js/ft-page-zodiac.js?v=0f79d067be"></script>
+</body>
+</html>

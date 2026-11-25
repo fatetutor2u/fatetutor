@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="zh-Hans" data-lang="zh-hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i18n="pg.zodiac.meta.title">生肖：一步步找出您的生肖与五行 — Fate Tutor</title>
+<meta name="description" content="找出您的生肖与五行，看看年份是怎样算的，并逐一了解十二生肖及其传统出处。" data-i18n-content="pg.zodiac.meta.description">
+<!-- ft:head — written by engine/ft_build_pages.py, do not edit by hand -->
+<link rel="canonical" href="https://www.fatetutor.com/zh-hans/zodiac/">
+<link rel="alternate" hreflang="en" href="https://www.fatetutor.com/zodiac/">
+<link rel="alternate" hreflang="zh-Hans" href="https://www.fatetutor.com/zh-hans/zodiac/">
+<link rel="alternate" hreflang="zh-Hant" href="https://www.fatetutor.com/zh-hant/zodiac/">
+<link rel="alternate" hreflang="id" href="https://www.fatetutor.com/id/zodiac/">
+<link rel="alternate" hreflang="ms" href="https://www.fatetutor.com/ms/zodiac/">
+<link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/zodiac/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Fate Tutor">
+<meta property="og:title" content="生肖：一步步找出您的生肖与五行 — Fate Tutor">
+<meta property="og:description" content="找出您的生肖与五行，看看年份是怎样算的，并逐一了解十二生肖及其传统出处。">
+<meta property="og:url" content="https://www.fatetutor.com/zh-hans/zodiac/">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+<!-- /ft:head -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500&display=swap">
+<link rel="stylesheet" href="../../assets/css/ft.css?v=75770d3cb2">
+</head>
+<body class="lesson">
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="../" data-page="">
+      <b>FATETUTOR</b>
+      <span data-i18n="brand.tagline">全球人生智慧平台</span>
+    </a>
+    <nav class="topnav">
+      <a href="../bazi/" data-page="bazi/" data-i18n="nav.bazi">八字</a>
+      <a href="../numerology/" data-page="numerology/" data-i18n="nav.numerology">数字命理</a>
+      <a href="../zodiac/" data-page="zodiac/" class="here" aria-current="page" data-i18n="nav.zodiac">生肖</a>
+      <a href="../weton/" data-page="weton/" data-i18n="nav.weton">爪哇 Weton</a>
+      <select id="lang" class="lang" aria-label="语言" data-i18n-aria-label="nav.language">
+        <option value="en">English</option>
+        <option value="zh-hans" selected>简体中文</option>
+        <option value="zh-hant">繁體中文</option>
+        <option value="id">Bahasa Indonesia</option>
+        <option value="ms">Bahasa Melayu</option>
+      </select>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="lhero">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <a href="../" data-page="" data-i18n="lesson.crumb.home">Fate Tutor</a> /
+      <a href="../#traditions" data-page="#traditions" data-i18n="nav.traditions">传统</a> /
+      <span data-i18n="trad.zodiac.name">生肖</span>
+    </nav>
+    <div class="lhero-row">
+      <div class="badge"><span class="badge-han">生肖</span><b>12</b></div>
+      <div>
+        <span class="eyebrow" data-i18n="pg.zodiac.eyebrow">中国传统 · 十二生肖 · 五行</span>
+        <h1 data-i18n="pg.zodiac.title">生肖：您的生肖与五行</h1>
+        <p class="lead" data-i18n="pg.zodiac.lead">每一年属于十二生肖之一，同时也带着五行之一。输入出生日期即可看到您的生肖，看看它是怎样算出来的，再逐一了解十二生肖。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band low birth-band">
+  <div class="wrap">
+    <form class="birth-panel" id="birth-panel" novalidate autocomplete="off" onsubmit="return false">
+      <div class="bp-head">
+        <span class="eyebrow" data-i18n="lesson.birth.title">您的出生资料</span>
+        <span class="bp-live" id="b-status" data-i18n="form.loading">正在加载计算程序…</span>
+        <span class="bp-hint" data-i18n="lesson.birth.live">结果会随输入即时更新。您在 Fate Tutor 其他页面填过的资料会自动带入。</span>
+      </div>
+      <div class="bp-fields">
+        <div class="field">
+          <label for="b-date" data-i18n="form.date">出生日期</label>
+          <input class="input" type="date" id="b-date" min="1900-01-01" max="2100-12-31">
+        </div>
+      </div>
+      <p class="bp-privacy" data-i18n="lesson.birth.privacy">全部在您自己的设备上计算。您的资料绝不会被发送出去；只保留在这个浏览器分页里，关闭分页即清除。</p>
+      <div class="bp-keep">
+        <label class="check"><input type="checkbox" id="b-keep"><span data-i18n="lesson.birth.keep">在这台设备上记住</span></label>
+        <button type="button" class="linkbtn" id="b-forget" data-i18n="lesson.birth.forget">清除我的资料</button>
+        <span class="form-error" id="b-error" role="alert"></span>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="tiles" id="tiles"></div>
+  </div>
+</section>
+
+<section class="band low">
+  <div class="wrap">
+    <div class="cards-head">
+      <div>
+        <span class="eyebrow" id="cards-count">01 – 12</span>
+        <h2 data-i18n="pg.zodiac.cards.title">选一个生肖</h2>
+        <p class="soft" data-i18n="lesson.cards.hint">点选卡片，或用键盘 ← / → 切换。</p>
+      </div>
+    </div>
+    <div class="lesson-grid">
+      <div class="lcards" id="cards" role="tablist"></div>
+      <aside class="inspector" id="inspector" aria-live="polite">
+        <span class="eyebrow jade" data-i18n="lesson.inspector">详细说明</span>
+        <div id="inspector-body"></div>
+        <div class="i-actions">
+          <button type="button" class="btn btn-sm" id="i-read">Mark as read</button>
+          <span class="soft small" data-i18n="lesson.read.saved">只保存在这个浏览器里</span>
+          <span class="i-nav">
+            <button type="button" class="ghost" id="i-prev" aria-label="上一张" data-i18n-aria-label="lesson.prev">←</button>
+            <button type="button" class="ghost" id="i-next" aria-label="下一张" data-i18n-aria-label="lesson.next">→</button>
+          </span>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="demo">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow" data-i18n="lesson.demo.eyebrow">计算过程</span>
+      <h2 data-i18n="pg.zodiac.demo.title">您的生肖是怎样算出来的</h2>
+      <p class="soft" id="demo-who"></p>
+    </div>
+    <div class="demo">
+      <div class="stage" id="stage" role="img" aria-label="您的生肖是怎样算出来的" data-i18n-aria-label="pg.zodiac.demo.title"></div>
+      <div class="demo-side">
+        <div class="player">
+          <button type="button" class="btn btn-sm" id="p-play">Pause</button>
+          <button type="button" class="ghost" id="p-prev" aria-label="上一步" data-i18n-aria-label="lesson.step.prev">◂</button>
+          <button type="button" class="ghost" id="p-next" aria-label="下一步" data-i18n-aria-label="lesson.step.next">▸</button>
+          <span class="speeds">
+            <button type="button" class="ghost" data-speed="0.5">0.5×</button>
+            <button type="button" class="ghost on" data-speed="1">1×</button>
+            <button type="button" class="ghost" data-speed="2">2×</button>
+          </span>
+        </div>
+        <ol class="steps" id="steps"></ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band lowest">
+  <div class="wrap about-cols">
+    <div>
+      <span class="eyebrow jade" data-i18n="lesson.about">关于这个传统</span>
+      <h2 data-i18n="pg.zodiac.about.title">什么是生肖？</h2>
+    </div>
+    <div class="legal">
+      <p data-i18n="pg.zodiac.about.p1">十二生肖对应十二地支，是中国古代用来纪年、纪月、纪时的方法。地支与十天干相配，组成六十年一轮的甲子，至今仍印在中国的日历上。</p>
+      <p data-i18n="pg.zodiac.about.p2">民间传统为每个生肖赋予了性格。这些说法来自民间，没有单一的古典出处，Fate Tutor 也如实标明。</p>
+      <p data-i18n="pg.zodiac.about.p3">两种历法给出两个起年的日子：农历新年（民间常用）与立春（八字的算法）。大多数生日两者一致；但在一月下旬到二月中旬出生的人，两者可能不同，本页两种都会列出。</p>
+      <p data-i18n="legal.tradition">这些是传统的信仰体系。它们不是科学，也不预测未来。Fate Tutor 只用“倾向”的说法，展示每种传统说了什么、出自哪里。</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p data-i18n="legal.credits">城市数据：GeoNames (geonames.org)，CC BY 4.0。古籍原文取自中文维基文库。计算程序已与 NASA JPL Horizons 核对。</p>
+    <p><a href="../../third-party-notices.txt" data-i18n="footer.notices">开源声明</a></p>
+    <p data-i18n="footer.rights">Fate Tutor · www.fatetutor.com</p>
+  </div>
+</footer>
+
+<script src="../../assets/js/ft-engine.js?v=ce9455bcdf"></script>
+<script src="../../assets/js/ft-lesson.js?v=a7b862f34b"></script>
+<script src="../../assets/js/ft-page-zodiac.js?v=0f79d067be"></script>
+</body>
+</html>

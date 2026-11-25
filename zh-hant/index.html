@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title data-i18n="meta.title">Fate Tutor — 命運智慧，古老智慧引擎</title>
-<meta name="description" content="用幾種古老傳統來看你的出生時刻。每種傳統分開呈現，並註明出處。全部在你自己的裝置上計算。">
+<meta name="description" content="用幾種古老傳統來看你的出生時刻。每種傳統分開呈現，並註明出處。全部在你自己的裝置上計算。" data-i18n-content="meta.description">
 <!-- ft:head — written by engine/ft_build_pages.py, do not edit by hand -->
 <link rel="canonical" href="https://www.fatetutor.com/zh-hant/">
 <link rel="alternate" hreflang="en" href="https://www.fatetutor.com/">
@@ -25,7 +25,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500&display=swap">
-<link rel="stylesheet" href="../assets/css/ft.css?v=9019d3528c">
+<link rel="stylesheet" href="../assets/css/ft.css?v=75770d3cb2">
 </head>
 <body>
 
@@ -94,10 +94,10 @@
       <h2 data-i18n="trad.title">每種傳統，各按各的規則</h2>
     </div>
     <div class="trads">
-      <a class="trad open" href="#read" data-trad="bazi"><span class="pill live" data-i18n="trad.live">現已開放</span><h3 data-i18n="trad.bazi.name">八字</h3><p data-i18n="trad.bazi.body">四柱：出生的年、月、日、時，用五行來解讀。</p><span class="go" data-i18n="trad.go">開始計算 →</span></a>
-      <a class="trad open" href="#read" data-trad="numerology"><span class="pill live" data-i18n="trad.live">現已開放</span><h3 data-i18n="trad.numerology.name">數字命理</h3><p data-i18n="trad.numerology.body">從出生日期和名字的字母中得出的數字。</p><span class="go" data-i18n="trad.go">開始計算 →</span></a>
-      <a class="trad open" href="#read" data-trad="zodiac"><span class="pill live" data-i18n="trad.live">現已開放</span><h3 data-i18n="trad.zodiac.name">生肖</h3><p data-i18n="trad.zodiac.body">你出生那一年的動物和五行。</p><span class="go" data-i18n="trad.go">開始計算 →</span></a>
-      <a class="trad open" href="#read" data-trad="weton"><span class="pill live" data-i18n="trad.live">現已開放</span><h3 data-i18n="trad.weton.name">爪哇 Weton</h3><p data-i18n="trad.weton.body">七天一週與五天一輪的市集週，在你生日那天交會。</p><span class="go" data-i18n="trad.go">開始計算 →</span></a>
+      <a class="trad open" href="bazi/" data-page="bazi/" data-trad="bazi"><span class="pill live" data-i18n="trad.live">現已開放</span><h3 data-i18n="trad.bazi.name">八字</h3><p data-i18n="trad.bazi.body">四柱：出生的年、月、日、時，用五行來解讀。</p><span class="go" data-i18n="trad.go">開始計算 →</span></a>
+      <a class="trad open" href="numerology/" data-page="numerology/" data-trad="numerology"><span class="pill live" data-i18n="trad.live">現已開放</span><h3 data-i18n="trad.numerology.name">數字命理</h3><p data-i18n="trad.numerology.body">從出生日期和名字的字母中得出的數字。</p><span class="go" data-i18n="trad.go">開始計算 →</span></a>
+      <a class="trad open" href="zodiac/" data-page="zodiac/" data-trad="zodiac"><span class="pill live" data-i18n="trad.live">現已開放</span><h3 data-i18n="trad.zodiac.name">生肖</h3><p data-i18n="trad.zodiac.body">你出生那一年的動物和五行。</p><span class="go" data-i18n="trad.go">開始計算 →</span></a>
+      <a class="trad open" href="weton/" data-page="weton/" data-trad="weton"><span class="pill live" data-i18n="trad.live">現已開放</span><h3 data-i18n="trad.weton.name">爪哇 Weton</h3><p data-i18n="trad.weton.body">七天一週與五天一輪的市集週，在你生日那天交會。</p><span class="go" data-i18n="trad.go">開始計算 →</span></a>
       <div class="trad next"><span class="pill" data-i18n="trad.next">即將推出</span><h3 data-i18n="trad.ziwei.name">紫微斗數</h3></div>
       <div class="trad next"><span class="pill" data-i18n="trad.next">即將推出</span><h3 data-i18n="trad.iching.name">易經</h3></div>
       <div class="trad next"><span class="pill" data-i18n="trad.next">即將推出</span><h3 data-i18n="trad.indian.name">印度占星</h3></div>
@@ -113,7 +113,6 @@
       <h2 data-i18n="form.title">看我的命盤</h2>
     </div>
     <form id="birth" class="form-card" novalidate autocomplete="off">
-      <p class="chosen-trad" id="f-trad" hidden></p>
       <p class="privacy" data-i18n="form.privacy">一切都在你自己的裝置上計算。你的出生資料不會傳送給我們或任何人。</p>
 
       <div class="grid2">
@@ -208,8 +207,8 @@
       <p data-i18n="legal.offlimits">我們不提供關於死亡、壽命、重病、意外或災禍的解讀，即使古書裡有這類內容。</p>
       <p data-i18n="legal.advice">涉及健康、金錢、法律或婚姻的決定，請諮詢合格的專業人士。傳統解讀只是一種觀點，不是建議。</p>
       <p data-i18n="legal.review">標有「待專家審閱」的解讀依據所列的出處寫成，但還沒有經過執業者核對。</p>
-      <p data-i18n="legal.privacy">你的出生資料只留在你的裝置上。本頁面不會儲存或傳送這些資料。</p>
-      <p data-i18n="legal.hosting">本頁面由 GitHub Pages 提供，字型由 Google Fonts 提供。與任何網站一樣，頁面載入時這些服務會看到您的網路位址。Fate Tutor 不設定 Cookie，也不做任何追蹤；只在您自己的裝置上記住您選擇的語言。</p>
+      <p data-i18n="legal.privacy">您的出生資料只留在您的裝置上，絕不會被傳送出去。為了在頁面之間帶過去，資料會保存在這個瀏覽器分頁裡，關閉分頁即清除。在各傳統頁面上，您可以選擇「在這台裝置上記住」或「清除我的資料」。</p>
+      <p data-i18n="legal.hosting">本頁面由 GitHub Pages 提供，字型由 Google Fonts 提供。與任何網站一樣，頁面載入時這些服務會看到您的網路位址。Fate Tutor 不設定 Cookie，也不做任何追蹤。它只在您自己的裝置上記住您選擇的語言、您標記為已讀的卡片，以及您要求記住的出生資料。</p>
       <p data-i18n="legal.range">支援的出生年份為 1900 至 2100 年。</p>
     </div>
   </div>
@@ -226,6 +225,6 @@
 </footer>
 
 <script src="../assets/js/ft-engine.js?v=ce9455bcdf"></script>
-<script src="../assets/js/ft-app.js?v=fb30b25db5"></script>
+<script src="../assets/js/ft-app.js?v=abf62fa730"></script>
 </body>
 </html>

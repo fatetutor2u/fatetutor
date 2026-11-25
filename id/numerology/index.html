@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="id" data-lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i18n="pg.numerology.meta.title">Numerologi: Angka Jalur Hidup dan Angka Nama Anda, Langkah demi Langkah — Fate Tutor</title>
+<meta name="description" content="Hitung angka Jalur Hidup, hari lahir, nama, dan Tahun Pribadi Anda, lihat setiap digit dijumlahkan, dan jelajahi kedua belas angka beserta sumbernya." data-i18n-content="pg.numerology.meta.description">
+<!-- ft:head — written by engine/ft_build_pages.py, do not edit by hand -->
+<link rel="canonical" href="https://www.fatetutor.com/id/numerology/">
+<link rel="alternate" hreflang="en" href="https://www.fatetutor.com/numerology/">
+<link rel="alternate" hreflang="zh-Hans" href="https://www.fatetutor.com/zh-hans/numerology/">
+<link rel="alternate" hreflang="zh-Hant" href="https://www.fatetutor.com/zh-hant/numerology/">
+<link rel="alternate" hreflang="id" href="https://www.fatetutor.com/id/numerology/">
+<link rel="alternate" hreflang="ms" href="https://www.fatetutor.com/ms/numerology/">
+<link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/numerology/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Fate Tutor">
+<meta property="og:title" content="Numerologi: Angka Jalur Hidup dan Angka Nama Anda, Langkah demi Langkah — Fate Tutor">
+<meta property="og:description" content="Hitung angka Jalur Hidup, hari lahir, nama, dan Tahun Pribadi Anda, lihat setiap digit dijumlahkan, dan jelajahi kedua belas angka beserta sumbernya.">
+<meta property="og:url" content="https://www.fatetutor.com/id/numerology/">
+<meta property="og:locale" content="id_ID">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+<!-- /ft:head -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500&display=swap">
+<link rel="stylesheet" href="../../assets/css/ft.css?v=75770d3cb2">
+<link rel="stylesheet" href="../../assets/css/ft-page-numerology.css?v=d1d96ce689">
+</head>
+<body class="lesson">
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="../" data-page="">
+      <b>FATETUTOR</b>
+      <span data-i18n="brand.tagline">Platform Kecerdasan Hidup Global</span>
+    </a>
+    <nav class="topnav">
+      <a href="../bazi/" data-page="bazi/" data-i18n="nav.bazi">BaZi</a>
+      <a href="../numerology/" data-page="numerology/" class="here" aria-current="page" data-i18n="nav.numerology">Numerologi</a>
+      <a href="../zodiac/" data-page="zodiac/" data-i18n="nav.zodiac">Shio</a>
+      <a href="../weton/" data-page="weton/" data-i18n="nav.weton">Weton</a>
+      <select id="lang" class="lang" aria-label="Bahasa" data-i18n-aria-label="nav.language">
+        <option value="en">English</option>
+        <option value="zh-hans">简体中文</option>
+        <option value="zh-hant">繁體中文</option>
+        <option value="id" selected>Bahasa Indonesia</option>
+        <option value="ms">Bahasa Melayu</option>
+      </select>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="lhero">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <a href="../" data-page="" data-i18n="lesson.crumb.home">Fate Tutor</a> /
+      <a href="../#traditions" data-page="#traditions" data-i18n="nav.traditions">Tradisi</a> /
+      <span data-i18n="trad.numerology.name">Numerologi</span>
+    </nav>
+    <div class="lhero-row">
+      <div class="badge"><span class="badge-han">1–9</span><b>12</b></div>
+      <div>
+        <span class="eyebrow" data-i18n="pg.numerology.eyebrow">Sistem modern · 9 angka · 3 angka master</span>
+        <h1 data-i18n="pg.numerology.title">Numerologi: Angka Jalur Hidup dan Angka Nama Anda</h1>
+        <p class="lead" data-i18n="pg.numerology.lead">Numerologi mengubah tanggal lahir Anda, dan jika mau juga nama Anda, menjadi beberapa angka kecil dengan menjumlahkan digit. Isi tanggal lahir untuk melihat angka Anda, lihat setiap penjumlahan dikerjakan, lalu jelajahi kedua belas angka.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band low birth-band">
+  <div class="wrap">
+    <form class="birth-panel" id="birth-panel" novalidate autocomplete="off" onsubmit="return false">
+      <div class="bp-head">
+        <span class="eyebrow" data-i18n="lesson.birth.title">Data kelahiran Anda</span>
+        <span class="bp-live" id="b-status" data-i18n="form.loading">Memuat kalkulator…</span>
+        <span class="bp-hint" data-i18n="lesson.birth.live">Hasil diperbarui saat Anda mengetik. Data yang sudah Anda isi di halaman Fate Tutor lain akan langsung terisi.</span>
+      </div>
+      <div class="bp-fields">
+        <div class="field">
+          <label for="b-date" data-i18n="form.date">Tanggal lahir</label>
+          <input class="input" type="date" id="b-date" min="1900-01-01" max="2100-12-31">
+        </div>
+        <div class="field">
+          <label for="b-name" data-i18n="form.name">Nama lengkap saat lahir (opsional)</label>
+          <input class="input" type="text" id="b-name" maxlength="120">
+          <span class="hint" data-i18n="form.name.hint">Hanya dipakai untuk numerologi. Huruf Latin saja.</span>
+        </div>
+      </div>
+      <p class="bp-privacy" data-i18n="lesson.birth.privacy">Dihitung di perangkat Anda sendiri. Data Anda tidak pernah dikirim ke mana pun; data hanya ada di tab browser ini sampai Anda menutupnya.</p>
+      <div class="bp-keep">
+        <label class="check"><input type="checkbox" id="b-keep"><span data-i18n="lesson.birth.keep">Ingat di perangkat ini</span></label>
+        <button type="button" class="linkbtn" id="b-forget" data-i18n="lesson.birth.forget">Hapus data saya</button>
+        <span class="form-error" id="b-error" role="alert"></span>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="tiles" id="tiles"></div>
+  </div>
+</section>
+
+<section class="band low">
+  <div class="wrap">
+    <div class="cards-head">
+      <div>
+        <span class="eyebrow" id="cards-count">01 – 12</span>
+        <h2 data-i18n="pg.numerology.cards.title">Pilih sebuah angka</h2>
+        <p class="soft" data-i18n="lesson.cards.hint">Klik kartu atau gunakan tombol ← / →.</p>
+      </div>
+    </div>
+    <div class="lesson-grid">
+      <div class="lcards" id="cards" role="tablist"></div>
+      <aside class="inspector" id="inspector" aria-live="polite">
+        <span class="eyebrow jade" data-i18n="lesson.inspector">Rincian</span>
+        <div id="inspector-body"></div>
+        <div class="i-actions">
+          <button type="button" class="btn btn-sm" id="i-read">Mark as read</button>
+          <span class="soft small" data-i18n="lesson.read.saved">Hanya disimpan di browser ini</span>
+          <span class="i-nav">
+            <button type="button" class="ghost" id="i-prev" aria-label="Kartu sebelumnya" data-i18n-aria-label="lesson.prev">←</button>
+            <button type="button" class="ghost" id="i-next" aria-label="Kartu berikutnya" data-i18n-aria-label="lesson.next">→</button>
+          </span>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="demo">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow" data-i18n="lesson.demo.eyebrow">Cara menghitungnya</span>
+      <h2 data-i18n="pg.numerology.demo.title">Cara angka Anda dihitung</h2>
+      <p class="soft" id="demo-who"></p>
+    </div>
+    <div class="demo">
+      <div class="stage" id="stage" role="img" aria-label="Cara angka Anda dihitung" data-i18n-aria-label="pg.numerology.demo.title"></div>
+      <div class="demo-side">
+        <div class="player">
+          <button type="button" class="btn btn-sm" id="p-play">Pause</button>
+          <button type="button" class="ghost" id="p-prev" aria-label="Langkah sebelumnya" data-i18n-aria-label="lesson.step.prev">◂</button>
+          <button type="button" class="ghost" id="p-next" aria-label="Langkah berikutnya" data-i18n-aria-label="lesson.step.next">▸</button>
+          <span class="speeds">
+            <button type="button" class="ghost" data-speed="0.5">0.5×</button>
+            <button type="button" class="ghost on" data-speed="1">1×</button>
+            <button type="button" class="ghost" data-speed="2">2×</button>
+          </span>
+        </div>
+        <ol class="steps" id="steps"></ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band lowest">
+  <div class="wrap about-cols">
+    <div>
+      <span class="eyebrow jade" data-i18n="lesson.about">Tentang tradisi ini</span>
+      <h2 data-i18n="pg.numerology.about.title">Apa itu numerologi?</h2>
+    </div>
+    <div class="legal">
+      <p data-i18n="pg.numerology.about.p1">Numerologi yang diajarkan saat ini adalah sistem modern, bukan sistem kuno. Bentuk Pythagorasnya disusun pada awal abad ke-20, sebagian besar dalam buku berbahasa Inggris. Namanya meminjam nama pemikir Yunani Pythagoras, tetapi metode di halaman ini tidak berasal darinya maupun dari teks kuno mana pun.</p>
+      <p data-i18n="pg.numerology.about.p2">Angka dikecilkan dengan menjumlahkan digitnya sampai tinggal satu digit; 11, 22, dan 33 dipertahankan dan disebut angka master. Para guru berbeda dalam rinciannya. Halaman ini mengecilkan bulan, tanggal, dan tahun secara terpisah lalu menjumlahkannya, dan juga menampilkan cara umum lainnya, yaitu menjumlahkan semua digit sekaligus, bila hasilnya berbeda.</p>
+      <p data-i18n="pg.numerology.about.p3">Angka nama hanya memakai 26 huruf Latin: A = 1 sampai I = 9, lalu J = 1 lagi, dan Y dihitung sebagai konsonan. Nama yang ditulis dengan aksara lain termasuk tradisi lain dan tidak dipaksakan ke tabel ini. Hal yang dikaitkan dengan setiap angka berasal dari sistem modern ini; ini bukan sains dan bukan ramalan.</p>
+      <p data-i18n="legal.tradition">Ini adalah sistem kepercayaan tradisional. Ini bukan ilmu pengetahuan dan tidak meramal masa depan. Fate Tutor menunjukkan apa kata setiap tradisi dan di mana hal itu tertulis, dengan bahasa kecenderungan.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p data-i18n="legal.credits">Data kota: GeoNames (geonames.org), CC BY 4.0. Kitab klasik dibaca dari Wikisource bahasa Mandarin. Kalkulator dicocokkan dengan NASA JPL Horizons.</p>
+    <p><a href="../../third-party-notices.txt" data-i18n="footer.notices">Pemberitahuan sumber terbuka</a></p>
+    <p data-i18n="footer.rights">Fate Tutor · www.fatetutor.com</p>
+  </div>
+</footer>
+
+<script src="../../assets/js/ft-engine.js?v=ce9455bcdf"></script>
+<script src="../../assets/js/ft-lesson.js?v=a7b862f34b"></script>
+<script src="../../assets/js/ft-page-numerology.js?v=0c6fe92250"></script>
+</body>
+</html>

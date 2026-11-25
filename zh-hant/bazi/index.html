@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="zh-Hant" data-lang="zh-hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i18n="pg.bazi.meta.title">八字四柱：一步步排出您的八字與日主 — Fate Tutor</title>
+<meta name="description" content="看看您的八字四柱與日主，一步步了解每一柱是怎樣從太陽位置和曆法排出來的，並逐一認識十天干及其古典出處。" data-i18n-content="pg.bazi.meta.description">
+<!-- ft:head — written by engine/ft_build_pages.py, do not edit by hand -->
+<link rel="canonical" href="https://www.fatetutor.com/zh-hant/bazi/">
+<link rel="alternate" hreflang="en" href="https://www.fatetutor.com/bazi/">
+<link rel="alternate" hreflang="zh-Hans" href="https://www.fatetutor.com/zh-hans/bazi/">
+<link rel="alternate" hreflang="zh-Hant" href="https://www.fatetutor.com/zh-hant/bazi/">
+<link rel="alternate" hreflang="id" href="https://www.fatetutor.com/id/bazi/">
+<link rel="alternate" hreflang="ms" href="https://www.fatetutor.com/ms/bazi/">
+<link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/bazi/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Fate Tutor">
+<meta property="og:title" content="八字四柱：一步步排出您的八字與日主 — Fate Tutor">
+<meta property="og:description" content="看看您的八字四柱與日主，一步步了解每一柱是怎樣從太陽位置和曆法排出來的，並逐一認識十天干及其古典出處。">
+<meta property="og:url" content="https://www.fatetutor.com/zh-hant/bazi/">
+<meta property="og:locale" content="zh_TW">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+<!-- /ft:head -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500&display=swap">
+<link rel="stylesheet" href="../../assets/css/ft.css?v=75770d3cb2">
+<link rel="stylesheet" href="../../assets/css/ft-page-bazi.css?v=e5426dbf2b">
+</head>
+<body class="lesson">
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="../" data-page="">
+      <b>FATETUTOR</b>
+      <span data-i18n="brand.tagline">全球人生智慧平台</span>
+    </a>
+    <nav class="topnav">
+      <a href="../bazi/" data-page="bazi/" class="here" aria-current="page" data-i18n="nav.bazi">八字</a>
+      <a href="../numerology/" data-page="numerology/" data-i18n="nav.numerology">數字命理</a>
+      <a href="../zodiac/" data-page="zodiac/" data-i18n="nav.zodiac">生肖</a>
+      <a href="../weton/" data-page="weton/" data-i18n="nav.weton">爪哇 Weton</a>
+      <select id="lang" class="lang" aria-label="語言" data-i18n-aria-label="nav.language">
+        <option value="en">English</option>
+        <option value="zh-hans">简体中文</option>
+        <option value="zh-hant" selected>繁體中文</option>
+        <option value="id">Bahasa Indonesia</option>
+        <option value="ms">Bahasa Melayu</option>
+      </select>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="lhero">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <a href="../" data-page="" data-i18n="lesson.crumb.home">Fate Tutor</a> /
+      <a href="../#traditions" data-page="#traditions" data-i18n="nav.traditions">傳統</a> /
+      <span data-i18n="trad.bazi.name">八字</span>
+    </nav>
+    <div class="lhero-row">
+      <div class="badge"><span class="badge-han">八字</span><b>4</b></div>
+      <div>
+        <span class="eyebrow" data-i18n="pg.bazi.eyebrow">中國傳統 · 四柱 · 十種日主</span>
+        <h1 data-i18n="pg.bazi.title">八字：您的四柱與日主</h1>
+        <p class="lead" data-i18n="pg.bazi.lead">八字把出生的時刻寫成四組漢字，每組兩個字，分別代表年、月、日、時。日柱上面的那個字叫做日主。輸入出生資料，即可看到您的四柱，一步步了解每一柱是怎樣排出來的，再逐一認識十種日主。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band low birth-band">
+  <div class="wrap">
+    <form class="birth-panel" id="birth-panel" novalidate autocomplete="off" onsubmit="return false">
+      <div class="bp-head">
+        <span class="eyebrow" data-i18n="lesson.birth.title">您的出生資料</span>
+        <span class="bp-live" id="b-status" data-i18n="form.loading">正在載入計算程式…</span>
+        <span class="bp-hint" data-i18n="lesson.birth.live">結果會隨輸入即時更新。您在 Fate Tutor 其他頁面填過的資料會自動帶入。</span>
+      </div>
+      <div class="bp-fields">
+        <div class="field">
+          <label for="b-date" data-i18n="form.date">出生日期</label>
+          <input class="input" type="date" id="b-date" min="1900-01-01" max="2100-12-31">
+        </div>
+        <div class="field">
+          <label for="b-time" data-i18n="form.time">出生時間（時鐘上的時間）</label>
+          <input class="input" type="time" id="b-time">
+          <label class="check"><input type="checkbox" id="b-notime"><span data-i18n="form.time_unknown">我不知道出生時間</span></label>
+        </div>
+        <div class="field">
+          <label for="b-place" data-i18n="form.place">出生城鎮</label>
+          <input class="input" type="text" id="b-place" role="combobox" aria-autocomplete="list" aria-controls="b-places" placeholder="用英文或中文輸入城鎮名稱" data-i18n-placeholder="form.place.hint">
+          <ul class="places" id="b-places" role="listbox" hidden></ul>
+          <span class="chosen" id="b-chosen" aria-live="polite"></span>
+        </div>
+        <div class="field">
+          <label for="b-sex" data-i18n="form.sex">性別</label>
+          <select class="input" id="b-sex">
+            <option value="" data-i18n="form.sex.skip">不願透露</option>
+            <option value="male" data-i18n="form.sex.male">男</option>
+            <option value="female" data-i18n="form.sex.female">女</option>
+          </select>
+        </div>
+      </div>
+      <p class="bp-privacy" data-i18n="lesson.birth.privacy">全部在您自己的裝置上計算。您的資料絕不會被傳送出去；只保留在這個瀏覽器分頁裡，關閉分頁即清除。</p>
+      <div class="bp-keep">
+        <label class="check"><input type="checkbox" id="b-keep"><span data-i18n="lesson.birth.keep">在這台裝置上記住</span></label>
+        <button type="button" class="linkbtn" id="b-forget" data-i18n="lesson.birth.forget">清除我的資料</button>
+        <span class="form-error" id="b-error" role="alert"></span>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="tiles" id="tiles"></div>
+  </div>
+</section>
+
+<section class="band low">
+  <div class="wrap">
+    <div class="cards-head">
+      <div>
+        <span class="eyebrow" id="cards-count">01 – 10</span>
+        <h2 data-i18n="pg.bazi.cards.title">選一種日主</h2>
+        <p class="soft" data-i18n="lesson.cards.hint">點選卡片，或用鍵盤 ← / → 切換。</p>
+      </div>
+    </div>
+    <div class="lesson-grid">
+      <div class="lcards" id="cards" role="tablist"></div>
+      <aside class="inspector" id="inspector" aria-live="polite">
+        <span class="eyebrow jade" data-i18n="lesson.inspector">詳細說明</span>
+        <div id="inspector-body"></div>
+        <div class="i-actions">
+          <button type="button" class="btn btn-sm" id="i-read">Mark as read</button>
+          <span class="soft small" data-i18n="lesson.read.saved">只儲存在這個瀏覽器裡</span>
+          <span class="i-nav">
+            <button type="button" class="ghost" id="i-prev" aria-label="上一張" data-i18n-aria-label="lesson.prev">←</button>
+            <button type="button" class="ghost" id="i-next" aria-label="下一張" data-i18n-aria-label="lesson.next">→</button>
+          </span>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="demo">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow" data-i18n="lesson.demo.eyebrow">計算過程</span>
+      <h2 data-i18n="pg.bazi.demo.title">您的四柱是怎樣排出來的</h2>
+      <p class="soft" id="demo-who"></p>
+    </div>
+    <div class="demo">
+      <div class="stage" id="stage" role="img" aria-label="您的四柱是怎樣排出來的" data-i18n-aria-label="pg.bazi.demo.title"></div>
+      <div class="demo-side">
+        <div class="player">
+          <button type="button" class="btn btn-sm" id="p-play">Pause</button>
+          <button type="button" class="ghost" id="p-prev" aria-label="上一步" data-i18n-aria-label="lesson.step.prev">◂</button>
+          <button type="button" class="ghost" id="p-next" aria-label="下一步" data-i18n-aria-label="lesson.step.next">▸</button>
+          <span class="speeds">
+            <button type="button" class="ghost" data-speed="0.5">0.5×</button>
+            <button type="button" class="ghost on" data-speed="1">1×</button>
+            <button type="button" class="ghost" data-speed="2">2×</button>
+          </span>
+        </div>
+        <ol class="steps" id="steps"></ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band lowest">
+  <div class="wrap about-cols">
+    <div>
+      <span class="eyebrow jade" data-i18n="lesson.about">關於這個傳統</span>
+      <h2 data-i18n="pg.bazi.about.title">什麼是八字？</h2>
+    </div>
+    <div class="legal">
+      <p data-i18n="pg.bazi.about.p1">八字又叫四柱，是中國的一種傳統：用古老的六十甲子曆法記下出生的年、月、日、時。每一柱上面是一個天干，下面是一個地支，每個字都屬於五行之一：木、火、土、金、水。</p>
+      <p data-i18n="pg.bazi.about.p2">古典著作以日主（日柱上面的那個字）為中心來看八字。本頁對十種日主的描述依據《滴天髓》，而其他字與日主的關係名稱（十神）依據《淵海子平》。每一句都註明出處。</p>
+      <p data-i18n="pg.bazi.about.p3">各派在幾項設定上看法不同，Fate Tutor 都公開列出：日和時用出生地的真太陽時還是鐘錶時間，以及換日是在 23:00 還是午夜。沒有出生時間時，時柱會留空，不作猜測。</p>
+      <p data-i18n="legal.tradition">這些是傳統的信仰體系。它們不是科學，也不預測未來。Fate Tutor 只用「傾向」的說法，呈現每種傳統說了什麼、出自哪裡。</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p data-i18n="legal.credits">城市資料：GeoNames (geonames.org)，CC BY 4.0。古籍原文取自中文維基文庫。計算程式已與 NASA JPL Horizons 核對。</p>
+    <p><a href="../../third-party-notices.txt" data-i18n="footer.notices">開源聲明</a></p>
+    <p data-i18n="footer.rights">Fate Tutor · www.fatetutor.com</p>
+  </div>
+</footer>
+
+<script src="../../assets/js/ft-engine.js?v=ce9455bcdf"></script>
+<script src="../../assets/js/ft-lesson.js?v=a7b862f34b"></script>
+<script src="../../assets/js/ft-page-bazi.js?v=42f2c0bb4b"></script>
+</body>
+</html>

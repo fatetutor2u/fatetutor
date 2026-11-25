@@ -1,0 +1,37 @@
+/* Fate Tutor — BaZi page (bazi/) only. Shared styles live in ft.css. */
+
+/* inspector */
+.inspector .fact b.verse { font-family: var(--font-han); font-size: 1.05rem; color: var(--gold); }
+.inspector .fact b.stem-big { font-family: var(--font-han); font-size: 1.7rem; line-height: 1.1; }
+.tg-table tbody tr { cursor: pointer; transition: background 0.15s; }
+.tg-table tbody tr:hover, .tg-table tbody tr:focus-visible { background: rgba(212, 175, 55, 0.08); outline: none; }
+.tg-table tbody tr.self td { color: var(--text-dim); }
+.tg-table tbody tr.in-chart td.chart { color: var(--jade); }
+.tg-table tbody tr.picked { background: rgba(212, 175, 55, 0.12); }
+.tg-table td.han-cell small { font-family: var(--font-data); font-size: 0.72rem; color: var(--text-dim); margin-left: 6px; }
+.tg-note { border-left: 2px solid var(--gold-deep); background: rgba(212, 175, 55, 0.06); padding: 9px 14px; font-size: 0.9rem; color: var(--text-soft); border-radius: 0 var(--radius) var(--radius) 0; }
+.tg-note:empty { display: none; }
+
+/* demo */
+.demo-svg .ecl { fill: none; stroke: rgba(212, 175, 55, 0.35); stroke-width: 1.2; }
+.demo-svg .tick { stroke: rgba(203, 213, 225, 0.35); stroke-width: 1; }
+.demo-svg .tick.jie { stroke: rgba(203, 213, 225, 0.7); stroke-width: 1.4; }
+.demo-svg .tick.lichun { stroke: var(--gold); stroke-width: 2.4; }
+.demo-svg .lc-label { font-family: var(--font-han); font-size: 13px; fill: var(--gold); }
+.demo-svg .trail { fill: none; stroke: #ffb347; stroke-width: 3; stroke-linecap: round; opacity: 0.55; }
+.demo-svg .sun { fill: #ffb347; stroke: #fff3d6; stroke-width: 1.5; }
+.demo-svg .d60 { fill: rgba(203, 213, 225, 0.18); }
+.demo-svg .d60.on { fill: rgba(242, 202, 80, 0.55); }
+.demo-svg .d60.cur { fill: var(--jade); }
+.demo-svg .d60-label { font-family: var(--font-han); font-size: 12px; fill: var(--text-dim); }
+.demo-svg .hr { font-family: var(--font-data); font-size: 10px; fill: var(--text-dim); }
+.demo-svg .pcol { fill: rgba(255, 255, 255, 0.03); stroke: rgba(212, 175, 55, 0.25); stroke-width: 1; }
+.demo-svg .pcol.day { fill: rgba(242, 202, 80, 0.1); stroke: var(--gold); stroke-width: 1.8; }
+.demo-svg .pcol.unknown { stroke-dasharray: 5 4; fill: transparent; }
+.demo-svg .p-label { font-family: var(--font-data); font-size: 11px; fill: var(--text-dim); letter-spacing: 0.06em; }
+.demo-svg .p-han { font-family: var(--font-han); font-size: 34px; }
+.demo-svg .p-sub { font-family: var(--font-han); font-size: 12px; fill: var(--text-soft); }
+.demo-svg .p-sub.dm { fill: var(--gold); font-family: var(--font-data); font-size: 10px; letter-spacing: 0.04em; }
+.demo-svg .ebar-bg { fill: rgba(255, 255, 255, 0.06); }
+.demo-svg .e-leg { font-family: var(--font-han); font-size: 14px; }
+.demo-svg .w-result.small { font-size: 18px; }

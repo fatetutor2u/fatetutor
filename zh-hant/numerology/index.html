@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="zh-Hant" data-lang="zh-hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i18n="pg.numerology.meta.title">數字命理：一步步算出您的生命靈數與姓名數 — Fate Tutor</title>
+<meta name="description" content="算出您的生命靈數、生日數、姓名數與個人流年，看著每一位數字相加，並逐一了解十二個數字及其出處。" data-i18n-content="pg.numerology.meta.description">
+<!-- ft:head — written by engine/ft_build_pages.py, do not edit by hand -->
+<link rel="canonical" href="https://www.fatetutor.com/zh-hant/numerology/">
+<link rel="alternate" hreflang="en" href="https://www.fatetutor.com/numerology/">
+<link rel="alternate" hreflang="zh-Hans" href="https://www.fatetutor.com/zh-hans/numerology/">
+<link rel="alternate" hreflang="zh-Hant" href="https://www.fatetutor.com/zh-hant/numerology/">
+<link rel="alternate" hreflang="id" href="https://www.fatetutor.com/id/numerology/">
+<link rel="alternate" hreflang="ms" href="https://www.fatetutor.com/ms/numerology/">
+<link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/numerology/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Fate Tutor">
+<meta property="og:title" content="數字命理：一步步算出您的生命靈數與姓名數 — Fate Tutor">
+<meta property="og:description" content="算出您的生命靈數、生日數、姓名數與個人流年，看著每一位數字相加，並逐一了解十二個數字及其出處。">
+<meta property="og:url" content="https://www.fatetutor.com/zh-hant/numerology/">
+<meta property="og:locale" content="zh_TW">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+<!-- /ft:head -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500&display=swap">
+<link rel="stylesheet" href="../../assets/css/ft.css?v=75770d3cb2">
+<link rel="stylesheet" href="../../assets/css/ft-page-numerology.css?v=d1d96ce689">
+</head>
+<body class="lesson">
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="../" data-page="">
+      <b>FATETUTOR</b>
+      <span data-i18n="brand.tagline">全球人生智慧平台</span>
+    </a>
+    <nav class="topnav">
+      <a href="../bazi/" data-page="bazi/" data-i18n="nav.bazi">八字</a>
+      <a href="../numerology/" data-page="numerology/" class="here" aria-current="page" data-i18n="nav.numerology">數字命理</a>
+      <a href="../zodiac/" data-page="zodiac/" data-i18n="nav.zodiac">生肖</a>
+      <a href="../weton/" data-page="weton/" data-i18n="nav.weton">爪哇 Weton</a>
+      <select id="lang" class="lang" aria-label="語言" data-i18n-aria-label="nav.language">
+        <option value="en">English</option>
+        <option value="zh-hans">简体中文</option>
+        <option value="zh-hant" selected>繁體中文</option>
+        <option value="id">Bahasa Indonesia</option>
+        <option value="ms">Bahasa Melayu</option>
+      </select>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="lhero">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <a href="../" data-page="" data-i18n="lesson.crumb.home">Fate Tutor</a> /
+      <a href="../#traditions" data-page="#traditions" data-i18n="nav.traditions">傳統</a> /
+      <span data-i18n="trad.numerology.name">數字命理</span>
+    </nav>
+    <div class="lhero-row">
+      <div class="badge"><span class="badge-han">1–9</span><b>12</b></div>
+      <div>
+        <span class="eyebrow" data-i18n="pg.numerology.eyebrow">現代體系 · 九個數字 · 三個大師數</span>
+        <h1 data-i18n="pg.numerology.title">數字命理：您的生命靈數與姓名數</h1>
+        <p class="lead" data-i18n="pg.numerology.lead">數字命理把出生日期（如您願意，還有姓名）透過逐位相加化成幾個小數字。輸入出生日期即可看到您的數字，看每一步加法是怎樣算的，再逐一了解十二個數字。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band low birth-band">
+  <div class="wrap">
+    <form class="birth-panel" id="birth-panel" novalidate autocomplete="off" onsubmit="return false">
+      <div class="bp-head">
+        <span class="eyebrow" data-i18n="lesson.birth.title">您的出生資料</span>
+        <span class="bp-live" id="b-status" data-i18n="form.loading">正在載入計算程式…</span>
+        <span class="bp-hint" data-i18n="lesson.birth.live">結果會隨輸入即時更新。您在 Fate Tutor 其他頁面填過的資料會自動帶入。</span>
+      </div>
+      <div class="bp-fields">
+        <div class="field">
+          <label for="b-date" data-i18n="form.date">出生日期</label>
+          <input class="input" type="date" id="b-date" min="1900-01-01" max="2100-12-31">
+        </div>
+        <div class="field">
+          <label for="b-name" data-i18n="form.name">出生時的全名（選填）</label>
+          <input class="input" type="text" id="b-name" maxlength="120">
+          <span class="hint" data-i18n="form.name.hint">只用於數字命理。只限拉丁字母。</span>
+        </div>
+      </div>
+      <p class="bp-privacy" data-i18n="lesson.birth.privacy">全部在您自己的裝置上計算。您的資料絕不會被傳送出去；只保留在這個瀏覽器分頁裡，關閉分頁即清除。</p>
+      <div class="bp-keep">
+        <label class="check"><input type="checkbox" id="b-keep"><span data-i18n="lesson.birth.keep">在這台裝置上記住</span></label>
+        <button type="button" class="linkbtn" id="b-forget" data-i18n="lesson.birth.forget">清除我的資料</button>
+        <span class="form-error" id="b-error" role="alert"></span>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="tiles" id="tiles"></div>
+  </div>
+</section>
+
+<section class="band low">
+  <div class="wrap">
+    <div class="cards-head">
+      <div>
+        <span class="eyebrow" id="cards-count">01 – 12</span>
+        <h2 data-i18n="pg.numerology.cards.title">選一個數字</h2>
+        <p class="soft" data-i18n="lesson.cards.hint">點選卡片，或用鍵盤 ← / → 切換。</p>
+      </div>
+    </div>
+    <div class="lesson-grid">
+      <div class="lcards" id="cards" role="tablist"></div>
+      <aside class="inspector" id="inspector" aria-live="polite">
+        <span class="eyebrow jade" data-i18n="lesson.inspector">詳細說明</span>
+        <div id="inspector-body"></div>
+        <div class="i-actions">
+          <button type="button" class="btn btn-sm" id="i-read">Mark as read</button>
+          <span class="soft small" data-i18n="lesson.read.saved">只儲存在這個瀏覽器裡</span>
+          <span class="i-nav">
+            <button type="button" class="ghost" id="i-prev" aria-label="上一張" data-i18n-aria-label="lesson.prev">←</button>
+            <button type="button" class="ghost" id="i-next" aria-label="下一張" data-i18n-aria-label="lesson.next">→</button>
+          </span>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="demo">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow" data-i18n="lesson.demo.eyebrow">計算過程</span>
+      <h2 data-i18n="pg.numerology.demo.title">您的數字是怎樣算出來的</h2>
+      <p class="soft" id="demo-who"></p>
+    </div>
+    <div class="demo">
+      <div class="stage" id="stage" role="img" aria-label="您的數字是怎樣算出來的" data-i18n-aria-label="pg.numerology.demo.title"></div>
+      <div class="demo-side">
+        <div class="player">
+          <button type="button" class="btn btn-sm" id="p-play">Pause</button>
+          <button type="button" class="ghost" id="p-prev" aria-label="上一步" data-i18n-aria-label="lesson.step.prev">◂</button>
+          <button type="button" class="ghost" id="p-next" aria-label="下一步" data-i18n-aria-label="lesson.step.next">▸</button>
+          <span class="speeds">
+            <button type="button" class="ghost" data-speed="0.5">0.5×</button>
+            <button type="button" class="ghost on" data-speed="1">1×</button>
+            <button type="button" class="ghost" data-speed="2">2×</button>
+          </span>
+        </div>
+        <ol class="steps" id="steps"></ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band lowest">
+  <div class="wrap about-cols">
+    <div>
+      <span class="eyebrow jade" data-i18n="lesson.about">關於這個傳統</span>
+      <h2 data-i18n="pg.numerology.about.title">什麼是數字命理？</h2>
+    </div>
+    <div class="legal">
+      <p data-i18n="pg.numerology.about.p1">今天所教的數字命理是現代體系，並非古代傳統。它的「畢達哥拉斯」形式成形於二十世紀初，主要見於英文書籍。它借用了古希臘思想家畢達哥拉斯的名字，但本頁的方法並非出自他本人，也不出自任何古代典籍。</p>
+      <p data-i18n="pg.numerology.about.p2">數字逐位相加，直到剩下一位數；11、22 和 33 保留不加，稱為大師數。各家老師在細節上做法不同。本頁先把月、日、年分別化簡再相加；若另一種常見做法（把所有數字一次加完）得出不同結果，也會一併列出。</p>
+      <p data-i18n="pg.numerology.about.p3">姓名數只計算 26 個拉丁字母：A=1 到 I=9，再從 J=1 重新開始；Y 算作子音。用其他文字書寫的姓名屬於其他傳統，不會硬套進這張表。每個數字所關聯的特質出自這個現代體系，既不是科學，也不是預言。</p>
+      <p data-i18n="legal.tradition">這些是傳統的信仰體系。它們不是科學，也不預測未來。Fate Tutor 只用「傾向」的說法，呈現每種傳統說了什麼、出自哪裡。</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p data-i18n="legal.credits">城市資料：GeoNames (geonames.org)，CC BY 4.0。古籍原文取自中文維基文庫。計算程式已與 NASA JPL Horizons 核對。</p>
+    <p><a href="../../third-party-notices.txt" data-i18n="footer.notices">開源聲明</a></p>
+    <p data-i18n="footer.rights">Fate Tutor · www.fatetutor.com</p>
+  </div>
+</footer>
+
+<script src="../../assets/js/ft-engine.js?v=ce9455bcdf"></script>
+<script src="../../assets/js/ft-lesson.js?v=a7b862f34b"></script>
+<script src="../../assets/js/ft-page-numerology.js?v=0c6fe92250"></script>
+</body>
+</html>

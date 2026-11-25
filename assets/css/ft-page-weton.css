@@ -1,0 +1,11 @@
+/* Fate Tutor — Javanese Weton page only (weton/). Loaded after ft.css. */
+.demo-svg .w-day { font-family: var(--font-body); font-size: 13px; font-weight: 600; fill: var(--text); }
+.demo-svg .w-sub { font-family: var(--font-data); font-size: 10px; fill: var(--text-dim); }
+.demo-svg .w-sub.on { fill: var(--gold); font-size: 12px; }
+.demo-svg .sector.final { fill: rgba(68, 226, 205, 0.16); stroke: var(--jade); }
+.demo-svg .sector.next { fill: rgba(242, 202, 80, 0.08); stroke: var(--gold); stroke-dasharray: 4 3; }
+.demo-svg .pmark { fill: var(--jade); }
+.demo-svg .pmark.inner { fill: var(--gold); }
+.demo-svg .w-legend { font-family: var(--font-data); font-size: 10px; letter-spacing: 0.06em; fill: var(--text-dim); }
+.demo-svg .w-result-sub { font-family: var(--font-body); font-size: 14px; fill: var(--text-soft); }
+.weton-note { color: var(--jade); font-size: 0.86rem; }

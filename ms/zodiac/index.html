@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="ms" data-lang="ms">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i18n="pg.zodiac.meta.title">Zodiak Cina: Haiwan dan Unsur Anda, Langkah demi Langkah — Fate Tutor</title>
+<meta name="description" content="Ketahui haiwan dan unsur zodiak Cina anda, lihat cara tahunnya dikira, dan terokai kedua belas haiwan bersama sumber tradisinya." data-i18n-content="pg.zodiac.meta.description">
+<!-- ft:head — written by engine/ft_build_pages.py, do not edit by hand -->
+<link rel="canonical" href="https://www.fatetutor.com/ms/zodiac/">
+<link rel="alternate" hreflang="en" href="https://www.fatetutor.com/zodiac/">
+<link rel="alternate" hreflang="zh-Hans" href="https://www.fatetutor.com/zh-hans/zodiac/">
+<link rel="alternate" hreflang="zh-Hant" href="https://www.fatetutor.com/zh-hant/zodiac/">
+<link rel="alternate" hreflang="id" href="https://www.fatetutor.com/id/zodiac/">
+<link rel="alternate" hreflang="ms" href="https://www.fatetutor.com/ms/zodiac/">
+<link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/zodiac/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Fate Tutor">
+<meta property="og:title" content="Zodiak Cina: Haiwan dan Unsur Anda, Langkah demi Langkah — Fate Tutor">
+<meta property="og:description" content="Ketahui haiwan dan unsur zodiak Cina anda, lihat cara tahunnya dikira, dan terokai kedua belas haiwan bersama sumber tradisinya.">
+<meta property="og:url" content="https://www.fatetutor.com/ms/zodiac/">
+<meta property="og:locale" content="ms_MY">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+<!-- /ft:head -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500&display=swap">
+<link rel="stylesheet" href="../../assets/css/ft.css?v=75770d3cb2">
+</head>
+<body class="lesson">
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="../" data-page="">
+      <b>FATETUTOR</b>
+      <span data-i18n="brand.tagline">Platform Kecerdasan Kehidupan Global</span>
+    </a>
+    <nav class="topnav">
+      <a href="../bazi/" data-page="bazi/" data-i18n="nav.bazi">BaZi</a>
+      <a href="../numerology/" data-page="numerology/" data-i18n="nav.numerology">Numerologi</a>
+      <a href="../zodiac/" data-page="zodiac/" class="here" aria-current="page" data-i18n="nav.zodiac">Zodiak</a>
+      <a href="../weton/" data-page="weton/" data-i18n="nav.weton">Weton</a>
+      <select id="lang" class="lang" aria-label="Bahasa" data-i18n-aria-label="nav.language">
+        <option value="en">English</option>
+        <option value="zh-hans">简体中文</option>
+        <option value="zh-hant">繁體中文</option>
+        <option value="id">Bahasa Indonesia</option>
+        <option value="ms" selected>Bahasa Melayu</option>
+      </select>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="lhero">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <a href="../" data-page="" data-i18n="lesson.crumb.home">Fate Tutor</a> /
+      <a href="../#traditions" data-page="#traditions" data-i18n="nav.traditions">Tradisi</a> /
+      <span data-i18n="trad.zodiac.name">Zodiak Cina 生肖</span>
+    </nav>
+    <div class="lhero-row">
+      <div class="badge"><span class="badge-han">生肖</span><b>12</b></div>
+      <div>
+        <span class="eyebrow" data-i18n="pg.zodiac.eyebrow">Tradisi Cina · 12 haiwan · 5 unsur</span>
+        <h1 data-i18n="pg.zodiac.title">Zodiak Cina: Haiwan dan Unsur Anda</h1>
+        <p class="lead" data-i18n="pg.zodiac.lead">Setiap tahun tergolong dalam salah satu daripada dua belas haiwan, dan setiap tahun juga membawa salah satu daripada lima unsur. Isi tarikh lahir untuk melihat milik anda, lihat cara pengiraannya, kemudian terokai kesemua dua belas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band low birth-band">
+  <div class="wrap">
+    <form class="birth-panel" id="birth-panel" novalidate autocomplete="off" onsubmit="return false">
+      <div class="bp-head">
+        <span class="eyebrow" data-i18n="lesson.birth.title">Butiran kelahiran anda</span>
+        <span class="bp-live" id="b-status" data-i18n="form.loading">Memuatkan kalkulator…</span>
+        <span class="bp-hint" data-i18n="lesson.birth.live">Keputusan dikemas kini semasa anda menaip. Butiran yang anda isi di halaman Fate Tutor lain akan terus diisi.</span>
+      </div>
+      <div class="bp-fields">
+        <div class="field">
+          <label for="b-date" data-i18n="form.date">Tarikh lahir</label>
+          <input class="input" type="date" id="b-date" min="1900-01-01" max="2100-12-31">
+        </div>
+      </div>
+      <p class="bp-privacy" data-i18n="lesson.birth.privacy">Dikira pada peranti anda sendiri. Butiran anda tidak pernah dihantar ke mana-mana; ia kekal dalam tab pelayar ini sehingga anda menutupnya.</p>
+      <div class="bp-keep">
+        <label class="check"><input type="checkbox" id="b-keep"><span data-i18n="lesson.birth.keep">Ingat pada peranti ini</span></label>
+        <button type="button" class="linkbtn" id="b-forget" data-i18n="lesson.birth.forget">Padam butiran saya</button>
+        <span class="form-error" id="b-error" role="alert"></span>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="tiles" id="tiles"></div>
+  </div>
+</section>
+
+<section class="band low">
+  <div class="wrap">
+    <div class="cards-head">
+      <div>
+        <span class="eyebrow" id="cards-count">01 – 12</span>
+        <h2 data-i18n="pg.zodiac.cards.title">Pilih seekor haiwan</h2>
+        <p class="soft" data-i18n="lesson.cards.hint">Klik kad atau gunakan kekunci ← / →.</p>
+      </div>
+    </div>
+    <div class="lesson-grid">
+      <div class="lcards" id="cards" role="tablist"></div>
+      <aside class="inspector" id="inspector" aria-live="polite">
+        <span class="eyebrow jade" data-i18n="lesson.inspector">Butiran</span>
+        <div id="inspector-body"></div>
+        <div class="i-actions">
+          <button type="button" class="btn btn-sm" id="i-read">Mark as read</button>
+          <span class="soft small" data-i18n="lesson.read.saved">Disimpan dalam pelayar ini sahaja</span>
+          <span class="i-nav">
+            <button type="button" class="ghost" id="i-prev" aria-label="Kad sebelumnya" data-i18n-aria-label="lesson.prev">←</button>
+            <button type="button" class="ghost" id="i-next" aria-label="Kad seterusnya" data-i18n-aria-label="lesson.next">→</button>
+          </span>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="demo">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow" data-i18n="lesson.demo.eyebrow">Cara pengiraannya</span>
+      <h2 data-i18n="pg.zodiac.demo.title">Cara haiwan anda ditentukan</h2>
+      <p class="soft" id="demo-who"></p>
+    </div>
+    <div class="demo">
+      <div class="stage" id="stage" role="img" aria-label="Cara haiwan anda ditentukan" data-i18n-aria-label="pg.zodiac.demo.title"></div>
+      <div class="demo-side">
+        <div class="player">
+          <button type="button" class="btn btn-sm" id="p-play">Pause</button>
+          <button type="button" class="ghost" id="p-prev" aria-label="Langkah sebelumnya" data-i18n-aria-label="lesson.step.prev">◂</button>
+          <button type="button" class="ghost" id="p-next" aria-label="Langkah seterusnya" data-i18n-aria-label="lesson.step.next">▸</button>
+          <span class="speeds">
+            <button type="button" class="ghost" data-speed="0.5">0.5×</button>
+            <button type="button" class="ghost on" data-speed="1">1×</button>
+            <button type="button" class="ghost" data-speed="2">2×</button>
+          </span>
+        </div>
+        <ol class="steps" id="steps"></ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band lowest">
+  <div class="wrap about-cols">
+    <div>
+      <span class="eyebrow jade" data-i18n="lesson.about">Tentang tradisi ini</span>
+      <h2 data-i18n="pg.zodiac.about.title">Apakah zodiak Cina?</h2>
+    </div>
+    <div class="legal">
+      <p data-i18n="pg.zodiac.about.p1">Dua belas haiwan (生肖) menamakan dua belas Cabang Bumi, cara kuno Cina untuk mengira tahun, bulan dan jam. Bersama sepuluh Batang Langit, ia membentuk kitaran enam puluh tahun yang masih dicetak pada kalendar Cina.</p>
+      <p data-i18n="pg.zodiac.about.p2">Tradisi popular memberi setiap haiwan satu watak. Kaitan ini ialah tradisi rakyat tanpa satu sumber klasik, dan Fate Tutor melabelkannya begitu.</p>
+      <p data-i18n="pg.zodiac.about.p3">Dua kalendar memberi dua tarikh permulaan tahun: Tahun Baru Cina (cara popular) dan Permulaan Musim Bunga, 立春 (cara BaZi). Bagi kebanyakan hari lahir kedua-duanya sama; bagi kelahiran antara akhir Januari dan pertengahan Februari ia boleh berbeza, dan halaman ini menunjukkan kedua-duanya.</p>
+      <p data-i18n="legal.tradition">Ini ialah sistem kepercayaan tradisional. Ini bukan sains dan tidak meramal masa depan. Fate Tutor menunjukkan apa kata setiap tradisi dan di mana ia disebut, dalam bahasa kecenderungan.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p data-i18n="legal.credits">Data bandar: GeoNames (geonames.org), CC BY 4.0. Kitab klasik dibaca daripada Wikisource bahasa Cina. Kalkulator disemak dengan NASA JPL Horizons.</p>
+    <p><a href="../../third-party-notices.txt" data-i18n="footer.notices">Notis sumber terbuka</a></p>
+    <p data-i18n="footer.rights">Fate Tutor · www.fatetutor.com</p>
+  </div>
+</footer>
+
+<script src="../../assets/js/ft-engine.js?v=ce9455bcdf"></script>
+<script src="../../assets/js/ft-lesson.js?v=a7b862f34b"></script>
+<script src="../../assets/js/ft-page-zodiac.js?v=0f79d067be"></script>
+</body>
+</html>

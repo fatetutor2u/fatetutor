@@ -73,7 +73,6 @@
     const canonical = document.querySelector('link[rel="canonical"]');
     if (canonical) canonical.href = PUBLIC_ROOT + FOLDER[state.lang];
     showChosenPlace();
-    if (state.engine) showChosenTrad();
   }
 
   // Keeps the address bar in step with the language without reloading the
@@ -84,7 +83,11 @@
     if (target.pathname !== location.pathname) {
       try { history.replaceState(null, "", target.pathname + location.hash); } catch (e) { /* stays as it is */ }
     }
+    // Links to the tradition pages follow the language too.
+    document.querySelectorAll("a[data-page]").forEach((a) => { a.href = pageUrl(a.dataset.page); });
   }
+
+  const pageUrl = (page) => new URL(FOLDER[state.lang] + page, SITE_ROOT).href;
 
   async function setLanguage(lang) {
     state.lang = lang;
@@ -143,8 +146,13 @@
   }
 
   function panel(titleKey, introKey, children, id) {
+    const page = id && id.indexOf("res-") === 0 ? id.slice(4) + "/" : null;
     return el("section", { class: "panel", id: id || null }, [
-      el("header", null, [el("h3", { text: t(titleKey) }), el("p", { text: t(introKey) })]),
+      el("header", null, [
+        el("h3", { text: t(titleKey) }),
+        el("p", { text: t(introKey) }),
+        page ? el("a", { class: "panel-more", href: pageUrl(page), "data-page": page, text: t("trad.page") }) : null,
+      ]),
     ].concat(children));
   }
 
@@ -384,23 +392,42 @@
     target.classList.add("flash");
   }
 
-  // A card at the top was pressed: open that tradition's result, or the form first.
-  function openTradition(key) {
-    state.focus = key;
-    if (state.record) { showResult(key); return; }
-    showChosenTrad();
-    $("read").scrollIntoView({ behavior: "smooth", block: "start" });
-    setTimeout(() => { try { $("f-date").focus({ preventScroll: true }); } catch (e) { $("f-date").focus(); } }, 450);
+  // The birth details travel to the tradition pages (bazi/, zodiac/ …) in this
+  // browser tab only, in the same shape ft-lesson.js reads. Nothing is sent anywhere.
+  const BIRTH_KEY = "ft.birth";
+
+  function rememberBirth(request) {
+    const b = {
+      date: request.date, time: request.time || "", notime: !request.time, place: state.place, zone: state.zone,
+      sex: request.sex || "", name: request.name || "", basis: request.time_basis, daystart: request.day_starts_at,
+    };
+    try { sessionStorage.setItem(BIRTH_KEY, JSON.stringify(b)); } catch (e) { /* private mode */ }
+    try { if (JSON.parse(localStorage.getItem("ft.birth.keep") || "false")) localStorage.setItem(BIRTH_KEY, JSON.stringify(b)); } catch (e) { /* */ }
   }
 
-  function showChosenTrad() {
-    const note = $("f-trad");
-    if (!state.focus || state.record) { note.hidden = true; return; }
-    note.textContent = t("form.trad_chosen", { name: t("trad." + state.focus + ".name") });
-    note.hidden = false;
+  function recallBirth() {
+    let raw = null;
+    try { raw = sessionStorage.getItem(BIRTH_KEY); } catch (e) { /* */ }
+    try { if (!raw && JSON.parse(localStorage.getItem("ft.birth.keep") || "false")) raw = localStorage.getItem(BIRTH_KEY); } catch (e) { /* */ }
+    let b = null;
+    try { b = raw ? JSON.parse(raw) : null; } catch (e) { b = null; }
+    if (!b || !b.date) return;
+    $("f-date").value = b.date;
+    if (b.time) $("f-time").value = b.time;
+    $("f-notime").checked = !!b.notime && !b.time;
+    $("f-time").disabled = $("f-notime").checked;
+    if (b.name) $("f-name").value = b.name;
+    if (b.sex) { const r = document.querySelector('input[name="sex"][value="' + b.sex + '"]'); if (r) r.checked = true; }
+    if (b.place) choosePlace(b.place);
+    if (b.zone && b.place && b.place.alt_tz && b.zone === b.place.alt_tz) {
+      state.zone = b.zone;
+      const alt = document.querySelector('input[name="clockzone"][value="' + b.zone + '"]');
+      if (alt) alt.checked = true;
+      showChosenPlace();
+    }
   }
 
-  // Once there is a reading, the cards say so and take the visitor straight to it.
+  // Once there is a reading, the cards say so and lead to the reading on the tradition page.
   function markCards() {
     document.querySelectorAll("a.trad.open").forEach((card) => {
       const go = card.querySelector(".go");
@@ -524,9 +551,9 @@
       error.textContent = String(e.message || e);
       return;
     }
+    rememberBirth(request);
     drawRecord(state.record);
     $("results").hidden = false;
-    showChosenTrad();
     if (state.focus) showResult(state.focus);
     else $("results").scrollIntoView({ behavior: "smooth", block: "start" });
   }
@@ -554,9 +581,6 @@
     $("f-place").addEventListener("keydown", placeKeys);
     $("f-place").addEventListener("blur", () => setTimeout(closePlaces, 120));
     $("birth").addEventListener("submit", submit);
-    document.querySelectorAll("a.trad.open").forEach((card) => {
-      card.addEventListener("click", (ev) => { ev.preventDefault(); openTradition(card.dataset.trad); });
-    });
     $("view-plain").addEventListener("click", () => setView(false));
     $("view-expert").addEventListener("click", () => setView(true));
     try {
@@ -565,6 +589,7 @@
       button.disabled = false;
       button.textContent = t("form.submit");
       button.dataset.i18n = "form.submit";
+      recallBirth();
     } catch (e) {
       $("f-error").textContent = t("form.error.engine");
     }

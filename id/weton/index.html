@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="id" data-lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i18n="pg.weton.meta.title">Weton Jawa: Hari, Pasaran dan Neptu Anda, Langkah demi Langkah — Fate Tutor</title>
+<meta name="description" content="Temukan weton Jawa Anda, lihat cara minggu tujuh hari dan pasaran lima hari dihitung dari satu tanggal tetap, dan jelajahi ke-35 weton beserta nilai neptunya." data-i18n-content="pg.weton.meta.description">
+<!-- ft:head — written by engine/ft_build_pages.py, do not edit by hand -->
+<link rel="canonical" href="https://www.fatetutor.com/id/weton/">
+<link rel="alternate" hreflang="en" href="https://www.fatetutor.com/weton/">
+<link rel="alternate" hreflang="zh-Hans" href="https://www.fatetutor.com/zh-hans/weton/">
+<link rel="alternate" hreflang="zh-Hant" href="https://www.fatetutor.com/zh-hant/weton/">
+<link rel="alternate" hreflang="id" href="https://www.fatetutor.com/id/weton/">
+<link rel="alternate" hreflang="ms" href="https://www.fatetutor.com/ms/weton/">
+<link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/weton/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Fate Tutor">
+<meta property="og:title" content="Weton Jawa: Hari, Pasaran dan Neptu Anda, Langkah demi Langkah — Fate Tutor">
+<meta property="og:description" content="Temukan weton Jawa Anda, lihat cara minggu tujuh hari dan pasaran lima hari dihitung dari satu tanggal tetap, dan jelajahi ke-35 weton beserta nilai neptunya.">
+<meta property="og:url" content="https://www.fatetutor.com/id/weton/">
+<meta property="og:locale" content="id_ID">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+<!-- /ft:head -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500&display=swap">
+<link rel="stylesheet" href="../../assets/css/ft.css?v=75770d3cb2">
+<link rel="stylesheet" href="../../assets/css/ft-page-weton.css?v=b0ace69b5b">
+</head>
+<body class="lesson">
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="../" data-page="">
+      <b>FATETUTOR</b>
+      <span data-i18n="brand.tagline">Platform Kecerdasan Hidup Global</span>
+    </a>
+    <nav class="topnav">
+      <a href="../bazi/" data-page="bazi/" data-i18n="nav.bazi">BaZi</a>
+      <a href="../numerology/" data-page="numerology/" data-i18n="nav.numerology">Numerologi</a>
+      <a href="../zodiac/" data-page="zodiac/" data-i18n="nav.zodiac">Shio</a>
+      <a href="../weton/" data-page="weton/" class="here" aria-current="page" data-i18n="nav.weton">Weton</a>
+      <select id="lang" class="lang" aria-label="Bahasa" data-i18n-aria-label="nav.language">
+        <option value="en">English</option>
+        <option value="zh-hans">简体中文</option>
+        <option value="zh-hant">繁體中文</option>
+        <option value="id" selected>Bahasa Indonesia</option>
+        <option value="ms">Bahasa Melayu</option>
+      </select>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="lhero">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <a href="../" data-page="" data-i18n="lesson.crumb.home">Fate Tutor</a> /
+      <a href="../#traditions" data-page="#traditions" data-i18n="nav.traditions">Tradisi</a> /
+      <span data-i18n="trad.weton.name">Weton Jawa</span>
+    </nav>
+    <div class="lhero-row">
+      <div class="badge"><span class="badge-han">Weton</span><b>35</b></div>
+      <div>
+        <span class="eyebrow" data-i18n="pg.weton.eyebrow">Tradisi Jawa · 7 hari · 5 pasaran · 35 weton</span>
+        <h1 data-i18n="pg.weton.title">Weton Jawa: Hari dan Pasaran Anda</h1>
+        <p class="lead" data-i18n="pg.weton.lead">Tradisi Jawa memberi setiap hari dua nama: satu dari minggu tujuh hari dan satu dari pasaran lima hari. Pasangan nama pada hari lahir Anda adalah weton Anda, dan setiap nama punya nilai yang disebut neptu. Isi tanggal lahir untuk melihat weton Anda, lihat cara menghitungnya, lalu jelajahi ke-35 weton.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band low birth-band">
+  <div class="wrap">
+    <form class="birth-panel" id="birth-panel" novalidate autocomplete="off" onsubmit="return false">
+      <div class="bp-head">
+        <span class="eyebrow" data-i18n="lesson.birth.title">Data kelahiran Anda</span>
+        <span class="bp-live" id="b-status" data-i18n="form.loading">Memuat kalkulator…</span>
+        <span class="bp-hint" data-i18n="lesson.birth.live">Hasil diperbarui saat Anda mengetik. Data yang sudah Anda isi di halaman Fate Tutor lain akan langsung terisi.</span>
+      </div>
+      <div class="bp-fields">
+        <div class="field">
+          <label for="b-date" data-i18n="form.date">Tanggal lahir</label>
+          <input class="input" type="date" id="b-date" min="1900-01-01" max="2100-12-31">
+        </div>
+        <div class="field"><label for="b-time" data-i18n="form.time">Waktu lahir menurut jam</label><input class="input" type="time" id="b-time"><label class="check"><input type="checkbox" id="b-notime"><span data-i18n="form.time_unknown">Saya tidak tahu waktu lahir saya</span></label></div>
+      </div>
+      <p class="bp-privacy" data-i18n="lesson.birth.privacy">Dihitung di perangkat Anda sendiri. Data Anda tidak pernah dikirim ke mana pun; data hanya ada di tab browser ini sampai Anda menutupnya.</p>
+      <div class="bp-keep">
+        <label class="check"><input type="checkbox" id="b-keep"><span data-i18n="lesson.birth.keep">Ingat di perangkat ini</span></label>
+        <button type="button" class="linkbtn" id="b-forget" data-i18n="lesson.birth.forget">Hapus data saya</button>
+        <span class="form-error" id="b-error" role="alert"></span>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="tiles" id="tiles"></div>
+  </div>
+</section>
+
+<section class="band low">
+  <div class="wrap">
+    <div class="cards-head">
+      <div>
+        <span class="eyebrow" id="cards-count">01 – 35</span>
+        <h2 data-i18n="pg.weton.cards.title">Pilih sebuah weton</h2>
+        <p class="soft" data-i18n="lesson.cards.hint">Klik kartu atau gunakan tombol ← / →.</p>
+      </div>
+    </div>
+    <div class="lesson-grid">
+      <div class="lcards" id="cards" role="tablist"></div>
+      <aside class="inspector" id="inspector" aria-live="polite">
+        <span class="eyebrow jade" data-i18n="lesson.inspector">Rincian</span>
+        <div id="inspector-body"></div>
+        <div class="i-actions">
+          <button type="button" class="btn btn-sm" id="i-read">Mark as read</button>
+          <span class="soft small" data-i18n="lesson.read.saved">Hanya disimpan di browser ini</span>
+          <span class="i-nav">
+            <button type="button" class="ghost" id="i-prev" aria-label="Kartu sebelumnya" data-i18n-aria-label="lesson.prev">←</button>
+            <button type="button" class="ghost" id="i-next" aria-label="Kartu berikutnya" data-i18n-aria-label="lesson.next">→</button>
+          </span>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="demo">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow" data-i18n="lesson.demo.eyebrow">Cara menghitungnya</span>
+      <h2 data-i18n="pg.weton.demo.title">Cara menemukan weton Anda</h2>
+      <p class="soft" id="demo-who"></p>
+    </div>
+    <div class="demo">
+      <div class="stage" id="stage" role="img" aria-label="Cara menemukan weton Anda" data-i18n-aria-label="pg.weton.demo.title"></div>
+      <div class="demo-side">
+        <div class="player">
+          <button type="button" class="btn btn-sm" id="p-play">Pause</button>
+          <button type="button" class="ghost" id="p-prev" aria-label="Langkah sebelumnya" data-i18n-aria-label="lesson.step.prev">◂</button>
+          <button type="button" class="ghost" id="p-next" aria-label="Langkah berikutnya" data-i18n-aria-label="lesson.step.next">▸</button>
+          <span class="speeds">
+            <button type="button" class="ghost" data-speed="0.5">0.5×</button>
+            <button type="button" class="ghost on" data-speed="1">1×</button>
+            <button type="button" class="ghost" data-speed="2">2×</button>
+          </span>
+        </div>
+        <ol class="steps" id="steps"></ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band lowest">
+  <div class="wrap about-cols">
+    <div>
+      <span class="eyebrow jade" data-i18n="lesson.about">Tentang tradisi ini</span>
+      <h2 data-i18n="pg.weton.about.title">Apa itu weton?</h2>
+    </div>
+    <div class="legal">
+      <p data-i18n="pg.weton.about.p1">Kalender Jawa menjalankan dua minggu berdampingan: minggu tujuh hari yang dipakai di seluruh dunia, dan pasaran lima hari yang lebih tua, yaitu Legi, Pahing, Pon, Wage dan Kliwon, yang dulu berkaitan dengan pasar yang berpindah dari kota ke kota. Keduanya membentuk 35 pasangan berbeda, dan pasangan yang sama kembali setiap 35 hari. Kalender Jawa masih mencetak keduanya.</p>
+      <p data-i18n="pg.weton.about.p2">Kitab primbon, seperti Kitab Primbon Betaljemur Adammakna, memberi setiap hari dan setiap pasaran sebuah angka (neptu) lalu menjumlahkannya. Tradisi memakai jumlah itu saat mencocokkan dua hari lahir atau memilih hari untuk sebuah acara. Fate Tutor menampilkan angka dan cara menjumlahkannya, dan tidak menilai jumlah mana pun lebih baik atau lebih buruk.</p>
+      <p data-i18n="pg.weton.about.p3">Dalam hitungan Jawa, hari baru dimulai saat matahari terbenam, bukan tengah malam. Matahari terbenam di Jawa sekitar pukul 18.00 sepanjang tahun, jadi Fate Tutor menganggap kelahiran pada atau sesudah pukul 18.00 sebagai kelahiran malam dan menampilkan kedua weton: weton tanggal kalender dan weton hari berikutnya. Setiap keluarga bisa berbeda; tanyakan kepada keluarga Anda.</p>
+      <p data-i18n="legal.tradition">Ini adalah sistem kepercayaan tradisional. Ini bukan ilmu pengetahuan dan tidak meramal masa depan. Fate Tutor menunjukkan apa kata setiap tradisi dan di mana hal itu tertulis, dengan bahasa kecenderungan.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p data-i18n="legal.credits">Data kota: GeoNames (geonames.org), CC BY 4.0. Kitab klasik dibaca dari Wikisource bahasa Mandarin. Kalkulator dicocokkan dengan NASA JPL Horizons.</p>
+    <p><a href="../../third-party-notices.txt" data-i18n="footer.notices">Pemberitahuan sumber terbuka</a></p>
+    <p data-i18n="footer.rights">Fate Tutor · www.fatetutor.com</p>
+  </div>
+</footer>
+
+<script src="../../assets/js/ft-engine.js?v=ce9455bcdf"></script>
+<script src="../../assets/js/ft-lesson.js?v=a7b862f34b"></script>
+<script src="../../assets/js/ft-page-weton.js?v=2820b00869"></script>
+</body>
+</html>

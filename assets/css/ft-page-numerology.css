@@ -1,0 +1,18 @@
+/* Fate Tutor — numerology page only (numerology/). Loaded after ft.css. */
+.lcard .glyph.n-glyph { font-family: var(--font-data); font-size: 1.8rem; }
+.lcard .glyph.n-master { text-shadow: 0 0 14px rgba(242, 202, 80, 0.45); }
+.inspector .n-where { display: flex; flex-wrap: wrap; gap: 6px; }
+
+/* demo: number tokens that fly and merge */
+.demo-svg .n-tok { fill: var(--surface-high); stroke: rgba(212, 175, 55, 0.45); stroke-width: 1.2; }
+.demo-svg .n-tok.res { fill: rgba(242, 202, 80, 0.14); stroke: var(--gold); }
+.demo-svg .n-ring { fill: none; stroke: var(--gold); stroke-width: 2.5; }
+.demo-svg .n-tok-t { font-family: var(--font-data); font-size: 18px; fill: var(--text); }
+.demo-svg .n-tok.res + .n-ring + .n-tok-t { fill: var(--gold); }
+.demo-svg .n-ghost { font-family: var(--font-data); font-size: 17px; fill: var(--text-dim); }
+.demo-svg .n-work { font-family: var(--font-data); font-size: 14px; fill: var(--text-soft); }
+.demo-svg .n-work.big { font-size: 17px; fill: var(--text); }
+.demo-svg .n-letter { font-family: var(--font-data); fill: var(--text); }
+.demo-svg .n-letter.vowel { fill: var(--gold); }
+.demo-svg .n-letter.dim { fill: var(--text-dim); }
+.demo-svg .n-note { font-size: 15px; fill: var(--text-soft); }

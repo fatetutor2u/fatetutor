@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i18n="pg.bazi.meta.title">BaZi Four Pillars: Your Chart and Day Master, Step by Step — Fate Tutor</title>
+<meta name="description" content="See your BaZi Four Pillars and Day Master, watch how each pillar is worked out from the Sun and the calendar, and explore the ten Heavenly Stems with their classical sources." data-i18n-content="pg.bazi.meta.description">
+<!-- ft:head — written by engine/ft_build_pages.py, do not edit by hand -->
+<link rel="canonical" href="https://www.fatetutor.com/bazi/">
+<link rel="alternate" hreflang="en" href="https://www.fatetutor.com/bazi/">
+<link rel="alternate" hreflang="zh-Hans" href="https://www.fatetutor.com/zh-hans/bazi/">
+<link rel="alternate" hreflang="zh-Hant" href="https://www.fatetutor.com/zh-hant/bazi/">
+<link rel="alternate" hreflang="id" href="https://www.fatetutor.com/id/bazi/">
+<link rel="alternate" hreflang="ms" href="https://www.fatetutor.com/ms/bazi/">
+<link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/bazi/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Fate Tutor">
+<meta property="og:title" content="BaZi Four Pillars: Your Chart and Day Master, Step by Step — Fate Tutor">
+<meta property="og:description" content="See your BaZi Four Pillars and Day Master, watch how each pillar is worked out from the Sun and the calendar, and explore the ten Heavenly Stems with their classical sources.">
+<meta property="og:url" content="https://www.fatetutor.com/bazi/">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<!-- /ft:head -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500&display=swap">
+<link rel="stylesheet" href="../assets/css/ft.css?v=75770d3cb2">
+<link rel="stylesheet" href="../assets/css/ft-page-bazi.css?v=e5426dbf2b">
+</head>
+<body class="lesson">
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="../" data-page="">
+      <b>FATETUTOR</b>
+      <span data-i18n="brand.tagline">Global Life Intelligence Platform</span>
+    </a>
+    <nav class="topnav">
+      <a href="../bazi/" data-page="bazi/" class="here" aria-current="page" data-i18n="nav.bazi">BaZi</a>
+      <a href="../numerology/" data-page="numerology/" data-i18n="nav.numerology">Numerology</a>
+      <a href="../zodiac/" data-page="zodiac/" data-i18n="nav.zodiac">Zodiac</a>
+      <a href="../weton/" data-page="weton/" data-i18n="nav.weton">Weton</a>
+      <select id="lang" class="lang" aria-label="Language" data-i18n-aria-label="nav.language">
+        <option value="en" selected>English</option>
+        <option value="zh-hans">简体中文</option>
+        <option value="zh-hant">繁體中文</option>
+        <option value="id">Bahasa Indonesia</option>
+        <option value="ms">Bahasa Melayu</option>
+      </select>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="lhero">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <a href="../" data-page="" data-i18n="lesson.crumb.home">Fate Tutor</a> /
+      <a href="../#traditions" data-page="#traditions" data-i18n="nav.traditions">Traditions</a> /
+      <span data-i18n="trad.bazi.name">BaZi 八字</span>
+    </nav>
+    <div class="lhero-row">
+      <div class="badge"><span class="badge-han">八字</span><b>4</b></div>
+      <div>
+        <span class="eyebrow" data-i18n="pg.bazi.eyebrow">Chinese tradition · 4 pillars · 10 Day Masters</span>
+        <h1 data-i18n="pg.bazi.title">BaZi: Your Four Pillars and Day Master</h1>
+        <p class="lead" data-i18n="pg.bazi.lead">BaZi writes the moment of birth as four pairs of Chinese characters: one pair each for the year, month, day and hour. The upper character of the day pair is called the Day Master. Enter your birth details to see your four pillars, watch how each one is worked out, then explore the ten Day Masters.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band low birth-band">
+  <div class="wrap">
+    <form class="birth-panel" id="birth-panel" novalidate autocomplete="off" onsubmit="return false">
+      <div class="bp-head">
+        <span class="eyebrow" data-i18n="lesson.birth.title">Your birth</span>
+        <span class="bp-live" id="b-status" data-i18n="form.loading">Loading the calculators…</span>
+        <span class="bp-hint" data-i18n="lesson.birth.live">Results update as you type. Details you entered on another Fate Tutor page are filled in for you.</span>
+      </div>
+      <div class="bp-fields">
+        <div class="field">
+          <label for="b-date" data-i18n="form.date">Birth date</label>
+          <input class="input" type="date" id="b-date" min="1900-01-01" max="2100-12-31">
+        </div>
+        <div class="field">
+          <label for="b-time" data-i18n="form.time">Birth time on the clock</label>
+          <input class="input" type="time" id="b-time">
+          <label class="check"><input type="checkbox" id="b-notime"><span data-i18n="form.time_unknown">I don't know my birth time</span></label>
+        </div>
+        <div class="field">
+          <label for="b-place" data-i18n="form.place">Birth town</label>
+          <input class="input" type="text" id="b-place" role="combobox" aria-autocomplete="list" aria-controls="b-places" placeholder="Type a town name in English or 中文" data-i18n-placeholder="form.place.hint">
+          <ul class="places" id="b-places" role="listbox" hidden></ul>
+          <span class="chosen" id="b-chosen" aria-live="polite"></span>
+        </div>
+        <div class="field">
+          <label for="b-sex" data-i18n="form.sex">Sex</label>
+          <select class="input" id="b-sex">
+            <option value="" data-i18n="form.sex.skip">Prefer not to say</option>
+            <option value="male" data-i18n="form.sex.male">Male</option>
+            <option value="female" data-i18n="form.sex.female">Female</option>
+          </select>
+        </div>
+      </div>
+      <p class="bp-privacy" data-i18n="lesson.birth.privacy">Worked out on your own device. Your details are never sent anywhere; they stay in this browser tab until you close it.</p>
+      <div class="bp-keep">
+        <label class="check"><input type="checkbox" id="b-keep"><span data-i18n="lesson.birth.keep">Remember on this device</span></label>
+        <button type="button" class="linkbtn" id="b-forget" data-i18n="lesson.birth.forget">Forget my details</button>
+        <span class="form-error" id="b-error" role="alert"></span>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="tiles" id="tiles"></div>
+  </div>
+</section>
+
+<section class="band low">
+  <div class="wrap">
+    <div class="cards-head">
+      <div>
+        <span class="eyebrow" id="cards-count">01 – 10</span>
+        <h2 data-i18n="pg.bazi.cards.title">Pick a Day Master</h2>
+        <p class="soft" data-i18n="lesson.cards.hint">Click a card or use the ← / → keys.</p>
+      </div>
+    </div>
+    <div class="lesson-grid">
+      <div class="lcards" id="cards" role="tablist"></div>
+      <aside class="inspector" id="inspector" aria-live="polite">
+        <span class="eyebrow jade" data-i18n="lesson.inspector">Inspector</span>
+        <div id="inspector-body"></div>
+        <div class="i-actions">
+          <button type="button" class="btn btn-sm" id="i-read">Mark as read</button>
+          <span class="soft small" data-i18n="lesson.read.saved">Kept in this browser only</span>
+          <span class="i-nav">
+            <button type="button" class="ghost" id="i-prev" aria-label="Previous card" data-i18n-aria-label="lesson.prev">←</button>
+            <button type="button" class="ghost" id="i-next" aria-label="Next card" data-i18n-aria-label="lesson.next">→</button>
+          </span>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="demo">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow" data-i18n="lesson.demo.eyebrow">How it is worked out</span>
+      <h2 data-i18n="pg.bazi.demo.title">How your four pillars are worked out</h2>
+      <p class="soft" id="demo-who"></p>
+    </div>
+    <div class="demo">
+      <div class="stage" id="stage" role="img" aria-label="How your four pillars are worked out" data-i18n-aria-label="pg.bazi.demo.title"></div>
+      <div class="demo-side">
+        <div class="player">
+          <button type="button" class="btn btn-sm" id="p-play">Pause</button>
+          <button type="button" class="ghost" id="p-prev" aria-label="Previous step" data-i18n-aria-label="lesson.step.prev">◂</button>
+          <button type="button" class="ghost" id="p-next" aria-label="Next step" data-i18n-aria-label="lesson.step.next">▸</button>
+          <span class="speeds">
+            <button type="button" class="ghost" data-speed="0.5">0.5×</button>
+            <button type="button" class="ghost on" data-speed="1">1×</button>
+            <button type="button" class="ghost" data-speed="2">2×</button>
+          </span>
+        </div>
+        <ol class="steps" id="steps"></ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band lowest">
+  <div class="wrap about-cols">
+    <div>
+      <span class="eyebrow jade" data-i18n="lesson.about">About this tradition</span>
+      <h2 data-i18n="pg.bazi.about.title">What is BaZi?</h2>
+    </div>
+    <div class="legal">
+      <p data-i18n="pg.bazi.about.p1">BaZi (八字, eight characters), also called the Four Pillars, is a Chinese tradition that records the year, month, day and hour of birth in the old sixty-pair calendar. Each pillar is one Heavenly Stem above one Earthly Branch, and each character belongs to one of the five elements: Wood, Fire, Earth, Metal and Water.</p>
+      <p data-i18n="pg.bazi.about.p2">The classical texts read a chart from the Day Master, the upper character of the day pillar. The pictures of the ten Day Masters on this page follow 滴天髓 (Di Tian Sui), and the names for how other characters relate to the Day Master, the Ten Gods, follow 淵海子平 (Yuan Hai Zi Ping). Each statement shows its source.</p>
+      <p data-i18n="pg.bazi.about.p3">Schools differ on a few settings, and Fate Tutor shows them openly: whether the day and hour use the sun's own time at the birthplace or the clock, and whether the day changes at 23:00 or at midnight. Without a birth time the hour pillar is left open rather than guessed.</p>
+      <p data-i18n="legal.tradition">These are traditional systems of belief. They are not science and they do not predict the future. Fate Tutor shows what each tradition says and where it says it, in the language of tendencies.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p data-i18n="legal.credits">City data: GeoNames (geonames.org), CC BY 4.0. Classical texts read from Chinese Wikisource. Calculators checked against NASA JPL Horizons.</p>
+    <p><a href="../third-party-notices.txt" data-i18n="footer.notices">Open-source notices</a></p>
+    <p data-i18n="footer.rights">Fate Tutor · www.fatetutor.com</p>
+  </div>
+</footer>
+
+<script src="../assets/js/ft-engine.js?v=ce9455bcdf"></script>
+<script src="../assets/js/ft-lesson.js?v=a7b862f34b"></script>
+<script src="../assets/js/ft-page-bazi.js?v=42f2c0bb4b"></script>
+</body>
+</html>

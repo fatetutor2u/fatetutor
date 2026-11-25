@@ -45,4 +45,184 @@
     <xhtml:link rel="alternate" hreflang="ms" href="https://www.fatetutor.com/ms/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/"/>
   </url>
+  <url>
+    <loc>https://www.fatetutor.com/bazi/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fatetutor.com/bazi/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.fatetutor.com/zh-hans/bazi/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.fatetutor.com/zh-hant/bazi/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.fatetutor.com/id/bazi/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://www.fatetutor.com/ms/bazi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/bazi/"/>
+  </url>
+  <url>
+    <loc>https://www.fatetutor.com/zh-hans/bazi/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fatetutor.com/bazi/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.fatetutor.com/zh-hans/bazi/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.fatetutor.com/zh-hant/bazi/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.fatetutor.com/id/bazi/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://www.fatetutor.com/ms/bazi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/bazi/"/>
+  </url>
+  <url>
+    <loc>https://www.fatetutor.com/zh-hant/bazi/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fatetutor.com/bazi/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.fatetutor.com/zh-hans/bazi/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.fatetutor.com/zh-hant/bazi/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.fatetutor.com/id/bazi/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://www.fatetutor.com/ms/bazi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/bazi/"/>
+  </url>
+  <url>
+    <loc>https://www.fatetutor.com/id/bazi/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fatetutor.com/bazi/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.fatetutor.com/zh-hans/bazi/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.fatetutor.com/zh-hant/bazi/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.fatetutor.com/id/bazi/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://www.fatetutor.com/ms/bazi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/bazi/"/>
+  </url>
+  <url>
+    <loc>https://www.fatetutor.com/ms/bazi/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fatetutor.com/bazi/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.fatetutor.com/zh-hans/bazi/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.fatetutor.com/zh-hant/bazi/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.fatetutor.com/id/bazi/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://www.fatetutor.com/ms/bazi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/bazi/"/>
+  </url>
+  <url>
+    <loc>https://www.fatetutor.com/numerology/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fatetutor.com/numerology/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.fatetutor.com/zh-hans/numerology/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.fatetutor.com/zh-hant/numerology/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.fatetutor.com/id/numerology/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://www.fatetutor.com/ms/numerology/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/numerology/"/>
+  </url>
+  <url>
+    <loc>https://www.fatetutor.com/zh-hans/numerology/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fatetutor.com/numerology/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.fatetutor.com/zh-hans/numerology/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.fatetutor.com/zh-hant/numerology/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.fatetutor.com/id/numerology/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://www.fatetutor.com/ms/numerology/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/numerology/"/>
+  </url>
+  <url>
+    <loc>https://www.fatetutor.com/zh-hant/numerology/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fatetutor.com/numerology/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.fatetutor.com/zh-hans/numerology/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.fatetutor.com/zh-hant/numerology/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.fatetutor.com/id/numerology/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://www.fatetutor.com/ms/numerology/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/numerology/"/>
+  </url>
+  <url>
+    <loc>https://www.fatetutor.com/id/numerology/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fatetutor.com/numerology/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.fatetutor.com/zh-hans/numerology/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.fatetutor.com/zh-hant/numerology/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.fatetutor.com/id/numerology/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://www.fatetutor.com/ms/numerology/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/numerology/"/>
+  </url>
+  <url>
+    <loc>https://www.fatetutor.com/ms/numerology/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fatetutor.com/numerology/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.fatetutor.com/zh-hans/numerology/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.fatetutor.com/zh-hant/numerology/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.fatetutor.com/id/numerology/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://www.fatetutor.com/ms/numerology/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/numerology/"/>
+  </url>
+  <url>
+    <loc>https://www.fatetutor.com/zodiac/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fatetutor.com/zodiac/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.fatetutor.com/zh-hans/zodiac/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.fatetutor.com/zh-hant/zodiac/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.fatetutor.com/id/zodiac/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://www.fatetutor.com/ms/zodiac/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/zodiac/"/>
+  </url>
+  <url>
+    <loc>https://www.fatetutor.com/zh-hans/zodiac/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fatetutor.com/zodiac/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.fatetutor.com/zh-hans/zodiac/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.fatetutor.com/zh-hant/zodiac/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.fatetutor.com/id/zodiac/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://www.fatetutor.com/ms/zodiac/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/zodiac/"/>
+  </url>
+  <url>
+    <loc>https://www.fatetutor.com/zh-hant/zodiac/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fatetutor.com/zodiac/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.fatetutor.com/zh-hans/zodiac/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.fatetutor.com/zh-hant/zodiac/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.fatetutor.com/id/zodiac/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://www.fatetutor.com/ms/zodiac/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/zodiac/"/>
+  </url>
+  <url>
+    <loc>https://www.fatetutor.com/id/zodiac/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fatetutor.com/zodiac/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.fatetutor.com/zh-hans/zodiac/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.fatetutor.com/zh-hant/zodiac/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.fatetutor.com/id/zodiac/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://www.fatetutor.com/ms/zodiac/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/zodiac/"/>
+  </url>
+  <url>
+    <loc>https://www.fatetutor.com/ms/zodiac/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fatetutor.com/zodiac/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.fatetutor.com/zh-hans/zodiac/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.fatetutor.com/zh-hant/zodiac/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.fatetutor.com/id/zodiac/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://www.fatetutor.com/ms/zodiac/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/zodiac/"/>
+  </url>
+  <url>
+    <loc>https://www.fatetutor.com/weton/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fatetutor.com/weton/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.fatetutor.com/zh-hans/weton/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.fatetutor.com/zh-hant/weton/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.fatetutor.com/id/weton/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://www.fatetutor.com/ms/weton/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/weton/"/>
+  </url>
+  <url>
+    <loc>https://www.fatetutor.com/zh-hans/weton/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fatetutor.com/weton/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.fatetutor.com/zh-hans/weton/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.fatetutor.com/zh-hant/weton/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.fatetutor.com/id/weton/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://www.fatetutor.com/ms/weton/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/weton/"/>
+  </url>
+  <url>
+    <loc>https://www.fatetutor.com/zh-hant/weton/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fatetutor.com/weton/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.fatetutor.com/zh-hans/weton/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.fatetutor.com/zh-hant/weton/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.fatetutor.com/id/weton/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://www.fatetutor.com/ms/weton/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/weton/"/>
+  </url>
+  <url>
+    <loc>https://www.fatetutor.com/id/weton/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fatetutor.com/weton/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.fatetutor.com/zh-hans/weton/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.fatetutor.com/zh-hant/weton/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.fatetutor.com/id/weton/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://www.fatetutor.com/ms/weton/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/weton/"/>
+  </url>
+  <url>
+    <loc>https://www.fatetutor.com/ms/weton/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fatetutor.com/weton/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.fatetutor.com/zh-hans/weton/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.fatetutor.com/zh-hant/weton/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.fatetutor.com/id/weton/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://www.fatetutor.com/ms/weton/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/weton/"/>
+  </url>
 </urlset>

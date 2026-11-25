@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title data-i18n="meta.title">Fate Tutor — Kecerdasan Takdir, Mesin Kearifan Kuno</title>
-<meta name="description" content="Baca kelahiran Anda lewat beberapa tradisi kuno. Masing-masing dipisahkan dan menunjukkan sumbernya. Dihitung di perangkat Anda sendiri.">
+<meta name="description" content="Baca kelahiran Anda lewat beberapa tradisi kuno. Masing-masing dipisahkan dan menunjukkan sumbernya. Dihitung di perangkat Anda sendiri." data-i18n-content="meta.description">
 <!-- ft:head — written by engine/ft_build_pages.py, do not edit by hand -->
 <link rel="canonical" href="https://www.fatetutor.com/id/">
 <link rel="alternate" hreflang="en" href="https://www.fatetutor.com/">
@@ -25,7 +25,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500&display=swap">
-<link rel="stylesheet" href="../assets/css/ft.css?v=9019d3528c">
+<link rel="stylesheet" href="../assets/css/ft.css?v=75770d3cb2">
 </head>
 <body>
 
@@ -94,10 +94,10 @@
       <h2 data-i18n="trad.title">Setiap tradisi, menurut aturannya sendiri</h2>
     </div>
     <div class="trads">
-      <a class="trad open" href="#read" data-trad="bazi"><span class="pill live" data-i18n="trad.live">Tersedia sekarang</span><h3 data-i18n="trad.bazi.name">BaZi 八字</h3><p data-i18n="trad.bazi.body">Empat Pilar: tahun, bulan, hari, dan jam lahir, dibaca lewat lima elemen.</p><span class="go" data-i18n="trad.go">Hitung sekarang →</span></a>
-      <a class="trad open" href="#read" data-trad="numerology"><span class="pill live" data-i18n="trad.live">Tersedia sekarang</span><h3 data-i18n="trad.numerology.name">Numerologi</h3><p data-i18n="trad.numerology.body">Angka yang diambil dari tanggal lahir dan huruf-huruf nama Anda.</p><span class="go" data-i18n="trad.go">Hitung sekarang →</span></a>
-      <a class="trad open" href="#read" data-trad="zodiac"><span class="pill live" data-i18n="trad.live">Tersedia sekarang</span><h3 data-i18n="trad.zodiac.name">Shio 生肖</h3><p data-i18n="trad.zodiac.body">Hewan dan elemen tahun lahir Anda.</p><span class="go" data-i18n="trad.go">Hitung sekarang →</span></a>
-      <a class="trad open" href="#read" data-trad="weton"><span class="pill live" data-i18n="trad.live">Tersedia sekarang</span><h3 data-i18n="trad.weton.name">Weton Jawa</h3><p data-i18n="trad.weton.body">Pertemuan minggu tujuh hari dan minggu pasaran lima hari pada hari lahir Anda.</p><span class="go" data-i18n="trad.go">Hitung sekarang →</span></a>
+      <a class="trad open" href="bazi/" data-page="bazi/" data-trad="bazi"><span class="pill live" data-i18n="trad.live">Tersedia sekarang</span><h3 data-i18n="trad.bazi.name">BaZi 八字</h3><p data-i18n="trad.bazi.body">Empat Pilar: tahun, bulan, hari, dan jam lahir, dibaca lewat lima elemen.</p><span class="go" data-i18n="trad.go">Hitung sekarang →</span></a>
+      <a class="trad open" href="numerology/" data-page="numerology/" data-trad="numerology"><span class="pill live" data-i18n="trad.live">Tersedia sekarang</span><h3 data-i18n="trad.numerology.name">Numerologi</h3><p data-i18n="trad.numerology.body">Angka yang diambil dari tanggal lahir dan huruf-huruf nama Anda.</p><span class="go" data-i18n="trad.go">Hitung sekarang →</span></a>
+      <a class="trad open" href="zodiac/" data-page="zodiac/" data-trad="zodiac"><span class="pill live" data-i18n="trad.live">Tersedia sekarang</span><h3 data-i18n="trad.zodiac.name">Shio 生肖</h3><p data-i18n="trad.zodiac.body">Hewan dan elemen tahun lahir Anda.</p><span class="go" data-i18n="trad.go">Hitung sekarang →</span></a>
+      <a class="trad open" href="weton/" data-page="weton/" data-trad="weton"><span class="pill live" data-i18n="trad.live">Tersedia sekarang</span><h3 data-i18n="trad.weton.name">Weton Jawa</h3><p data-i18n="trad.weton.body">Pertemuan minggu tujuh hari dan minggu pasaran lima hari pada hari lahir Anda.</p><span class="go" data-i18n="trad.go">Hitung sekarang →</span></a>
       <div class="trad next"><span class="pill" data-i18n="trad.next">Berikutnya</span><h3 data-i18n="trad.ziwei.name">Zi Wei Dou Shu 紫微斗数</h3></div>
       <div class="trad next"><span class="pill" data-i18n="trad.next">Berikutnya</span><h3 data-i18n="trad.iching.name">I Ching 易经</h3></div>
       <div class="trad next"><span class="pill" data-i18n="trad.next">Berikutnya</span><h3 data-i18n="trad.indian.name">Astrologi India</h3></div>
@@ -113,7 +113,6 @@
       <h2 data-i18n="form.title">Baca bagan saya</h2>
     </div>
     <form id="birth" class="form-card" novalidate autocomplete="off">
-      <p class="chosen-trad" id="f-trad" hidden></p>
       <p class="privacy" data-i18n="form.privacy">Semuanya dihitung di perangkat Anda sendiri. Data kelahiran Anda tidak dikirim kepada kami atau siapa pun.</p>
 
       <div class="grid2">
@@ -208,8 +207,8 @@
       <p data-i18n="legal.offlimits">Kami tidak memberi pembacaan tentang kematian, panjang umur, penyakit berat, kecelakaan, atau bencana, meskipun kitab lama membahasnya.</p>
       <p data-i18n="legal.advice">Untuk keputusan tentang kesehatan, uang, hukum, atau pernikahan, mohon berkonsultasi dengan tenaga profesional yang berkualifikasi. Pembacaan tradisional adalah sebuah sudut pandang, bukan nasihat.</p>
       <p data-i18n="legal.review">Pembacaan bertanda “menunggu tinjauan ahli” mengikuti sumber yang disebutkan, tetapi belum diperiksa oleh praktisi.</p>
-      <p data-i18n="legal.privacy">Data kelahiran Anda tetap berada di perangkat Anda. Halaman ini tidak menyimpan atau mengirimnya.</p>
-      <p data-i18n="legal.hosting">Halaman ini disajikan oleh GitHub Pages, dan hurufnya oleh Google Fonts. Seperti situs web mana pun, layanan tersebut melihat alamat internet Anda saat halaman dimuat. Fate Tutor tidak memasang cookie dan tidak melacak; yang diingat hanya pilihan bahasa Anda, di perangkat Anda sendiri.</p>
+      <p data-i18n="legal.privacy">Data kelahiran Anda tetap di perangkat Anda dan tidak pernah dikirim ke mana pun. Agar terbawa dari halaman ke halaman, data disimpan di tab browser ini sampai Anda menutupnya. Di halaman tiap tradisi Anda bisa memilih “Ingat di perangkat ini” atau “Hapus data saya”.</p>
+      <p data-i18n="legal.hosting">Halaman ini disajikan oleh GitHub Pages, dan hurufnya oleh Google Fonts. Seperti situs web mana pun, layanan tersebut melihat alamat internet Anda saat halaman dimuat. Fate Tutor tidak memasang cookie dan tidak melacak. Di perangkat Anda sendiri ia hanya mengingat bahasa Anda, kartu yang Anda tandai sudah dibaca, dan data kelahiran Anda bila Anda memintanya.</p>
       <p data-i18n="legal.range">Tahun lahir yang didukung adalah 1900 sampai 2100.</p>
     </div>
   </div>
@@ -226,6 +225,6 @@
 </footer>
 
 <script src="../assets/js/ft-engine.js?v=ce9455bcdf"></script>
-<script src="../assets/js/ft-app.js?v=fb30b25db5"></script>
+<script src="../assets/js/ft-app.js?v=abf62fa730"></script>
 </body>
 </html>

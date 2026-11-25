@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title data-i18n="meta.title">Fate Tutor — Destiny Intelligence, the Ancient Wisdom Engine</title>
-<meta name="description" content="Read your birth through several ancient traditions, each kept separate and each showing its source. Worked out on your own device.">
+<meta name="description" content="Read your birth through several ancient traditions, each kept separate and each showing its source. Worked out on your own device." data-i18n-content="meta.description">
 <!-- ft:head — written by engine/ft_build_pages.py, do not edit by hand -->
 <link rel="canonical" href="https://www.fatetutor.com/">
 <link rel="alternate" hreflang="en" href="https://www.fatetutor.com/">
@@ -25,7 +25,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500&display=swap">
-<link rel="stylesheet" href="assets/css/ft.css?v=9019d3528c">
+<link rel="stylesheet" href="assets/css/ft.css?v=75770d3cb2">
 </head>
 <body>
 
@@ -94,10 +94,10 @@
       <h2 data-i18n="trad.title">Each tradition, on its own terms</h2>
     </div>
     <div class="trads">
-      <a class="trad open" href="#read" data-trad="bazi"><span class="pill live" data-i18n="trad.live">Available now</span><h3 data-i18n="trad.bazi.name">BaZi 八字</h3><p data-i18n="trad.bazi.body">The Four Pillars: year, month, day and hour of birth, read through the five elements.</p><span class="go" data-i18n="trad.go">Work it out →</span></a>
-      <a class="trad open" href="#read" data-trad="numerology"><span class="pill live" data-i18n="trad.live">Available now</span><h3 data-i18n="trad.numerology.name">Numerology</h3><p data-i18n="trad.numerology.body">Numbers drawn from your birth date and the letters of your name.</p><span class="go" data-i18n="trad.go">Work it out →</span></a>
-      <a class="trad open" href="#read" data-trad="zodiac"><span class="pill live" data-i18n="trad.live">Available now</span><h3 data-i18n="trad.zodiac.name">Chinese zodiac 生肖</h3><p data-i18n="trad.zodiac.body">The animal and element of your birth year.</p><span class="go" data-i18n="trad.go">Work it out →</span></a>
-      <a class="trad open" href="#read" data-trad="weton"><span class="pill live" data-i18n="trad.live">Available now</span><h3 data-i18n="trad.weton.name">Javanese Weton</h3><p data-i18n="trad.weton.body">The meeting of the seven-day week and the five-day market week on your birthday.</p><span class="go" data-i18n="trad.go">Work it out →</span></a>
+      <a class="trad open" href="bazi/" data-page="bazi/" data-trad="bazi"><span class="pill live" data-i18n="trad.live">Available now</span><h3 data-i18n="trad.bazi.name">BaZi 八字</h3><p data-i18n="trad.bazi.body">The Four Pillars: year, month, day and hour of birth, read through the five elements.</p><span class="go" data-i18n="trad.go">Work it out →</span></a>
+      <a class="trad open" href="numerology/" data-page="numerology/" data-trad="numerology"><span class="pill live" data-i18n="trad.live">Available now</span><h3 data-i18n="trad.numerology.name">Numerology</h3><p data-i18n="trad.numerology.body">Numbers drawn from your birth date and the letters of your name.</p><span class="go" data-i18n="trad.go">Work it out →</span></a>
+      <a class="trad open" href="zodiac/" data-page="zodiac/" data-trad="zodiac"><span class="pill live" data-i18n="trad.live">Available now</span><h3 data-i18n="trad.zodiac.name">Chinese zodiac 生肖</h3><p data-i18n="trad.zodiac.body">The animal and element of your birth year.</p><span class="go" data-i18n="trad.go">Work it out →</span></a>
+      <a class="trad open" href="weton/" data-page="weton/" data-trad="weton"><span class="pill live" data-i18n="trad.live">Available now</span><h3 data-i18n="trad.weton.name">Javanese Weton</h3><p data-i18n="trad.weton.body">The meeting of the seven-day week and the five-day market week on your birthday.</p><span class="go" data-i18n="trad.go">Work it out →</span></a>
       <div class="trad next"><span class="pill" data-i18n="trad.next">Coming next</span><h3 data-i18n="trad.ziwei.name">Zi Wei Dou Shu 紫微斗数</h3></div>
       <div class="trad next"><span class="pill" data-i18n="trad.next">Coming next</span><h3 data-i18n="trad.iching.name">I Ching 易经</h3></div>
       <div class="trad next"><span class="pill" data-i18n="trad.next">Coming next</span><h3 data-i18n="trad.indian.name">Indian astrology</h3></div>
@@ -113,7 +113,6 @@
       <h2 data-i18n="form.title">Read my chart</h2>
     </div>
     <form id="birth" class="form-card" novalidate autocomplete="off">
-      <p class="chosen-trad" id="f-trad" hidden></p>
       <p class="privacy" data-i18n="form.privacy">Everything is worked out on your own device. Your birth details are not sent to us or anyone else.</p>
 
       <div class="grid2">
@@ -208,8 +207,8 @@
       <p data-i18n="legal.offlimits">We do not give readings about death, lifespan, serious illness, accidents or disasters, even where old texts do.</p>
       <p data-i18n="legal.advice">For decisions about health, money, law or marriage, please speak to a qualified professional. A traditional reading is a perspective, not advice.</p>
       <p data-i18n="legal.review">Readings marked “awaiting expert review” follow a named source but have not yet been checked by a practitioner.</p>
-      <p data-i18n="legal.privacy">Your birth details stay on your device. This page does not store or send them.</p>
-      <p data-i18n="legal.hosting">This page is delivered by GitHub Pages, and its fonts by Google Fonts. As with any website, those services see your internet address when the page loads. Fate Tutor sets no cookies and does no tracking; it remembers only your language choice, on your own device.</p>
+      <p data-i18n="legal.privacy">Your birth details stay on your device and are never sent anywhere. So that they carry from page to page, they are kept in this browser tab until you close it. On a tradition page you can choose “Remember on this device” or “Forget my details”.</p>
+      <p data-i18n="legal.hosting">This page is delivered by GitHub Pages, and its fonts by Google Fonts. As with any website, those services see your internet address when the page loads. Fate Tutor sets no cookies and does no tracking. On your own device it remembers only your language, the cards you mark as read, and your birth details if you ask it to.</p>
       <p data-i18n="legal.range">Birth years 1900 to 2100 are supported.</p>
     </div>
   </div>
@@ -226,6 +225,6 @@
 </footer>
 
 <script src="assets/js/ft-engine.js?v=ce9455bcdf"></script>
-<script src="assets/js/ft-app.js?v=fb30b25db5"></script>
+<script src="assets/js/ft-app.js?v=abf62fa730"></script>
 </body>
 </html>
