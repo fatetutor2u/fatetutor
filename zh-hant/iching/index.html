@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-Hant" data-lang="zh-hant">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i18n="pg.iching.meta.title">易經：起六爻並讀原典 — Fate Tutor</title>
+<meta name="description" content="用三枚錢幣起卦，查看變爻、之卦與互卦，並閱讀中文原典。" data-i18n-content="pg.iching.meta.description">
+<!-- ft:head — written by engine/ft_build_pages.py, do not edit by hand -->
+<link rel="canonical" href="https://www.fatetutor.com/zh-hant/iching/">
+<link rel="alternate" hreflang="en" href="https://www.fatetutor.com/iching/">
+<link rel="alternate" hreflang="zh-Hans" href="https://www.fatetutor.com/zh-hans/iching/">
+<link rel="alternate" hreflang="zh-Hant" href="https://www.fatetutor.com/zh-hant/iching/">
+<link rel="alternate" hreflang="id" href="https://www.fatetutor.com/id/iching/">
+<link rel="alternate" hreflang="ms" href="https://www.fatetutor.com/ms/iching/">
+<link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/iching/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Fate Tutor">
+<meta property="og:title" content="易經：起六爻並讀原典 — Fate Tutor">
+<meta property="og:description" content="用三枚錢幣起卦，查看變爻、之卦與互卦，並閱讀中文原典。">
+<meta property="og:url" content="https://www.fatetutor.com/zh-hant/iching/">
+<meta property="og:locale" content="zh_TW">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+<!-- /ft:head -->
+<link rel="stylesheet" href="../../assets/css/ft.css?v=75770d3cb2"><link rel="stylesheet" href="../../assets/css/ft-iching.css?v=cfabaa2689">
+</head>
+<body class="lesson iching-page">
+<header class="topbar"><div class="wrap"><a class="brand" href="../" data-page=""><b>FATETUTOR</b><span data-i18n="brand.tagline">全球人生智慧平台</span></a><nav class="topnav"><a href="../bazi/" data-page="bazi/" data-i18n="nav.bazi">八字</a><a href="../numerology/" data-page="numerology/" data-i18n="nav.numerology">數字命理</a><a href="../zodiac/" data-page="zodiac/" data-i18n="nav.zodiac">生肖</a><a href="../weton/" data-page="weton/" data-i18n="nav.weton">爪哇 Weton</a><a class="here" aria-current="page" href="../iching/" data-page="iching/">I Ching</a><select id="lang" class="lang" aria-label="語言" data-i18n-aria-label="nav.language"><option value="en">English</option><option value="zh-hans">简体中文</option><option value="zh-hant" selected>繁體中文</option><option value="id">Bahasa Indonesia</option><option value="ms">Bahasa Melayu</option></select></nav></div></header>
+<main>
+<section class="lhero"><div class="wrap"><nav class="crumbs"><a href="../" data-page="" data-i18n="lesson.crumb.home">Fate Tutor</a> / <a href="../#traditions" data-page="#traditions" data-i18n="nav.traditions">傳統</a> / <span>I Ching 易經</span></nav><span class="eyebrow" data-i18n="pg.iching.eyebrow">經典原文 · 三枚錢幣 · 變爻</span><h1 data-i18n="pg.iching.title">易經：起卦、看變化、讀原文</h1><p class="lead" data-i18n="pg.iching.lead">用三枚錢幣起六爻。計算器會顯示本卦、變化與之卦。解讀只展示經典文字，不承諾結果。</p></div></section>
+<section class="band low"><div class="wrap iching-layout"><div class="cast-panel"><div class="cast-head"><div><span class="eyebrow jade" data-i18n="pg.iching.cast.eyebrow">你的卦</span><h2 data-i18n="pg.iching.cast.title">起六爻</h2></div><span id="cast-status" class="soft" data-i18n="pg.iching.cast.ready">準備好了</span></div><p class="soft" data-i18n="pg.iching.cast.hint">每一爻用三枚錢幣。爻從下往上出現。你可以重設再起一次。</p><div id="coin-stage" class="coin-stage" aria-live="polite"></div><div class="cast-actions"><button id="throw-one" class="ghost" type="button" data-i18n="pg.iching.throw.one">起下一爻</button><button id="throw-all" class="btn" type="button" data-i18n="pg.iching.throw.all">起全部六爻</button><button id="reset-cast" class="linkbtn" type="button" data-i18n="pg.iching.reset">重新開始</button></div><p class="bp-privacy" data-i18n="pg.iching.privacy">錢幣起卦和計算都在此裝置上完成，不會傳送給我們。</p></div><aside class="iching-note"><span class="eyebrow jade" data-i18n="pg.iching.rule.eyebrow">如何選擇文字</span><h3 data-i18n="pg.iching.rule.title">朱熹的讀法</h3><p data-i18n="pg.iching.rule.copy">變爻數決定讀卦辭、爻辭還是之卦。本頁每次都會公開顯示這條規則。</p><p class="source-in-site" data-i18n="pg.iching.source.book">本頁所用的經典段落已包含在 Fate Tutor 內。</p></aside></div></section>
+<section class="band" id="result" hidden><div class="wrap"><div class="result-head"><div><span class="eyebrow jade" data-i18n="pg.iching.result.eyebrow">你的卦：計算結果</span><h2 id="result-title">—</h2></div><p id="result-rule" class="soft"></p></div><div class="hex-grid"><article><span class="hex-label" data-i18n="pg.iching.original">本卦</span><div class="hex" id="hex-original"></div><h3 id="original-name"></h3></article><article><span class="hex-label" data-i18n="pg.iching.resulting">之卦</span><div class="hex" id="hex-resulting"></div><h3 id="resulting-name"></h3></article><article><span class="hex-label" data-i18n="pg.iching.inner">互卦</span><div class="hex" id="hex-inner"></div><h3 id="inner-name"></h3></article></div><div class="plain-panel"><span class="eyebrow jade" data-i18n="pg.iching.plain.eyebrow">白話說明</span><h3 data-i18n="pg.iching.plain.title">所選古文用日常話怎麼說</h3><p class="soft" data-i18n="pg.iching.plain.note">這裡解釋所選段落中實際出現的詞。它是反思提示，不是預測或指令。</p><div id="plain-reading" class="plain-reading"></div></div><div class="source-panel"><div class="source-head"><div><span class="eyebrow jade" data-i18n="pg.iching.text.eyebrow">經典來源</span><h3 id="source-name">—</h3></div><span class="tag tradition" data-i18n="pg.iching.text.tag">傳統文本</span></div><p class="judgement" id="source-judgement"></p><div id="source-lines" class="source-lines"></div><p class="soft small" data-i18n="pg.iching.text.note">所引中文段落已包含在此 Fate Tutor 頁面中。它們是原文資料，不是預測或指令。</p></div></div></section>
+<section class="band lowest"><div class="wrap about-cols"><div><span class="eyebrow jade" data-i18n="lesson.about">關於這個傳統</span><h2 data-i18n="pg.iching.about.title">變化之書，不是承諾</h2></div><div class="legal"><p data-i18n="pg.iching.about.p1">《易經》是中國經典。起卦會得到一個爻的圖案，變爻時會得到第二個圖案。不同讀者與註釋對文本有不同理解。</p><p data-i18n="pg.iching.about.p2">Fate Tutor 展示方法和來源，不把起卦變成預測、財務建議、醫療建議或替你做的決定。</p><p data-i18n="legal.tradition">這些是傳統的信仰體系。它們不是科學，也不預測未來。Fate Tutor 只用「傾向」的說法，呈現每種傳統說了什麼、出自哪裡。</p></div></div></section>
+</main><footer><div class="wrap"><p data-i18n="legal.credits">城市資料：GeoNames (geonames.org)，CC BY 4.0。古籍原文取自中文維基文庫。計算程式已與 NASA JPL Horizons 核對。</p><p><a href="../../third-party-notices.txt" data-i18n="footer.notices">開源聲明</a></p><p data-i18n="footer.rights">Fate Tutor · www.fatetutor.com</p></div></footer>
+<script src="../../assets/js/ft-engine.js?v=ce9455bcdf"></script><script src="../../assets/js/ft-page-iching.js?v=ce0a407d87"></script>
+</body></html>

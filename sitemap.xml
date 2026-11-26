@@ -225,4 +225,49 @@
     <xhtml:link rel="alternate" hreflang="ms" href="https://www.fatetutor.com/ms/weton/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/weton/"/>
   </url>
+  <url>
+    <loc>https://www.fatetutor.com/iching/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fatetutor.com/iching/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.fatetutor.com/zh-hans/iching/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.fatetutor.com/zh-hant/iching/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.fatetutor.com/id/iching/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://www.fatetutor.com/ms/iching/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/iching/"/>
+  </url>
+  <url>
+    <loc>https://www.fatetutor.com/zh-hans/iching/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fatetutor.com/iching/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.fatetutor.com/zh-hans/iching/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.fatetutor.com/zh-hant/iching/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.fatetutor.com/id/iching/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://www.fatetutor.com/ms/iching/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/iching/"/>
+  </url>
+  <url>
+    <loc>https://www.fatetutor.com/zh-hant/iching/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fatetutor.com/iching/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.fatetutor.com/zh-hans/iching/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.fatetutor.com/zh-hant/iching/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.fatetutor.com/id/iching/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://www.fatetutor.com/ms/iching/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/iching/"/>
+  </url>
+  <url>
+    <loc>https://www.fatetutor.com/id/iching/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fatetutor.com/iching/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.fatetutor.com/zh-hans/iching/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.fatetutor.com/zh-hant/iching/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.fatetutor.com/id/iching/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://www.fatetutor.com/ms/iching/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/iching/"/>
+  </url>
+  <url>
+    <loc>https://www.fatetutor.com/ms/iching/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fatetutor.com/iching/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.fatetutor.com/zh-hans/iching/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.fatetutor.com/zh-hant/iching/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.fatetutor.com/id/iching/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://www.fatetutor.com/ms/iching/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/iching/"/>
+  </url>
 </urlset>
