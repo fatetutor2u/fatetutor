@@ -469,6 +469,6 @@
     demo: { setup: setup, steps: steps, draw: draw },
 
     // The professional chart (ft-bazi-pro.js) redraws whenever the reading or the language changes.
-    after: (r, api) => { if (window.FTBaziPro) window.FTBaziPro.draw(r, api); },
+    after: (r, api) => { if (window.FTBaziPro) window.FTBaziPro.draw(r, api); if (!r || document.getElementById("parallel-start")) return; const b=document.createElement("button"); b.id="parallel-start"; b.type="button"; b.className="btn"; b.textContent="Start my Parallel Life"; b.addEventListener("click",()=>{try{sessionStorage.setItem("ft.parallel.seed",JSON.stringify({record:r,created_at:Date.now()}));}catch(e){} location.href="../parallel-life/";}); document.getElementById("tiles").appendChild(b); },
   });
 })();
