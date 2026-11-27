@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="zh-Hans" data-lang="zh-hans">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i18n="pg.meihua.meta.title">梅花易数：以时间或数目起卦 — Fate Tutor</title>
+<meta name="description" content="以年月日时或所数的物、声起梅花易数卦。每一步算法、体卦与用卦，以及原典怎么说，全部列出。" data-i18n-content="pg.meihua.meta.description">
+<!-- ft:head — written by engine/ft_build_pages.py, do not edit by hand -->
+<link rel="canonical" href="https://www.fatetutor.com/zh-hans/meihua/">
+<link rel="alternate" hreflang="en" href="https://www.fatetutor.com/meihua/">
+<link rel="alternate" hreflang="zh-Hans" href="https://www.fatetutor.com/zh-hans/meihua/">
+<link rel="alternate" hreflang="zh-Hant" href="https://www.fatetutor.com/zh-hant/meihua/">
+<link rel="alternate" hreflang="id" href="https://www.fatetutor.com/id/meihua/">
+<link rel="alternate" hreflang="ms" href="https://www.fatetutor.com/ms/meihua/">
+<link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/meihua/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Fate Tutor">
+<meta property="og:title" content="梅花易数：以时间或数目起卦 — Fate Tutor">
+<meta property="og:description" content="以年月日时或所数的物、声起梅花易数卦。每一步算法、体卦与用卦，以及原典怎么说，全部列出。">
+<meta property="og:url" content="https://www.fatetutor.com/zh-hans/meihua/">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+<!-- /ft:head -->
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500&display=swap">
+<link rel="stylesheet" href="../../assets/css/ft.css?v=5fbfdcb895"><link rel="stylesheet" href="../../assets/css/ft-iching.css?v=cfabaa2689"><link rel="stylesheet" href="../../assets/css/ft-meihua.css?v=39bdb8ac52">
+</head>
+<body class="lesson iching-page meihua-page">
+<header class="topbar"><div class="wrap"><a class="brand" href="../" data-page=""><img class="brand-mark" src="../../assets/img/fate-turtle.png" alt="" aria-hidden="true"><b>Fate Tutor</b><span data-i18n="brand.tagline">全球人生智慧平台</span></a><nav class="topnav"><a href="../bazi/" data-page="bazi/" data-i18n="nav.bazi">八字</a><a href="../numerology/" data-page="numerology/" data-i18n="nav.numerology">数字命理</a><a href="../zodiac/" data-page="zodiac/" data-i18n="nav.zodiac">生肖</a><a href="../weton/" data-page="weton/" data-i18n="nav.weton">爪哇 Weton</a><a href="../iching/" data-page="iching/">I Ching</a><a class="here" aria-current="page" href="../meihua/" data-page="meihua/" data-i18n="nav.meihua">梅花易数</a><a href="../parallel-life/" data-page="parallel-life/" data-i18n="nav.parallel">平行人生</a><select id="lang" class="lang" aria-label="语言" data-i18n-aria-label="nav.language"><option value="en">English</option><option value="zh-hans" selected>简体中文</option><option value="zh-hant">繁體中文</option><option value="id">Bahasa Indonesia</option><option value="ms">Bahasa Melayu</option></select></nav></div></header>
+<main>
+<section class="lhero"><div class="wrap"><nav class="crumbs"><a href="../" data-page="" data-i18n="lesson.crumb.home">Fate Tutor</a> / <a href="../#traditions" data-page="#traditions" data-i18n="nav.traditions">传统</a> / <span>梅花易數</span></nav><span class="eyebrow" data-i18n="pg.meihua.eyebrow">古法 · 数理 · 体用</span><h1 data-i18n="pg.meihua.title">梅花易数：由一个时刻起一卦</h1><p class="lead" data-i18n="pg.meihua.lead">这套相传出自邵雍的方法，把年月日时或任何可数之物化成一卦。每一步算法都列出，解读只依原典所说。</p></div></section>
+
+<section class="band low"><div class="wrap iching-layout">
+<form class="cast-panel" id="mh-form" novalidate>
+<div class="cast-head"><div><span class="eyebrow jade" data-i18n="pg.meihua.cast.eyebrow">你的卦</span><h2 data-i18n="pg.meihua.cast.title">选择起卦的数</h2></div></div>
+<div class="mh-methods" role="radiogroup">
+<label><input type="radio" name="method" value="date_time" checked><span data-i18n="pg.meihua.method.date_time">年月日时</span></label>
+<label><input type="radio" name="method" value="object_count"><span data-i18n="pg.meihua.method.object_count">物数</span></label>
+<label><input type="radio" name="method" value="sound_count"><span data-i18n="pg.meihua.method.sound_count">声音</span></label>
+<label><input type="radio" name="method" value="sound_pair"><span data-i18n="pg.meihua.method.sound_pair">两段叩声</span></label>
+<label><input type="radio" name="method" value="zhang_chi"><span data-i18n="pg.meihua.method.zhang_chi">丈尺</span></label>
+<label><input type="radio" name="method" value="chi_cun"><span data-i18n="pg.meihua.method.chi_cun">尺寸</span></label>
+</div>
+<p class="soft" id="mh-hint" data-i18n="pg.meihua.hint.date_time">日期先换成农历。年支、月、日之数为上卦；再加时数为下卦，并取动爻。</p>
+<div class="mh-fields">
+<label class="field"><span data-i18n="pg.meihua.field.date">日期</span><input class="input" type="date" id="mh-date" min="1901-03-01" max="2099-12-31" required></label>
+<label class="field"><span data-i18n="pg.meihua.field.time">时间</span><input class="input" type="time" id="mh-time" required></label>
+<label class="field" data-for="object_count sound_count"><span data-i18n="pg.meihua.field.count">数目</span><input class="input" type="number" id="mh-count" min="1" max="100000" step="1" value="3" inputmode="numeric"></label>
+<label class="field" data-for="sound_pair"><span data-i18n="pg.meihua.field.first">第一段</span><input class="input" type="number" id="mh-first" min="1" max="100000" step="1" value="1" inputmode="numeric"></label>
+<label class="field" data-for="sound_pair"><span data-i18n="pg.meihua.field.second">第二段</span><input class="input" type="number" id="mh-second" min="1" max="100000" step="1" value="5" inputmode="numeric"></label>
+<label class="field" data-for="zhang_chi"><span data-i18n="pg.meihua.field.zhang">丈</span><input class="input" type="number" id="mh-zhang" min="1" max="100000" step="1" value="1" inputmode="numeric"></label>
+<label class="field" data-for="zhang_chi chi_cun"><span data-i18n="pg.meihua.field.chi">尺</span><input class="input" type="number" id="mh-chi" min="1" max="100000" step="1" value="3" inputmode="numeric"></label>
+<label class="field" data-for="chi_cun"><span data-i18n="pg.meihua.field.cun">寸</span><input class="input" type="number" id="mh-cun" min="1" max="100000" step="1" value="4" inputmode="numeric"></label>
+</div>
+<p class="soft small" data-i18n="pg.meihua.date.note">日期也决定农历月份，用于看旺衰。时辰每两小时一个：子时 23:00–00:59，丑时 01:00–02:59，依此类推。</p>
+<div class="cast-actions"><button class="btn" type="submit" data-i18n="pg.meihua.cast.go">起卦</button><button class="linkbtn" type="button" id="mh-now" data-i18n="pg.meihua.now">用此刻</button></div>
+<p class="mh-error" id="mh-error" role="alert" hidden></p>
+<p class="bp-privacy" data-i18n="pg.meihua.privacy">所有计算都在本设备上完成，不会传给我们。</p>
+</form>
+<aside class="iching-note"><span class="eyebrow jade" data-i18n="pg.meihua.rule.eyebrow">原书所载之法</span>
+<p class="mh-quote" id="mh-rule-quote" data-i18n="pg.meihua.quote.date_time">「年月日为上卦。年月日加时总数为下卦。」</p>
+<p class="mh-quote" data-i18n="pg.meihua.quote.eight">「如得八数整，即坤卦」</p>
+<p class="mh-quote" data-i18n="pg.meihua.quote.six">「凡起动爻，以重卦总数除六，以余数作动爻。」</p>
+<p class="mh-quote" data-i18n="pg.meihua.quote.hour">「取爻当以时加之。」</p>
+<p class="soft small" data-i18n="pg.meihua.rule.note">引自《梅花易数》卷一（公有领域）。</p></aside>
+</div></section>
+
+<section class="band" id="result" hidden><div class="wrap">
+<div class="result-head"><div><span class="eyebrow jade" data-i18n="pg.meihua.result.eyebrow">你的卦，逐步列出</span><h2 id="result-title">—</h2></div></div>
+<div class="plain-panel mh-steps"><h3 data-i18n="pg.meihua.steps.title">算法</h3><ol id="mh-steps"></ol></div>
+<div class="hex-grid">
+<article><span class="hex-label" data-i18n="pg.meihua.original">本卦</span><div class="mh-tri" id="tri-upper"></div><div class="hex" id="hex-original"></div><div class="mh-tri" id="tri-lower"></div><h3 id="original-name"></h3></article>
+<article><span class="hex-label" data-i18n="pg.meihua.hu">互卦</span><div class="mh-tri"></div><div class="hex" id="hex-hu"></div><div class="mh-tri"></div><h3 id="hu-name"></h3></article>
+<article><span class="hex-label" data-i18n="pg.meihua.changed">变卦</span><div class="mh-tri"></div><div class="hex" id="hex-changed"></div><div class="mh-tri"></div><h3 id="changed-name"></h3></article>
+</div>
+<p class="soft" data-i18n="pg.meihua.ti.explain">无动爻的一卦为体，代表问的人自己；有动爻的一卦为用，代表所问之事。</p>
+<div class="source-panel mh-rel"><div class="source-head"><div><h3 data-i18n="pg.meihua.rel.title">体卦与其他各卦</h3></div><span class="tag tradition" data-i18n="pg.meihua.tag">传统文本</span></div>
+<p class="soft" data-i18n="pg.meihua.rel.note">各卦依五行与体卦比较。表中列出原书对每种关系的原话；这是传统的读法，不是预测。</p>
+<div class="mh-table-wrap"><table class="mh-table"><thead><tr><th data-i18n="pg.meihua.col.which">卦</th><th data-i18n="pg.meihua.col.element">五行</th><th data-i18n="pg.meihua.col.relation">与体卦的关系</th><th data-i18n="pg.meihua.col.book">原书怎么说</th></tr></thead><tbody id="mh-rel"></tbody></table></div>
+<p class="soft" id="mh-flow"><span data-i18n="pg.meihua.flow">原书以用卦为事之本身，互卦为事之中间，变卦为事之结尾：</span> <span class="mh-quote-inline" data-i18n="pg.meihua.quote.flow">「互乃中间之应，变乃末后之期」</span></p>
+</div>
+<div class="source-panel mh-season"><h3 data-i18n="pg.meihua.season.title">体卦的旺衰</h3><p id="mh-season-line"></p><p id="mh-season-verdict" class="mh-verdict"></p><p class="mh-quote" data-i18n="pg.meihua.quote.season">「寅卯之月日则木旺，巳午之月日火旺，申酉之月日金旺，亥子之月日水旺，辰戌丑未之月日土旺。」</p></div>
+</div></section>
+
+<section class="band low"><div class="wrap about-cols"><div><span class="eyebrow jade" data-i18n="pg.meihua.source.eyebrow">出处</span><h2 data-i18n="pg.meihua.source.title">《梅花易数》，题邵雍撰</h2></div><div class="legal"><p data-i18n="pg.meihua.source.p1">规则与引文出自中文维基文库的《梅花易数》（公有领域）。每条规则另与三个印本核对，内容一致。</p><p data-i18n="pg.meihua.source.p2">有两点在此明示：声音占本身未说动爻怎么取，故用原书的通则（加时数）；原书看旺衰兼论月与日，本页只用月份。</p></div></div></section>
+<section class="band lowest"><div class="wrap about-cols"><div><span class="eyebrow jade" data-i18n="lesson.about">关于这个传统</span><h2 data-i18n="pg.meihua.about.title">由时刻得数，以体用来读</h2></div><div class="legal"><p data-i18n="pg.meihua.about.p1">梅花易数相传与宋代邵雍有关。它以数起卦，主要以体卦、用卦的五行生克来读。</p><p data-i18n="pg.meihua.about.p2">Fate Tutor 只展示方法与出处，不把卦变成预测、理财建议、医疗建议，也不替你做决定。</p><p data-i18n="legal.tradition">这些是传统的信仰体系。它们不是科学，也不预测未来。Fate Tutor 只用“倾向”的说法，展示每种传统说了什么、出自哪里。</p></div></div></section>
+</main><footer><div class="wrap"><p data-i18n="legal.credits">城市数据：GeoNames (geonames.org)，CC BY 4.0。古籍原文取自中文维基文库。计算程序已与 NASA JPL Horizons 核对。</p><p><a href="../../third-party-notices.txt" data-i18n="footer.notices">开源声明</a></p><p data-i18n="footer.rights">Fate Tutor · www.fatetutor.com</p></div></footer>
+<script src="../../assets/js/ft-engine.js?v=ce9455bcdf"></script><script src="../../assets/js/ft-page-meihua.js?v=f2247c88e9"></script>
+</body></html>

@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i18n="pg.meihua.meta.title">Plum Blossom Numbers (梅花易數): Cast a Hexagram from Time or Counts — Fate Tutor</title>
+<meta name="description" content="Cast a Plum Blossom hexagram from the date and hour, or from things and sounds you count. See every step of the arithmetic, the body and use trigrams, and what the classical text says." data-i18n-content="pg.meihua.meta.description">
+<!-- ft:head — written by engine/ft_build_pages.py, do not edit by hand -->
+<link rel="canonical" href="https://www.fatetutor.com/meihua/">
+<link rel="alternate" hreflang="en" href="https://www.fatetutor.com/meihua/">
+<link rel="alternate" hreflang="zh-Hans" href="https://www.fatetutor.com/zh-hans/meihua/">
+<link rel="alternate" hreflang="zh-Hant" href="https://www.fatetutor.com/zh-hant/meihua/">
+<link rel="alternate" hreflang="id" href="https://www.fatetutor.com/id/meihua/">
+<link rel="alternate" hreflang="ms" href="https://www.fatetutor.com/ms/meihua/">
+<link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/meihua/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Fate Tutor">
+<meta property="og:title" content="Plum Blossom Numbers (梅花易數): Cast a Hexagram from Time or Counts — Fate Tutor">
+<meta property="og:description" content="Cast a Plum Blossom hexagram from the date and hour, or from things and sounds you count. See every step of the arithmetic, the body and use trigrams, and what the classical text says.">
+<meta property="og:url" content="https://www.fatetutor.com/meihua/">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<!-- /ft:head -->
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500&display=swap">
+<link rel="stylesheet" href="../assets/css/ft.css?v=5fbfdcb895"><link rel="stylesheet" href="../assets/css/ft-iching.css?v=cfabaa2689"><link rel="stylesheet" href="../assets/css/ft-meihua.css?v=39bdb8ac52">
+</head>
+<body class="lesson iching-page meihua-page">
+<header class="topbar"><div class="wrap"><a class="brand" href="../" data-page=""><img class="brand-mark" src="../assets/img/fate-turtle.png" alt="" aria-hidden="true"><b>Fate Tutor</b><span data-i18n="brand.tagline">Global Life Intelligence Platform</span></a><nav class="topnav"><a href="../bazi/" data-page="bazi/" data-i18n="nav.bazi">BaZi</a><a href="../numerology/" data-page="numerology/" data-i18n="nav.numerology">Numerology</a><a href="../zodiac/" data-page="zodiac/" data-i18n="nav.zodiac">Zodiac</a><a href="../weton/" data-page="weton/" data-i18n="nav.weton">Weton</a><a href="../iching/" data-page="iching/">I Ching</a><a class="here" aria-current="page" href="../meihua/" data-page="meihua/" data-i18n="nav.meihua">Plum Blossom</a><a href="../parallel-life/" data-page="parallel-life/" data-i18n="nav.parallel">Parallel Life</a><select id="lang" class="lang" aria-label="Language" data-i18n-aria-label="nav.language"><option value="en" selected>English</option><option value="zh-hans">简体中文</option><option value="zh-hant">繁體中文</option><option value="id">Bahasa Indonesia</option><option value="ms">Bahasa Melayu</option></select></nav></div></header>
+<main>
+<section class="lhero"><div class="wrap"><nav class="crumbs"><a href="../" data-page="" data-i18n="lesson.crumb.home">Fate Tutor</a> / <a href="../#traditions" data-page="#traditions" data-i18n="nav.traditions">Traditions</a> / <span>梅花易數</span></nav><span class="eyebrow" data-i18n="pg.meihua.eyebrow">Classical method · numbers · body and use</span><h1 data-i18n="pg.meihua.title">Plum Blossom Numbers: From a Moment to a Hexagram</h1><p class="lead" data-i18n="pg.meihua.lead">This method, linked with Shao Yong, turns the date and hour, or anything you can count, into a hexagram. Every step of the arithmetic is shown, and the reading stays with what the classical text says.</p></div></section>
+
+<section class="band low"><div class="wrap iching-layout">
+<form class="cast-panel" id="mh-form" novalidate>
+<div class="cast-head"><div><span class="eyebrow jade" data-i18n="pg.meihua.cast.eyebrow">Your cast</span><h2 data-i18n="pg.meihua.cast.title">Choose what to count</h2></div></div>
+<div class="mh-methods" role="radiogroup">
+<label><input type="radio" name="method" value="date_time" checked><span data-i18n="pg.meihua.method.date_time">Date and hour</span></label>
+<label><input type="radio" name="method" value="object_count"><span data-i18n="pg.meihua.method.object_count">Things counted</span></label>
+<label><input type="radio" name="method" value="sound_count"><span data-i18n="pg.meihua.method.sound_count">Sounds heard</span></label>
+<label><input type="radio" name="method" value="sound_pair"><span data-i18n="pg.meihua.method.sound_pair">Two groups of knocks</span></label>
+<label><input type="radio" name="method" value="zhang_chi"><span data-i18n="pg.meihua.method.zhang_chi">Length in 丈 and 尺</span></label>
+<label><input type="radio" name="method" value="chi_cun"><span data-i18n="pg.meihua.method.chi_cun">Length in 尺 and 寸</span></label>
+</div>
+<p class="soft" id="mh-hint" data-i18n="pg.meihua.hint.date_time">The date becomes a lunar date. Year branch, month and day go above; add the hour for below and for the moving line.</p>
+<div class="mh-fields">
+<label class="field"><span data-i18n="pg.meihua.field.date">Date</span><input class="input" type="date" id="mh-date" min="1901-03-01" max="2099-12-31" required></label>
+<label class="field"><span data-i18n="pg.meihua.field.time">Time</span><input class="input" type="time" id="mh-time" required></label>
+<label class="field" data-for="object_count sound_count"><span data-i18n="pg.meihua.field.count">How many</span><input class="input" type="number" id="mh-count" min="1" max="100000" step="1" value="3" inputmode="numeric"></label>
+<label class="field" data-for="sound_pair"><span data-i18n="pg.meihua.field.first">First group</span><input class="input" type="number" id="mh-first" min="1" max="100000" step="1" value="1" inputmode="numeric"></label>
+<label class="field" data-for="sound_pair"><span data-i18n="pg.meihua.field.second">Second group</span><input class="input" type="number" id="mh-second" min="1" max="100000" step="1" value="5" inputmode="numeric"></label>
+<label class="field" data-for="zhang_chi"><span data-i18n="pg.meihua.field.zhang">丈 (about 3.3 m)</span><input class="input" type="number" id="mh-zhang" min="1" max="100000" step="1" value="1" inputmode="numeric"></label>
+<label class="field" data-for="zhang_chi chi_cun"><span data-i18n="pg.meihua.field.chi">尺 (about 33 cm)</span><input class="input" type="number" id="mh-chi" min="1" max="100000" step="1" value="3" inputmode="numeric"></label>
+<label class="field" data-for="chi_cun"><span data-i18n="pg.meihua.field.cun">寸 (about 3.3 cm)</span><input class="input" type="number" id="mh-cun" min="1" max="100000" step="1" value="4" inputmode="numeric"></label>
+</div>
+<p class="soft small" data-i18n="pg.meihua.date.note">The date also gives the lunar month, used for season strength. The hour is a two-hour period: 子 is 23:00–00:59, 丑 is 01:00–02:59, and so on.</p>
+<div class="cast-actions"><button class="btn" type="submit" data-i18n="pg.meihua.cast.go">Cast</button><button class="linkbtn" type="button" id="mh-now" data-i18n="pg.meihua.now">Use this moment</button></div>
+<p class="mh-error" id="mh-error" role="alert" hidden></p>
+<p class="bp-privacy" data-i18n="pg.meihua.privacy">Everything is worked out on this device. Nothing is sent to us.</p>
+</form>
+<aside class="iching-note"><span class="eyebrow jade" data-i18n="pg.meihua.rule.eyebrow">The rule, as the book states it</span>
+<p class="mh-quote" id="mh-rule-quote" data-i18n="pg.meihua.quote.date_time">「年月日為上卦。年月日加時總數為下卦。」</p>
+<p class="mh-quote" data-i18n="pg.meihua.quote.eight">「如得八數整，即坤卦」</p>
+<p class="mh-quote" data-i18n="pg.meihua.quote.six">「凡起動爻，以重卦總數除六，以餘數作動爻。」</p>
+<p class="mh-quote" data-i18n="pg.meihua.quote.hour">「取爻當以時加之。」</p>
+<p class="soft small" data-i18n="pg.meihua.rule.note">Quoted from 梅花易數 卷一, public domain.</p></aside>
+</div></section>
+
+<section class="band" id="result" hidden><div class="wrap">
+<div class="result-head"><div><span class="eyebrow jade" data-i18n="pg.meihua.result.eyebrow">Your cast, shown step by step</span><h2 id="result-title">—</h2></div></div>
+<div class="plain-panel mh-steps"><h3 data-i18n="pg.meihua.steps.title">The arithmetic</h3><ol id="mh-steps"></ol></div>
+<div class="hex-grid">
+<article><span class="hex-label" data-i18n="pg.meihua.original">Original hexagram 本卦</span><div class="mh-tri" id="tri-upper"></div><div class="hex" id="hex-original"></div><div class="mh-tri" id="tri-lower"></div><h3 id="original-name"></h3></article>
+<article><span class="hex-label" data-i18n="pg.meihua.hu">Inner hexagram 互卦</span><div class="mh-tri"></div><div class="hex" id="hex-hu"></div><div class="mh-tri"></div><h3 id="hu-name"></h3></article>
+<article><span class="hex-label" data-i18n="pg.meihua.changed">Changed hexagram 變卦</span><div class="mh-tri"></div><div class="hex" id="hex-changed"></div><div class="mh-tri"></div><h3 id="changed-name"></h3></article>
+</div>
+<p class="soft" data-i18n="pg.meihua.ti.explain">體 (body) is the trigram without the moving line: it stands for you, the one asking. 用 (use) holds the moving line: it stands for the matter asked about.</p>
+<div class="source-panel mh-rel"><div class="source-head"><div><h3 data-i18n="pg.meihua.rel.title">體 and the other trigrams</h3></div><span class="tag tradition" data-i18n="pg.meihua.tag">Traditional text</span></div>
+<p class="soft" data-i18n="pg.meihua.rel.note">Each trigram is compared with 體 through the five elements. The book's own words for each relation are shown; they are a traditional reading, not a forecast.</p>
+<div class="mh-table-wrap"><table class="mh-table"><thead><tr><th data-i18n="pg.meihua.col.which">Trigram</th><th data-i18n="pg.meihua.col.element">Element</th><th data-i18n="pg.meihua.col.relation">Relation to 體</th><th data-i18n="pg.meihua.col.book">The book's words</th></tr></thead><tbody id="mh-rel"></tbody></table></div>
+<p class="soft" id="mh-flow"><span data-i18n="pg.meihua.flow">In the book, 用 is the matter itself, 互 the middle of it, and 變 how it ends:</span> <span class="mh-quote-inline" data-i18n="pg.meihua.quote.flow">「互乃中間之應，變乃末後之期」</span></p>
+</div>
+<div class="source-panel mh-season"><h3 data-i18n="pg.meihua.season.title">Season strength of 體</h3><p id="mh-season-line"></p><p id="mh-season-verdict" class="mh-verdict"></p><p class="mh-quote" data-i18n="pg.meihua.quote.season">「寅卯之月日則木旺，巳午之月日火旺，申酉之月日金旺，亥子之月日水旺，辰戌丑未之月日土旺。」</p></div>
+</div></section>
+
+<section class="band low"><div class="wrap about-cols"><div><span class="eyebrow jade" data-i18n="pg.meihua.source.eyebrow">Where this comes from</span><h2 data-i18n="pg.meihua.source.title">梅花易數, attributed to Shao Yong (邵雍)</h2></div><div class="legal"><p data-i18n="pg.meihua.source.p1">The rules and quotes come from the 梅花易數 text on Chinese Wikisource, which is public domain. Each rule was also checked against three printed editions, and they agree.</p><p data-i18n="pg.meihua.source.p2">Two points are shown openly. The sound method does not state its own moving-line rule, so the book's general rule (add the hour) is used. The book judges season strength by month and day; this page uses the month only.</p></div></div></section>
+<section class="band lowest"><div class="wrap about-cols"><div><span class="eyebrow jade" data-i18n="lesson.about">About this tradition</span><h2 data-i18n="pg.meihua.about.title">Numbers from a moment, read through body and use</h2></div><div class="legal"><p data-i18n="pg.meihua.about.p1">Plum Blossom Numbers is a method linked with the Song-dynasty scholar Shao Yong. It builds a hexagram from numbers and reads it mainly through the five elements of the 體 and 用 trigrams.</p><p data-i18n="pg.meihua.about.p2">Fate Tutor shows the method and its source. It does not turn a cast into a forecast, financial advice, medical advice or a decision made for you.</p><p data-i18n="legal.tradition">These are traditional systems of belief. They are not science and they do not predict the future. Fate Tutor shows what each tradition says and where it says it, in the language of tendencies.</p></div></div></section>
+</main><footer><div class="wrap"><p data-i18n="legal.credits">City data: GeoNames (geonames.org), CC BY 4.0. Classical texts read from Chinese Wikisource. Calculators checked against NASA JPL Horizons.</p><p><a href="../third-party-notices.txt" data-i18n="footer.notices">Open-source notices</a></p><p data-i18n="footer.rights">Fate Tutor · www.fatetutor.com</p></div></footer>
+<script src="../assets/js/ft-engine.js?v=ce9455bcdf"></script><script src="../assets/js/ft-page-meihua.js?v=f2247c88e9"></script>
+</body></html>
