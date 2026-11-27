@@ -270,4 +270,49 @@
     <xhtml:link rel="alternate" hreflang="ms" href="https://www.fatetutor.com/ms/iching/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/iching/"/>
   </url>
+  <url>
+    <loc>https://www.fatetutor.com/parallel-life/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fatetutor.com/parallel-life/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.fatetutor.com/zh-hans/parallel-life/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.fatetutor.com/zh-hant/parallel-life/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.fatetutor.com/id/parallel-life/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://www.fatetutor.com/ms/parallel-life/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/parallel-life/"/>
+  </url>
+  <url>
+    <loc>https://www.fatetutor.com/zh-hans/parallel-life/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fatetutor.com/parallel-life/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.fatetutor.com/zh-hans/parallel-life/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.fatetutor.com/zh-hant/parallel-life/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.fatetutor.com/id/parallel-life/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://www.fatetutor.com/ms/parallel-life/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/parallel-life/"/>
+  </url>
+  <url>
+    <loc>https://www.fatetutor.com/zh-hant/parallel-life/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fatetutor.com/parallel-life/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.fatetutor.com/zh-hans/parallel-life/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.fatetutor.com/zh-hant/parallel-life/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.fatetutor.com/id/parallel-life/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://www.fatetutor.com/ms/parallel-life/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/parallel-life/"/>
+  </url>
+  <url>
+    <loc>https://www.fatetutor.com/id/parallel-life/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fatetutor.com/parallel-life/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.fatetutor.com/zh-hans/parallel-life/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.fatetutor.com/zh-hant/parallel-life/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.fatetutor.com/id/parallel-life/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://www.fatetutor.com/ms/parallel-life/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/parallel-life/"/>
+  </url>
+  <url>
+    <loc>https://www.fatetutor.com/ms/parallel-life/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fatetutor.com/parallel-life/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.fatetutor.com/zh-hans/parallel-life/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.fatetutor.com/zh-hant/parallel-life/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.fatetutor.com/id/parallel-life/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://www.fatetutor.com/ms/parallel-life/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/parallel-life/"/>
+  </url>
 </urlset>

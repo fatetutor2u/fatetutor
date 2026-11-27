@@ -1,1 +1,72 @@
-.pl-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.panel{border:1px solid rgba(212,175,55,.25);padding:22px;border-radius:14px;background:rgba(255,255,255,.025)}.panel label{display:grid;gap:7px;margin:13px 0;color:var(--text-soft)}.panel input,.panel textarea{background:#09101f;border:1px solid #34415a;color:#fff;padding:10px;border-radius:7px;font:inherit}.panel textarea{min-height:100px}.pl-steps{display:flex;gap:0;list-style:none;margin:0 0 24px;padding:0;counter-reset:step}.pl-steps li{color:#9aa6bc;flex:1;font-size:.82rem;letter-spacing:.08em;padding:10px 8px 10px 30px;position:relative;border-bottom:1px solid #34415a}.pl-steps li:before{content:counter(step,decimal-leading-zero);counter-increment:step;color:#d4af37;position:absolute;left:0}.pl-steps .active{color:#f5ddb0;border-color:#d4af37}.numbers{display:grid;grid-template-columns:1fr 1fr;gap:0 12px}.numbers label{position:relative}.numbers label span{position:absolute;right:10px;bottom:11px;color:#9aa6bc}.numbers input{width:100%;box-sizing:border-box}.field-note{font-size:.82rem;color:#9aa6bc;line-height:1.45}.pl-result{margin-top:18px}.range{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0}.range div{padding:14px;border:1px solid #34415a;border-radius:9px}.range strong{display:block;color:#f2ca50;font-size:1.35rem;margin-top:4px}.range .middle{border-color:#44e2cd;background:rgba(68,226,205,.06)}.range .middle strong{color:#44e2cd}.secondary{background:transparent;border:1px solid #d4af37;color:#f2ca50;margin-top:6px}@media(max-width:800px){.pl-grid{grid-template-columns:1fr}.pl-steps{overflow:auto}.pl-steps li{min-width:108px}.range{grid-template-columns:1fr}.numbers{grid-template-columns:1fr}}
+/* Fate Tutor — Parallel Life, "Build my world". Loaded by parallel-life/ only. */
+.pl-stages { list-style: none; padding: 0; margin: 18px 0 10px; display: flex; flex-wrap: wrap; gap: 8px; }
+.pl-stages li { display: inline-flex; gap: 8px; align-items: center; font-size: .84rem; color: var(--text-soft); border: 1px solid var(--line); border-radius: 999px; padding: 5px 12px 5px 6px; }
+.pl-stages li b { width: 22px; height: 22px; border-radius: 50%; display: grid; place-items: center; font-family: var(--font-data); font-size: .72rem; background: var(--gold); color: var(--on-gold); }
+.pl-stages li.later { opacity: .55; border-style: dashed; }
+.pl-stages li.later b { background: transparent; color: var(--text-dim); border: 1px solid var(--line); }
+.pl-legend { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+.pl-tag { display: inline-flex; align-items: center; gap: 6px; font-size: .76rem; color: var(--text-soft); border: 1px solid var(--line-soft); border-radius: 999px; padding: 3px 10px; }
+.pl-tag i, .pl-tagline i, .pl-role i, .pl-lens .dot { width: 9px; height: 9px; border-radius: 50%; display: inline-block; flex: none; }
+.pl-two { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); gap: 18px; align-items: start; }
+.pl-card { background: var(--surface-mid); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px; display: grid; gap: 12px; min-width: 0; }
+.pl-card h2 { margin: 0; font-size: 1.3rem; }
+.pl-fields { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px 12px; }
+.pl-fields label, .pl-run label, .pl-item label, .pl-row label { display: grid; gap: 4px; font-size: .78rem; color: var(--text-soft); }
+.pl-fields label.wide { grid-column: 1 / -1; }
+.pl-fields .input, .pl-run .input, .pl-item .input, .pl-row .input, .pl-addrole .input { font-size: .9rem; padding: 8px 10px; }
+.legend-title { font-family: var(--font-data); font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; color: var(--text-dim); }
+.pl-roles { display: grid; gap: 6px; border-top: 1px solid var(--line-soft); padding-top: 10px; }
+.pl-role { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; font-size: .86rem; color: var(--text-soft); }
+.pl-role b { color: var(--text); }
+.pl-addrole { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr) auto; gap: 6px; }
+.pl-lens { border-top: 1px solid var(--line-soft); padding-top: 10px; font-size: .86rem; color: var(--text-soft); }
+.pl-lens p { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.pl-lens a { color: var(--gold); }
+.pl-mapcard { position: sticky; top: 76px; }
+.pl-map-svg { width: 100%; height: auto; display: block; }
+.pl-map-svg .pl-link { stroke: rgba(212, 175, 55, .28); stroke-width: 1.2; }
+.pl-map-svg .pl-node { cursor: pointer; outline: none; }
+.pl-map-svg .pl-node:hover circle, .pl-map-svg .pl-node:focus circle { stroke-width: 3; }
+.pl-map-svg text { font-family: var(--font-body); fill: var(--text); }
+.pl-map-svg .pl-n-title { font-size: 11px; font-weight: 600; }
+.pl-map-svg .pl-n-value { font-size: 9.5px; fill: var(--text-soft); }
+.pl-detail { border-top: 1px solid var(--line-soft); padding-top: 10px; display: grid; gap: 6px; min-height: 64px; }
+.pl-detail h3 { font-size: 1.05rem; margin: 0; }
+.pl-quick { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin: 12px 0 14px; color: var(--text-soft); font-size: .88rem; }
+.pl-branches { display: grid; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); gap: 14px; }
+.pl-branch { background: var(--surface-mid); border: 1px solid var(--line); border-left: 4px solid var(--gold); border-radius: var(--radius); padding: 14px; display: grid; gap: 10px; align-content: start; }
+.pl-branch header { display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; }
+.pl-branch header b { font-size: 1.02rem; }
+.pl-branch header small { color: var(--text-dim); font-size: .76rem; }
+.pl-dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; flex: none; margin-right: 4px; }
+.pl-tagline { display: flex; gap: 8px; align-items: center; font-size: .8rem; color: var(--text-dim); margin: 0; }
+.pl-sub { display: grid; gap: 8px; border-top: 1px solid var(--line-soft); padding-top: 8px; }
+.pl-row { display: grid; grid-template-columns: minmax(0, 1.3fr) 70px minmax(0, 1fr) auto; gap: 6px; align-items: end; }
+.pl-item { display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 6px; align-items: end; border: 1px dashed var(--line-soft); border-radius: var(--radius); padding: 8px; }
+.pl-actions { display: flex; gap: 10px; align-items: center; }
+.pl-run { display: flex; flex-wrap: wrap; gap: 14px; align-items: end; margin-top: 16px; }
+.pl-run label { max-width: 140px; }
+#pl-results .pl-card { margin-top: 14px; }
+.pl-chart-svg { width: 100%; height: auto; display: block; }
+.pl-chart-svg text { font-family: var(--font-data); }
+.pl-chart-svg .pl-axis { font-size: 11px; fill: var(--text-dim); }
+.pl-chart-svg .pl-grid { stroke: rgba(255, 255, 255, .06); }
+.pl-chart-svg .pl-zero { stroke: var(--error); stroke-dasharray: 5 4; stroke-width: 1.2; }
+.pl-chart-svg .pl-lensline { stroke: var(--jade); stroke-dasharray: 2 4; }
+.pl-chart-svg .pl-lenstext { font-size: 12px; fill: var(--jade); font-family: var(--font-han); }
+.pl-chartkey { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.pl-keybtn { font: inherit; font-size: .8rem; color: var(--text); background: var(--surface-low); border: 1px solid var(--line-soft); border-radius: 999px; padding: 4px 10px; cursor: pointer; display: inline-flex; gap: 6px; align-items: center; }
+.pl-keybtn i { width: 10px; height: 10px; border-radius: 50%; }
+.pl-keybtn.off { opacity: .4; text-decoration: line-through; }
+.pl-tablecard { overflow-x: auto; }
+.pl-compare td small { display: block; color: var(--text-dim); font-size: .74rem; }
+.pl-notes { display: grid; gap: 6px; margin-top: 12px; }
+.pl-save { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 18px; align-items: center; }
+.pl-savebtns { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.pl-open { cursor: pointer; }
+@media (max-width: 960px) {
+  .pl-two, .pl-save { grid-template-columns: 1fr; }
+  .pl-mapcard { position: static; }
+  .pl-addrole { grid-template-columns: 1fr; }
+  .pl-row { grid-template-columns: 1fr 1fr; }
+}
