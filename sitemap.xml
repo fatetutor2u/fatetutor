@@ -316,6 +316,51 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/meihua/"/>
   </url>
   <url>
+    <loc>https://www.fatetutor.com/liuyao/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fatetutor.com/liuyao/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.fatetutor.com/zh-hans/liuyao/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.fatetutor.com/zh-hant/liuyao/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.fatetutor.com/id/liuyao/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://www.fatetutor.com/ms/liuyao/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/liuyao/"/>
+  </url>
+  <url>
+    <loc>https://www.fatetutor.com/zh-hans/liuyao/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fatetutor.com/liuyao/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.fatetutor.com/zh-hans/liuyao/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.fatetutor.com/zh-hant/liuyao/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.fatetutor.com/id/liuyao/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://www.fatetutor.com/ms/liuyao/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/liuyao/"/>
+  </url>
+  <url>
+    <loc>https://www.fatetutor.com/zh-hant/liuyao/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fatetutor.com/liuyao/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.fatetutor.com/zh-hans/liuyao/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.fatetutor.com/zh-hant/liuyao/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.fatetutor.com/id/liuyao/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://www.fatetutor.com/ms/liuyao/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/liuyao/"/>
+  </url>
+  <url>
+    <loc>https://www.fatetutor.com/id/liuyao/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fatetutor.com/liuyao/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.fatetutor.com/zh-hans/liuyao/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.fatetutor.com/zh-hant/liuyao/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.fatetutor.com/id/liuyao/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://www.fatetutor.com/ms/liuyao/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/liuyao/"/>
+  </url>
+  <url>
+    <loc>https://www.fatetutor.com/ms/liuyao/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fatetutor.com/liuyao/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.fatetutor.com/zh-hans/liuyao/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.fatetutor.com/zh-hant/liuyao/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.fatetutor.com/id/liuyao/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://www.fatetutor.com/ms/liuyao/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/liuyao/"/>
+  </url>
+  <url>
     <loc>https://www.fatetutor.com/parallel-life/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.fatetutor.com/parallel-life/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.fatetutor.com/zh-hans/parallel-life/"/>

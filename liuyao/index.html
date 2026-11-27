@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i18n="pg.liuyao.meta.title">Six Lines (六爻 納甲): Cast and Lay Out the Classical Chart — Fate Tutor</title>
+<meta name="description" content="Throw six lines with three coins and see the chart as 增刪卜易 lays it out: palace, 世 and 應, stems and branches, the five relatives, the six spirits, empty and broken lines." data-i18n-content="pg.liuyao.meta.description">
+<!-- ft:head — written by engine/ft_build_pages.py, do not edit by hand -->
+<link rel="canonical" href="https://www.fatetutor.com/liuyao/">
+<link rel="alternate" hreflang="en" href="https://www.fatetutor.com/liuyao/">
+<link rel="alternate" hreflang="zh-Hans" href="https://www.fatetutor.com/zh-hans/liuyao/">
+<link rel="alternate" hreflang="zh-Hant" href="https://www.fatetutor.com/zh-hant/liuyao/">
+<link rel="alternate" hreflang="id" href="https://www.fatetutor.com/id/liuyao/">
+<link rel="alternate" hreflang="ms" href="https://www.fatetutor.com/ms/liuyao/">
+<link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/liuyao/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Fate Tutor">
+<meta property="og:title" content="Six Lines (六爻 納甲): Cast and Lay Out the Classical Chart — Fate Tutor">
+<meta property="og:description" content="Throw six lines with three coins and see the chart as 增刪卜易 lays it out: palace, 世 and 應, stems and branches, the five relatives, the six spirits, empty and broken lines.">
+<meta property="og:url" content="https://www.fatetutor.com/liuyao/">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<!-- /ft:head -->
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500&display=swap">
+<link rel="stylesheet" href="../assets/css/ft.css?v=5fbfdcb895"><link rel="stylesheet" href="../assets/css/ft-iching.css?v=cfabaa2689"><link rel="stylesheet" href="../assets/css/ft-meihua.css?v=39bdb8ac52"><link rel="stylesheet" href="../assets/css/ft-liuyao.css?v=bf99a9bcb0">
+</head>
+<body class="lesson iching-page liuyao-page">
+<header class="topbar"><div class="wrap"><a class="brand" href="../" data-page=""><img class="brand-mark" src="../assets/img/fate-turtle.png" alt="" aria-hidden="true"><b>Fate Tutor</b><span data-i18n="brand.tagline">Global Life Intelligence Platform</span></a><nav class="topnav"><a href="../bazi/" data-page="bazi/" data-i18n="nav.bazi">BaZi</a><a href="../numerology/" data-page="numerology/" data-i18n="nav.numerology">Numerology</a><a href="../zodiac/" data-page="zodiac/" data-i18n="nav.zodiac">Zodiac</a><a href="../weton/" data-page="weton/" data-i18n="nav.weton">Weton</a><a href="../iching/" data-page="iching/">I Ching</a><a href="../meihua/" data-page="meihua/" data-i18n="nav.meihua">Plum Blossom</a><a class="here" aria-current="page" href="../liuyao/" data-page="liuyao/" data-i18n="nav.liuyao">Six Lines</a><a href="../parallel-life/" data-page="parallel-life/" data-i18n="nav.parallel">Parallel Life</a><select id="lang" class="lang" aria-label="Language" data-i18n-aria-label="nav.language"><option value="en" selected>English</option><option value="zh-hans">简体中文</option><option value="zh-hant">繁體中文</option><option value="id">Bahasa Indonesia</option><option value="ms">Bahasa Melayu</option></select></nav></div></header>
+<main>
+<section class="lhero"><div class="wrap"><nav class="crumbs"><a href="../" data-page="" data-i18n="lesson.crumb.home">Fate Tutor</a> / <a href="../#traditions" data-page="#traditions" data-i18n="nav.traditions">Traditions</a> / <span>六爻</span></nav><span class="eyebrow" data-i18n="pg.liuyao.eyebrow">Classical chart · stems and branches · five relatives</span><h1 data-i18n="pg.liuyao.title">Six Lines: Cast and Lay Out the Chart</h1><p class="lead" data-i18n="pg.liuyao.lead">The Six Lines method gives every line of a hexagram a branch, an element and a family role, then reads them against the month and day of the cast. This page lays out the chart exactly as the 1690 handbook 增刪卜易 does, and shows where each fact comes from.</p></div></section>
+
+<section class="band low"><div class="wrap iching-layout">
+<div class="cast-panel">
+<div class="cast-head"><div><span class="eyebrow jade" data-i18n="pg.liuyao.cast.eyebrow">Your cast</span><h2 data-i18n="pg.liuyao.cast.title">Throw six lines</h2></div><span id="cast-status" class="soft" data-i18n="pg.liuyao.ready">Ready</span></div>
+<p class="soft" data-i18n="pg.liuyao.cast.hint">Each throw uses three coins: heads count 3, tails 2. Lines build from the bottom up.</p>
+<div id="coin-stage" class="coin-stage" aria-live="polite"></div>
+<div class="cast-actions"><button id="throw-one" class="ghost" type="button" data-i18n="pg.liuyao.throw.one">Throw next line</button><button id="throw-all" class="btn" type="button" data-i18n="pg.liuyao.throw.all">Throw all six lines</button><button id="reset-cast" class="linkbtn" type="button" data-i18n="pg.liuyao.reset">Start again</button></div>
+<details class="ly-manual"><summary data-i18n="pg.liuyao.manual">I threw my own coins</summary><p class="soft small" data-i18n="pg.liuyao.manual.hint">Enter each line from the bottom (line 1) up, then lay out the chart.</p><div id="ly-manual-lines" class="ly-manual-lines"></div><button id="ly-manual-go" class="ghost" type="button" data-i18n="pg.liuyao.manual.go">Lay out the chart</button></details>
+<fieldset class="ly-moment"><legend data-i18n="pg.liuyao.moment">Moment of the cast</legend><div class="mh-fields"><label class="field"><span data-i18n="pg.liuyao.field.date">Date</span><input class="input" type="date" id="ly-date" min="1901-03-01" max="2099-12-31"></label><label class="field"><span data-i18n="pg.liuyao.field.time">Time</span><input class="input" type="time" id="ly-time"></label></div><p class="soft small"><span id="ly-tz"></span> · <span data-i18n="pg.liuyao.moment.note">The month (月建) turns at the solar term and the day (日辰) at 23:00, as in the classical calendar. The moment is set to now when the page opens.</span></p></fieldset>
+<p class="mh-error" id="ly-error" role="alert" hidden></p>
+<p class="bp-privacy" data-i18n="pg.liuyao.privacy">The coin throws and the chart are worked out on this device. Nothing is sent to us.</p>
+</div>
+<aside class="iching-note"><span class="eyebrow jade" data-i18n="pg.liuyao.rule.eyebrow">How the chart is built, in the book's words</span>
+<p class="soft small" data-i18n="pg.liuyao.rule.najia">Branches for each trigram, inner and outer:</p><p class="mh-quote" data-i18n="pg.liuyao.quote.najia">「乾在內：子水寅木辰土。乾在外：午火申金戌土。」</p>
+<p class="soft small" data-i18n="pg.liuyao.rule.liuqin">Family roles by the palace element:</p><p class="mh-quote" data-i18n="pg.liuyao.quote.liuqin">「乾兌宮金兄、土父、木財、火鬼、水子。」</p>
+<p class="soft small" data-i18n="pg.liuyao.rule.shiying">應 sits two lines away from 世:</p><p class="mh-quote" data-i18n="pg.liuyao.quote.shiying">「隔世爻兩位卽是應爻」</p>
+<p class="soft small" data-i18n="pg.liuyao.rule.note">Quoted from 增刪卜易 (1690), public domain.</p></aside>
+</div></section>
+
+<section class="band" id="result" hidden><div class="wrap">
+<div class="result-head"><div><span class="eyebrow jade" data-i18n="pg.liuyao.result.eyebrow">Your chart (裝卦), as facts</span><h2 id="result-title">—</h2></div></div>
+<dl class="ly-facts"><div><dt data-i18n="pg.liuyao.fact.palace">Palace</dt><dd id="ly-palace"></dd></div><div><dt data-i18n="pg.liuyao.fact.month">Month 月建</dt><dd id="ly-month"></dd></div><div><dt data-i18n="pg.liuyao.fact.day">Day 日辰</dt><dd id="ly-day"></dd></div><div><dt data-i18n="pg.liuyao.fact.void">Empty 旬空</dt><dd id="ly-void"></dd></div></dl>
+<p class="soft" id="ly-clash" hidden><span data-i18n="pg.liuyao.fact.clash">This is one of the ten 六沖 hexagrams the book names:</span> <span class="mh-quote-inline" data-i18n="pg.liuyao.quote.clash">「此八宮第一卦皆是六沖卦」</span></p>
+<div class="mh-table-wrap"><table class="mh-table ly-chart"><thead><tr><th data-i18n="pg.liuyao.col.spirit">六神</th><th data-i18n="pg.liuyao.col.hidden">Hidden 伏神</th><th data-i18n="pg.liuyao.col.line">Original line</th><th></th><th data-i18n="pg.liuyao.col.mark">世 / 應</th><th data-i18n="pg.liuyao.col.changed">Changes to</th><th data-i18n="pg.liuyao.col.notes">Notes</th></tr></thead><tbody id="ly-rows"></tbody></table></div>
+
+<div class="source-panel ly-topic"><div class="source-head"><div><h3 data-i18n="pg.liuyao.topic.title">What is the question about?</h3></div><span class="tag tradition" data-i18n="pg.liuyao.tag">Traditional text</span></div>
+<p class="soft" data-i18n="pg.liuyao.topic.note">For each kind of question the book reads one line, the 用神. Pick one to see which line that is and what the month and day do to it. Health questions are not covered here.</p>
+<div class="mh-methods" role="radiogroup" id="ly-topics">
+<label><input type="radio" name="topic" value="self" checked><span data-i18n="pg.liuyao.topic.self">Myself</span></label>
+<label><input type="radio" name="topic" value="other"><span data-i18n="pg.liuyao.topic.other">Another person</span></label>
+<label><input type="radio" name="topic" value="parent"><span data-i18n="pg.liuyao.topic.parent">Parents, documents, home</span></label>
+<label><input type="radio" name="topic" value="brother"><span data-i18n="pg.liuyao.topic.brother">Siblings and friends</span></label>
+<label><input type="radio" name="topic" value="wealth"><span data-i18n="pg.liuyao.topic.wealth">Money and goods</span></label>
+<label><input type="radio" name="topic" value="officer"><span data-i18n="pg.liuyao.topic.officer">Work and position</span></label>
+</div>
+<p class="mh-quote" id="ly-topic-quote"></p>
+<div id="ly-yong" class="ly-yong"></div>
+<p class="mh-quote"><span data-i18n="pg.liuyao.quote.month">「月建能生克沖合」</span> <span data-i18n="pg.liuyao.quote.day">「日辰能生克沖合」</span></p>
+<p class="soft small" data-i18n="pg.liuyao.not_forecast">These are the facts the book reads from. Fate Tutor does not turn them into a forecast.</p>
+</div>
+
+<div class="source-panel"><h3 data-i18n="pg.liuyao.legend.title">Reading the chart</h3>
+<p data-i18n="pg.liuyao.legend.shi">世 is the line for you, the one asking; 應 is the other side.</p>
+<p data-i18n="pg.liuyao.legend.rel">The five relatives: 兄弟 siblings and friends · 父母 parents, documents, home · 子孫 offspring and ease · 官鬼 office and pressure · 妻財 money and goods.</p>
+<p><span data-i18n="pg.liuyao.legend.changed">A moving line changes into a new line; its family role is still counted from the original palace:</span> <span class="mh-quote-inline" data-i18n="pg.liuyao.quote.changed">「六親須照前卦」</span></p>
+<p><span data-i18n="pg.liuyao.legend.hidden">If a relative is on no line, the book looks for it in the palace's first hexagram, hidden under the same line:</span> <span class="mh-quote-inline" data-i18n="pg.liuyao.quote.hidden">「則本宮首卦尋之」</span></p>
+<p><span data-i18n="pg.liuyao.legend.spirit">The six spirits start from the day stem and count upward. The book warns against reading them on their own:</span> <span class="mh-quote-inline" data-i18n="pg.liuyao.quote.yongshen">「須以用神爲主」</span></p>
+<p class="soft small"><span class="mh-quote-inline" data-i18n="pg.liuyao.quote.void">「甲子旬中戌亥空」</span> · <span class="mh-quote-inline" data-i18n="pg.liuyao.quote.break">「月建沖之爲月破」</span></p>
+</div>
+</div></section>
+
+<section class="band low"><div class="wrap about-cols"><div><span class="eyebrow jade" data-i18n="pg.liuyao.source.eyebrow">Where this comes from</span><h2 data-i18n="pg.liuyao.source.title">增刪卜易, 火珠林 and 京氏易傳</h2></div><div class="legal"><p data-i18n="pg.liuyao.source.p1">The chart rules come from 增刪卜易 (野鶴老人, 1690). The order of the eight palaces and the stems come from 京氏易傳 (Jing Fang, Han dynasty), and 火珠林 confirms the order of the six spirits. All three are public domain on Chinese Wikisource.</p><p data-i18n="pg.liuyao.source.p2">Checked line by line: the engine reproduces all 64 hexagrams of the book's chart and its worked examples. The online copy has a few copying slips, such as 士 for 土; our checker names each one. The book's two 六神 examples swap 勾陳 and 螣蛇 against its own table; this page follows the table, which 火珠林 agrees with.</p></div></div></section>
+<section class="band lowest"><div class="wrap about-cols"><div><span class="eyebrow jade" data-i18n="lesson.about">About this tradition</span><h2 data-i18n="pg.liuyao.about.title">A chart of the moment, read line by line</h2></div><div class="legal"><p data-i18n="pg.liuyao.about.p1">Six Lines (六爻, also called 納甲 or 火珠林 method) grew from Jing Fang's Han-dynasty system. Instead of reading the I Ching's words, it reads the elements and family roles of each line against the month and day.</p><p data-i18n="pg.liuyao.about.p2">Fate Tutor lays out the chart and shows its sources. It does not turn a cast into a forecast, financial advice, medical advice or a decision made for you.</p><p data-i18n="legal.tradition">These are traditional systems of belief. They are not science and they do not predict the future. Fate Tutor shows what each tradition says and where it says it, in the language of tendencies.</p></div></div></section>
+</main><footer><div class="wrap"><p data-i18n="legal.credits">City data: GeoNames (geonames.org), CC BY 4.0. Classical texts read from Chinese Wikisource. Calculators checked against NASA JPL Horizons.</p><p><a href="../third-party-notices.txt" data-i18n="footer.notices">Open-source notices</a></p><p data-i18n="footer.rights">Fate Tutor · www.fatetutor.com</p></div></footer>
+<script src="../assets/js/ft-engine.js?v=ce9455bcdf"></script><script src="../assets/js/ft-page-liuyao.js?v=6ebc388fa4"></script>
+</body></html>
