@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i18n="pg.ziwei.meta.title">Zi Wei Dou Shu (紫微斗數): Set Out Your Birth Chart — Fate Tutor</title>
+<meta name="description" content="Set out a Zi Wei Dou Shu birth chart from your lunar birth date and hour: twelve palaces, the bureau, the fourteen major stars, the helper stars and the four transformations, each step quoted from 紫微斗數全書." data-i18n-content="pg.ziwei.meta.description">
+<!-- ft:head — written by engine/ft_build_pages.py, do not edit by hand -->
+<link rel="canonical" href="https://www.fatetutor.com/ziwei/">
+<link rel="alternate" hreflang="en" href="https://www.fatetutor.com/ziwei/">
+<link rel="alternate" hreflang="zh-Hans" href="https://www.fatetutor.com/zh-hans/ziwei/">
+<link rel="alternate" hreflang="zh-Hant" href="https://www.fatetutor.com/zh-hant/ziwei/">
+<link rel="alternate" hreflang="id" href="https://www.fatetutor.com/id/ziwei/">
+<link rel="alternate" hreflang="ms" href="https://www.fatetutor.com/ms/ziwei/">
+<link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/ziwei/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Fate Tutor">
+<meta property="og:title" content="Zi Wei Dou Shu (紫微斗數): Set Out Your Birth Chart — Fate Tutor">
+<meta property="og:description" content="Set out a Zi Wei Dou Shu birth chart from your lunar birth date and hour: twelve palaces, the bureau, the fourteen major stars, the helper stars and the four transformations, each step quoted from 紫微斗數全書.">
+<meta property="og:url" content="https://www.fatetutor.com/ziwei/">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<!-- /ft:head -->
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500&display=swap">
+<link rel="stylesheet" href="../assets/css/ft.css?v=5fbfdcb895"><link rel="stylesheet" href="../assets/css/ft-iching.css?v=cfabaa2689"><link rel="stylesheet" href="../assets/css/ft-meihua.css?v=39bdb8ac52"><link rel="stylesheet" href="../assets/css/ft-ziwei.css?v=3143b6de17">
+</head>
+<body class="lesson iching-page ziwei-page">
+<header class="topbar"><div class="wrap"><a class="brand" href="../" data-page=""><img class="brand-mark" src="../assets/img/fate-turtle.png" alt="" aria-hidden="true"><b>Fate Tutor</b><span data-i18n="brand.tagline">Global Life Intelligence Platform</span></a><nav class="topnav"><a href="../bazi/" data-page="bazi/" data-i18n="nav.bazi">BaZi</a><a href="../numerology/" data-page="numerology/" data-i18n="nav.numerology">Numerology</a><a href="../zodiac/" data-page="zodiac/" data-i18n="nav.zodiac">Zodiac</a><a href="../weton/" data-page="weton/" data-i18n="nav.weton">Weton</a><a href="../iching/" data-page="iching/">I Ching</a><a href="../meihua/" data-page="meihua/" data-i18n="nav.meihua">Plum Blossom</a><a href="../liuyao/" data-page="liuyao/" data-i18n="nav.liuyao">Six Lines</a><a class="here" aria-current="page" href="../ziwei/" data-page="ziwei/" data-i18n="nav.ziwei">Zi Wei</a><a href="../parallel-life/" data-page="parallel-life/" data-i18n="nav.parallel">Parallel Life</a><select id="lang" class="lang" aria-label="Language" data-i18n-aria-label="nav.language"><option value="en" selected>English</option><option value="zh-hans">简体中文</option><option value="zh-hant">繁體中文</option><option value="id">Bahasa Indonesia</option><option value="ms">Bahasa Melayu</option></select></nav></div></header>
+<main>
+<section class="lhero"><div class="wrap"><nav class="crumbs"><a href="../" data-page="" data-i18n="lesson.crumb.home">Fate Tutor</a> / <a href="../#traditions" data-page="#traditions" data-i18n="nav.traditions">Traditions</a> / <span>紫微斗數</span></nav><span class="eyebrow" data-i18n="pg.ziwei.eyebrow">Twelve palaces · fourteen stars · four transformations</span><h1 data-i18n="pg.ziwei.title">Zi Wei Dou Shu: Set Out Your Chart</h1><p class="lead" data-i18n="pg.ziwei.lead">Zi Wei Dou Shu places stars in twelve palaces from your lunar birth date and hour. This page sets out the chart exactly as the Ming handbook 紫微斗數全書 does and shows every step. It does not read the chart for you.</p></div></section>
+
+<section class="band low"><div class="wrap iching-layout">
+<form class="cast-panel" id="zw-form" novalidate>
+<div class="cast-head"><div><span class="eyebrow jade" data-i18n="pg.ziwei.form.eyebrow">Your birth</span><h2 data-i18n="pg.ziwei.form.title">Birth date and hour</h2></div></div>
+<p class="soft small" id="zw-saved" hidden data-i18n="pg.ziwei.form.saved">Filled in from the birth details you entered on another Fate Tutor page.</p>
+<div class="mh-fields">
+<label class="field"><span data-i18n="pg.ziwei.field.date">Date of birth</span><input class="input" type="date" id="zw-date" min="1901-03-01" max="2099-12-31" required></label>
+<label class="field"><span data-i18n="pg.ziwei.field.time">Time of birth</span><input class="input" type="time" id="zw-time" required></label>
+<label class="field"><span data-i18n="pg.ziwei.field.tz">Time zone</span><input class="input" type="text" id="zw-tz" autocomplete="off" spellcheck="false"></label>
+<label class="field"><span data-i18n="pg.ziwei.field.lon">Longitude (optional)</span><input class="input" type="number" id="zw-lon" min="-180" max="180" step="0.01"></label>
+</div>
+<p class="soft small" data-i18n="pg.ziwei.form.lon.note">The chart rests on the birth hour. With a longitude the hour is taken in true solar time, as on the BaZi page; without one, clock time is used. From 23:00 the 子 hour counts as the next day.</p>
+<div class="cast-actions"><button class="btn" type="submit" data-i18n="pg.ziwei.form.go">Set out the chart</button></div>
+<p class="mh-error" id="zw-error" role="alert" hidden></p>
+<p class="bp-privacy" data-i18n="pg.ziwei.privacy">Your birth details are worked out on this device. Nothing is sent to us.</p>
+</form>
+<aside class="iching-note"><span class="eyebrow jade" data-i18n="pg.ziwei.rule.eyebrow">How the chart is set, in the book's words</span>
+<p class="soft small" data-i18n="pg.ziwei.rule.life">命 and 身 from the birth month and hour:</p><p class="mh-quote" data-i18n="pg.ziwei.quote.life">「大抵人命俱从寅上起正月，顺数至本生月止，又自人生月起子时逆至本生时安命，顺至本生时安身。」</p>
+<p class="soft small" data-i18n="pg.ziwei.rule.palaces">The twelve palaces run backward:</p><p class="mh-quote" data-i18n="pg.ziwei.quote.palaces">「男女俱从逆转切忌莫顺去」</p>
+<p class="mh-quote" data-i18n="pg.ziwei.quote.yin">「甲己之岁起丙寅，乙庚之岁起戊寅，丙辛之岁起庚寅，丁壬之岁起壬寅，戊癸之岁起甲寅。」</p>
+<p class="mh-quote" data-i18n="pg.ziwei.quote.ziwei">「如是正月初一生者是火局，酉宫起初一日，就从酉宫起紫微」</p>
+<p class="soft small" data-i18n="pg.ziwei.rule.note">Quoted from 紫微斗數全書 卷二 as printed, public domain.</p></aside>
+</div></section>
+
+<section class="band" id="result" hidden><div class="wrap">
+<div class="result-head"><div><span class="eyebrow jade" data-i18n="pg.ziwei.result.eyebrow">Your chart (命盤), as facts</span><h2 id="result-title">—</h2></div></div>
+<div class="zw-board" id="zw-board"><div class="zw-center" id="zw-center"></div></div>
+<div class="plain-panel mh-steps"><h3 data-i18n="pg.ziwei.steps.title">How your chart was set</h3><ol id="zw-steps"></ol></div>
+<div class="source-panel zw-legend"><h3 data-i18n="pg.ziwei.legend.title">Reading the chart</h3>
+<p data-i18n="pg.ziwei.legend.grid">Each square is a palace, named by its branch (子 … 亥) and stem. 命 marks the Life palace and 身 the Body palace. Bold names are the fourteen major stars; the others are helper stars.</p>
+<p><span data-i18n="pg.ziwei.legend.stars">The fourteen major stars follow 紫微 and 天府:</span></p><p class="mh-quote" data-i18n="pg.ziwei.quote.north">「紫微天机逆行旁，隔一阳武天同当，又隔二位廉贞地，空三复见紫微郎，」</p><p class="mh-quote" data-i18n="pg.ziwei.quote.south">「天府太阴与贪狼，巨门天相及天梁，七杀空三破军位，八星顺数细推详。」</p><p class="mh-quote" data-i18n="pg.ziwei.quote.tianfu">「天府惟寅申二宫紫府同宫」</p>
+<p><span data-i18n="pg.ziwei.legend.hua">祿, 權, 科 and 忌 are the four transformations (四化), set by the birth year's stem:</span></p><p class="mh-quote" data-i18n="pg.ziwei.quote.hua">「如甲生人廉贞化禄、破军化权、武曲化科、太阳化忌是也」</p>
+<p data-i18n="pg.ziwei.legend.kuiyue">魁鉞: the book's verse names the two palaces of this pair without saying which is 天魁 and which is 天鉞, so both are marked 魁鉞.</p>
+</div>
+<div class="source-panel zw-legend"><h3 data-i18n="pg.ziwei.omitted.title">Not shown, and why</h3>
+<p><span data-i18n="pg.ziwei.omitted.huoling">火星 and 鈴星: the verse gives only the palaces they start from, not which way to count, so they are left out:</span> <span class="mh-quote-inline" data-i18n="pg.ziwei.quote.huoling">「寅午戌人丑卯方」</span></p>
+<p data-i18n="pg.ziwei.omitted.daxian">大限 (ten-year periods): this book starts them one palace away from 命, while the Daoist-canon text 紫微斗數 starts them at 命. They are not shown until that is settled.</p>
+<p data-i18n="pg.ziwei.omitted.reading">What the stars mean: this page sets out the chart only. Fate Tutor does not turn it into a forecast.</p>
+</div>
+</div></section>
+
+<section class="band low"><div class="wrap about-cols"><div><span class="eyebrow jade" data-i18n="pg.ziwei.source.eyebrow">Where this comes from</span><h2 data-i18n="pg.ziwei.source.title">紫微斗數全書, volume two</h2></div><div class="legal"><p data-i18n="pg.ziwei.source.p1">Every rule comes from 紫微斗數全書 (a Ming text, Qing edition), volume two, on Chinese Wikisource, which is public domain. Quotes are given as the online copy prints them.</p><p data-i18n="pg.ziwei.source.p2">Checked cell by cell: the engine places 紫微 exactly as the book's five drawn tables do for all 150 days. Two slips in the online copy are named in our checker: the wood table prints 初九 twice, and the metal table leaves out day 30.</p><p class="mh-quote" data-i18n="pg.ziwei.quote.leap">「又若闰月正月生者要在二月内起安身命」</p></div></div></section>
+<section class="band lowest"><div class="wrap about-cols"><div><span class="eyebrow jade" data-i18n="lesson.about">About this tradition</span><h2 data-i18n="pg.ziwei.about.title">A chart of twelve palaces</h2></div><div class="legal"><p data-i18n="pg.ziwei.about.p1">Zi Wei Dou Shu, the 'Purple Star' method, is traditionally linked with the Song-era Daoist 陳摶. It turns the lunar birth date and hour into a ring of twelve palaces, each holding stars.</p><p data-i18n="pg.ziwei.about.p2">Fate Tutor sets out the chart and shows its sources. It does not turn a chart into a forecast, financial advice, medical advice or a decision made for you.</p><p data-i18n="legal.tradition">These are traditional systems of belief. They are not science and they do not predict the future. Fate Tutor shows what each tradition says and where it says it, in the language of tendencies.</p></div></div></section>
+</main><footer><div class="wrap"><p data-i18n="legal.credits">City data: GeoNames (geonames.org), CC BY 4.0. Classical texts read from Chinese Wikisource. Calculators checked against NASA JPL Horizons.</p><p><a href="../third-party-notices.txt" data-i18n="footer.notices">Open-source notices</a></p><p data-i18n="footer.rights">Fate Tutor · www.fatetutor.com</p></div></footer>
+<script src="../assets/js/ft-engine.js?v=ce9455bcdf"></script><script src="../assets/js/ft-page-ziwei.js?v=16b34f0b2d"></script>
+</body></html>
