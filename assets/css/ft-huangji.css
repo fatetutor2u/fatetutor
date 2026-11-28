@@ -1,0 +1,12 @@
+.hj-quick{display:flex;flex-wrap:wrap;gap:8px;margin:4px 0 10px}.hj-quick .btn{padding:7px 14px;font-size:.85rem}
+.hj-bar{position:relative;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:4px;margin:16px 0 8px;padding:6px 0}
+.hj-hui{position:relative;z-index:1;border:1px solid rgba(212,175,55,.22);border-radius:8px;padding:8px 4px;text-align:center;display:flex;flex-direction:column;gap:2px;background:rgba(255,255,255,.02)}
+.hj-hui b{font-family:var(--font-han);color:var(--gold);font-size:1.05rem;font-weight:600}.hj-hui span{font-family:var(--font-data);font-size:.72rem;color:var(--text-dim)}
+.hj-hui.here{border-color:var(--gold);background:rgba(212,175,55,.12)}
+.hj-kaiwu{position:absolute;top:0;bottom:0;background:rgba(68,226,205,.10);border-top:2px solid rgba(68,226,205,.55);border-bottom:2px solid rgba(68,226,205,.55);border-radius:4px;z-index:0}
+.hj-mark{position:absolute;top:-4px;bottom:-4px;width:3px;margin-left:-1px;background:var(--jade);border-radius:2px;z-index:2;box-shadow:0 0 0 2px rgba(11,18,32,.6)}
+.hj-table td{vertical-align:top}.hj-table .hj-level{font-family:var(--font-han);color:var(--gold);white-space:nowrap}.hj-table .hj-here{font-family:var(--font-han)}.hj-table .hj-years{font-family:var(--font-data);color:var(--text-soft);white-space:nowrap}
+.hj-chron{max-width:none}.hj-entry{font-size:1.02rem}
+.hj-list{list-style:none;margin:10px 0 0;padding:0;display:grid;gap:8px}.hj-list li{display:grid;grid-template-columns:minmax(92px,auto) 1fr;gap:12px;padding:8px 10px;border-radius:8px;background:rgba(255,255,255,.02)}
+.hj-list li.here{background:rgba(212,175,55,.1);outline:1px solid rgba(212,175,55,.4)}.hj-list b{font-family:var(--font-data);color:var(--gold);font-weight:500;white-space:nowrap}.hj-list .hj-text{font-family:var(--font-han);color:var(--text-soft);line-height:1.7}
+@media(max-width:760px){.hj-bar{gap:2px}.hj-hui{padding:5px 1px}.hj-hui b{font-size:.9rem}.hj-list li{grid-template-columns:1fr;gap:2px}.hj-table td,.hj-table th{padding:6px;font-size:.82rem}.hj-table .hj-years{white-space:normal}}
