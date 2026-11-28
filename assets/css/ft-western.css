@@ -1,0 +1,16 @@
+.we-quote{font-family:var(--font-body);font-style:italic}
+.we-top{display:grid;grid-template-columns:minmax(0,440px) minmax(0,1fr);gap:28px;align-items:start;margin:12px 0 18px}
+.we-wheel{width:100%;max-width:440px;aspect-ratio:1}.we-wheel svg{width:100%;height:100%;display:block}
+.we-ring{fill:none;stroke:rgba(212,175,55,.45);stroke-width:1.2}.we-ring.thin{stroke:rgba(212,175,55,.18)}
+.we-tick{stroke:rgba(212,175,55,.45);stroke-width:1}
+.we-sign{font-size:17px;text-anchor:middle;dominant-baseline:central;fill:var(--gold)}
+.we-sign.fire{fill:#f0a35e}.we-sign.earth{fill:#c9b37a}.we-sign.air{fill:#9fd3e6}.we-sign.water{fill:#7fb6f0}
+.we-cusp{stroke:rgba(203,213,225,.28);stroke-width:1}.we-cusp.angle{stroke:var(--jade);stroke-width:1.6}
+.we-hnum{font-size:10px;fill:var(--text-dim);text-anchor:middle;dominant-baseline:central;font-family:var(--font-data)}
+.we-angle{font-size:10px;fill:var(--jade);font-family:var(--font-data);font-weight:600;text-anchor:middle}
+.we-mark{stroke:var(--gold);stroke-width:1.4}
+.we-body{font-size:17px;fill:var(--text);text-anchor:middle;dominant-baseline:central;cursor:default}.we-body.lum{fill:var(--gold)}
+.we-asp{stroke-width:1.1;opacity:.75}.we-asp.trine,.we-asp.sextile{stroke:#57c7b6}.we-asp.square,.we-asp.opposition{stroke:#e07a6e}
+.we-table td{vertical-align:top}.we-table .we-num{font-family:var(--font-data);color:var(--text-soft)}.we-glyph{color:var(--gold)}
+.we-cusps{max-width:640px}
+@media(max-width:860px){.we-top{grid-template-columns:1fr}.we-wheel{margin:0 auto}}
