@@ -338,6 +338,7 @@
       }, [
         el("span", { class: "num", text: c.num }),
         c.glyph ? el("span", { class: "glyph" + (c.glyphClass ? " " + c.glyphClass : ""), text: c.glyph }) : null,
+        c.pic ? el("img", { class: "pic", src: c.pic, alt: "", "aria-hidden": "true", width: "44", height: "44", loading: "lazy" }) : null,
         el("span", { class: "kicker", text: c.kicker || "" }),
         el("b", { text: c.title }),
         c.sub ? el("small", { text: c.sub }) : null,

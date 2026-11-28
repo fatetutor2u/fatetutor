@@ -180,6 +180,8 @@ button, input, select { font: inherit; color: inherit; }
 .lcard small { color: var(--text-soft); font-size: 0.76rem; }
 .lcard .yours { position: absolute; top: 8px; right: 8px; font-family: var(--font-data); font-size: 0.62rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--on-gold); background: var(--gold); border-radius: 999px; padding: 2px 7px; }
 .lcard.mine { border-color: rgba(68, 226, 205, 0.55); }
+.lcard .pic { position: absolute; top: 30px; right: 10px; width: 44px; height: 44px; opacity: 0.9; pointer-events: none; }
+.lcard.on .pic, .lcard:hover .pic { opacity: 1; }
 .lcard .tick { position: absolute; bottom: 8px; right: 10px; color: var(--jade); font-weight: 700; }
 .inspector { position: sticky; top: 76px; background: var(--surface-mid); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px 22px; display: grid; gap: 14px; max-height: calc(100vh - 96px); overflow: auto; }
 .i-head { display: grid; grid-template-columns: auto 1fr; gap: 14px; align-items: center; }

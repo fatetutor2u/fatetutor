@@ -451,6 +451,51 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/liuren/"/>
   </url>
   <url>
+    <loc>https://www.fatetutor.com/qimen/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fatetutor.com/qimen/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.fatetutor.com/zh-hans/qimen/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.fatetutor.com/zh-hant/qimen/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.fatetutor.com/id/qimen/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://www.fatetutor.com/ms/qimen/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/qimen/"/>
+  </url>
+  <url>
+    <loc>https://www.fatetutor.com/zh-hans/qimen/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fatetutor.com/qimen/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.fatetutor.com/zh-hans/qimen/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.fatetutor.com/zh-hant/qimen/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.fatetutor.com/id/qimen/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://www.fatetutor.com/ms/qimen/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/qimen/"/>
+  </url>
+  <url>
+    <loc>https://www.fatetutor.com/zh-hant/qimen/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fatetutor.com/qimen/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.fatetutor.com/zh-hans/qimen/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.fatetutor.com/zh-hant/qimen/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.fatetutor.com/id/qimen/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://www.fatetutor.com/ms/qimen/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/qimen/"/>
+  </url>
+  <url>
+    <loc>https://www.fatetutor.com/id/qimen/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fatetutor.com/qimen/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.fatetutor.com/zh-hans/qimen/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.fatetutor.com/zh-hant/qimen/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.fatetutor.com/id/qimen/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://www.fatetutor.com/ms/qimen/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/qimen/"/>
+  </url>
+  <url>
+    <loc>https://www.fatetutor.com/ms/qimen/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fatetutor.com/qimen/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.fatetutor.com/zh-hans/qimen/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.fatetutor.com/zh-hant/qimen/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.fatetutor.com/id/qimen/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://www.fatetutor.com/ms/qimen/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/qimen/"/>
+  </url>
+  <url>
     <loc>https://www.fatetutor.com/parallel-life/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.fatetutor.com/parallel-life/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.fatetutor.com/zh-hans/parallel-life/"/>

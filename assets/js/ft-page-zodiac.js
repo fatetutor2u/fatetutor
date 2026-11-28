@@ -172,6 +172,7 @@
     card: (item, api) => ({
       num: String(item.i + 1).padStart(2, "0"),
       glyph: glyph(api, item.i),
+      pic: "/assets/img/zodiac/" + item.id + ".svg",
       kicker: BRANCH[item.i] + " · " + api.elementName(FIXED[item.i]),
       title: api.animalName(item.id),
       sub: yearsOf(item.i).slice(-3, -1).concat(yearsOf(item.i).slice(-1)).join(" · "),
