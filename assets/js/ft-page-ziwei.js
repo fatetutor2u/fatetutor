@@ -31,6 +31,7 @@
       const tz = b.zone || (b.place && b.place.tz);
       if (tz) $("zw-tz").value = tz;
       if (b.place && typeof b.place.lon === "number") $("zw-lon").value = b.place.lon;
+      if (b.sex === "male" || b.sex === "female") $("zw-sex").value = b.sex;
       $("zw-saved").hidden = false;
     }
   }
@@ -54,8 +55,12 @@
         if (s.hua) node.append(el("sup", s.hua === "ji" ? "ji" : "", t("pg.ziwei.hua." + s.hua)));
         stars.append(node);
       });
+      const period = (c.daxian || []).find((d) => d.branch === p.branch);
+      const age = period ? el("div", "zw-sub zw-age", t("pg.ziwei.cell.age", "", { a: period.from_age, b: period.to_age })) : null;
       const foot = el("div", "zw-sub zw-gz", p.stem_zh + p.branch_zh + (p.name === "life" || language.startsWith("zh") ? "" : " · " + p.name_zh));
-      cell.append(head, stars, foot);
+      cell.append(head, stars);
+      if (age) cell.append(age);
+      cell.append(foot);
       board.append(cell);
     });
   }
@@ -82,6 +87,11 @@
     const life = c.palaces[c.life_branch];
     add(t("pg.ziwei.step.bureau", "", { ys: c.year_zh[0], yin: c.palaces[2].stem_zh + "寅", gz: life.stem_zh + life.branch_zh, nayin: c.bureau.nayin_zh, el: t("pg.ziwei.el." + c.bureau.element), n: c.bureau.number }));
     add(t("pg.ziwei.step.ziwei", "", { d: c.day, n: c.bureau.number, zw: BRANCHES[c.ziwei_branch], tf: BRANCHES[c.tianfu_branch] }));
+    if (c.daxian) {
+      const first = c.daxian[0], yang = "甲丙戊庚壬".includes(c.year_zh[0]);
+      add(t("pg.ziwei.step.daxian", "", { kind: t("pg.ziwei.kind." + (yang ? "yang_" : "yin_") + c.sex), pname: t("pg.ziwei.palace." + c.palaces[first.branch].name),
+        br: first.branch_zh, dir: t("pg.ziwei.dir." + (c.daxian_forward ? "forward" : "backward")), a: first.from_age, b: first.to_age }));
+    } else add(t("pg.ziwei.step.daxian.none"));
   }
 
   function cast(event) {
@@ -92,6 +102,7 @@
     const year = Number(date.slice(0, 4));
     if (!date || !time || !tz || year < 1901 || year > 2099 || (lon !== null && !(lon >= -180 && lon <= 180))) { error.textContent = t("pg.ziwei.error.input"); error.hidden = false; return; }
     const req = { cmd: "ziwei", date, time, tz };
+    if ($("zw-sex").value) req.sex = $("zw-sex").value;
     if (lon !== null) req.lon = lon; else req.time_basis = "clock";
     let c;
     try { c = engine.call(req); } catch (e) { error.textContent = t("pg.ziwei.error.input"); error.hidden = false; console.error(e); return; }
@@ -108,6 +119,7 @@
       [engine, words] = await Promise.all([FTEngine.load(assetRoot + "wasm/ft.wasm"), fetch(assetRoot + "i18n/" + language + ".json", { cache: "no-cache" }).then((r) => r.json())]);
       fillForm();
       $("zw-form").addEventListener("submit", cast);
+      $("zw-sex").addEventListener("change", () => { if ($("zw-date").value && $("zw-time").value) cast(); });
       $("lang").addEventListener("change", (event) => { const next = event.target.value; location.href = next === "en" ? "/ziwei/" : "/" + next + "/ziwei/"; });
       if ($("zw-date").value && $("zw-time").value) cast();
     } catch (error) {

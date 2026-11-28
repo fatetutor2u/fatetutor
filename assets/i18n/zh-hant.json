@@ -1667,5 +1667,19 @@
   "pg.qizheng.source.p2": "已核對：星表推回乾隆甲子與《清史稿》所載相差不過三分；五星與另一獨立星曆相差僅數秒；四餘按《清史稿》所讀常數另行重算，相差不足一秒。",
   "pg.qizheng.about.title": "中國星命術",
   "pg.qizheng.about.p1": "七政四餘起於唐宋，盛於明代，讀取出生時的實際天象，以十二宮與二十八宿分之。",
-  "pg.qizheng.about.p2": "Fate Tutor 只排出星盤並註明出處，不據此作預測、理財建議、醫療建議，也不替你作決定。"
+  "pg.qizheng.about.p2": "Fate Tutor 只排出星盤並註明出處，不據此作預測、理財建議、醫療建議，也不替你作決定。",
+  "pg.ziwei.form.sex.note": "性別只用於一件事：大限順行或逆行由此而定。不填則不列出大限。",
+  "pg.ziwei.cell.age": "{a}–{b}歲",
+  "pg.ziwei.kind.yang_male": "陽男",
+  "pg.ziwei.kind.yin_female": "陰女",
+  "pg.ziwei.kind.yin_male": "陰男",
+  "pg.ziwei.kind.yang_female": "陽女",
+  "pg.ziwei.dir.forward": "順行",
+  "pg.ziwei.dir.backward": "逆行",
+  "pg.ziwei.step.daxian": "{kind}：大限從命宮旁的{pname}（{br}）起，{dir}，每宮十年。第一限為{a}–{b}歲（虛歲，出生即一歲）。",
+  "pg.ziwei.step.daxian.none": "未填性別，故不列出大限。",
+  "pg.ziwei.legend.daxian": "大限依本書「安大限訣」。年齡按虛歲計（出生即一歲）；第一限從局數起，水二局二歲起，至火六局六歲起。",
+  "pg.ziwei.quote.daxian": "「陽男陰女從命前一宮起順行」",
+  "pg.ziwei.quote.daxian2": "「陰男陽女從命後一宮起逆行」",
+  "pg.ziwei.legend.daxian.other": "其他書說法不同：道藏本《紫微斗數》從命宮本身起（陰男陽女從申宮起），今日不少排盤也從命宮起，因此別處的命盤大限可能不同。本頁依《紫微斗數全書》。"
 }

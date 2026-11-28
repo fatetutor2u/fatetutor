@@ -22,7 +22,7 @@
 <link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
 <!-- /ft:head -->
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500&display=swap">
-<link rel="stylesheet" href="../../assets/css/ft.css?v=b1a0d578ea"><link rel="stylesheet" href="../../assets/css/ft-iching.css?v=cfabaa2689"><link rel="stylesheet" href="../../assets/css/ft-meihua.css?v=39bdb8ac52"><link rel="stylesheet" href="../../assets/css/ft-ziwei.css?v=3143b6de17">
+<link rel="stylesheet" href="../../assets/css/ft.css?v=b1a0d578ea"><link rel="stylesheet" href="../../assets/css/ft-iching.css?v=cfabaa2689"><link rel="stylesheet" href="../../assets/css/ft-meihua.css?v=39bdb8ac52"><link rel="stylesheet" href="../../assets/css/ft-ziwei.css?v=8cab51ac58">
 </head>
 <body class="lesson iching-page ziwei-page">
 <header class="topbar"><div class="wrap"><a class="brand" href="../" data-page=""><img class="brand-mark" src="../../assets/img/fate-turtle.png" alt="" aria-hidden="true"><b>Fate Tutor</b><span data-i18n="brand.tagline">全球人生智慧平台</span></a><nav class="topnav"><a href="../bazi/" data-page="bazi/" data-i18n="nav.bazi">八字</a><a href="../numerology/" data-page="numerology/" data-i18n="nav.numerology">数字命理</a><a href="../zodiac/" data-page="zodiac/" data-i18n="nav.zodiac">生肖</a><a href="../weton/" data-page="weton/" data-i18n="nav.weton">爪哇 Weton</a><a href="../iching/" data-page="iching/">I Ching</a><a href="../meihua/" data-page="meihua/" data-i18n="nav.meihua">梅花易数</a><a href="../liuyao/" data-page="liuyao/" data-i18n="nav.liuyao">六爻</a><a class="here" aria-current="page" href="../ziwei/" data-page="ziwei/" data-i18n="nav.ziwei">紫微斗数</a><a href="../liuren/" data-page="liuren/" data-i18n="nav.liuren">大六壬</a><a href="../qimen/" data-page="qimen/" data-i18n="nav.qimen">奇门</a><a href="../qizheng/" data-page="qizheng/" data-i18n="nav.qizheng">七政四余</a><a href="../parallel-life/" data-page="parallel-life/" data-i18n="nav.parallel">平行人生</a><select id="lang" class="lang" aria-label="语言" data-i18n-aria-label="nav.language"><option value="en">English</option><option value="zh-hans" selected>简体中文</option><option value="zh-hant">繁體中文</option><option value="id">Bahasa Indonesia</option><option value="ms">Bahasa Melayu</option></select></nav></div></header>
@@ -38,7 +38,9 @@
 <label class="field"><span data-i18n="pg.ziwei.field.time">出生时间</span><input class="input" type="time" id="zw-time" required></label>
 <label class="field"><span data-i18n="pg.ziwei.field.tz">时区</span><input class="input" type="text" id="zw-tz" autocomplete="off" spellcheck="false"></label>
 <label class="field"><span data-i18n="pg.ziwei.field.lon">经度（可不填）</span><input class="input" type="number" id="zw-lon" min="-180" max="180" step="0.01"></label>
+<label class="field"><span data-i18n="form.sex">性别</span><select class="input" id="zw-sex"><option value="" data-i18n="form.sex.skip">不愿透露</option><option value="male" data-i18n="form.sex.male">男</option><option value="female" data-i18n="form.sex.female">女</option></select></label>
 </div>
+<p class="soft small" data-i18n="pg.ziwei.form.sex.note">性别只用于一件事：大限顺行或逆行由此而定。不填则不列出大限。</p>
 <p class="soft small" data-i18n="pg.ziwei.form.lon.note">命盘以时辰为本。填了经度就用真太阳时（与八字页相同）；不填则用钟表时间。23:00 起的子时算作次日。</p>
 <div class="cast-actions"><button class="btn" type="submit" data-i18n="pg.ziwei.form.go">排盘</button></div>
 <p class="mh-error" id="zw-error" role="alert" hidden></p>
@@ -60,11 +62,12 @@
 <p data-i18n="pg.ziwei.legend.grid">每一格是一宫，标有地支与天干。「命」为命宫，「身」为身宫。粗体为十四主星，其余为辅星。</p>
 <p><span data-i18n="pg.ziwei.legend.stars">十四主星随紫微、天府排出：</span></p><p class="mh-quote" data-i18n="pg.ziwei.quote.north">「紫微天机逆行旁，隔一阳武天同当，又隔二位廉贞地，空三复见紫微郎，」</p><p class="mh-quote" data-i18n="pg.ziwei.quote.south">「天府太阴与贪狼，巨门天相及天梁，七杀空三破军位，八星顺数细推详。」</p><p class="mh-quote" data-i18n="pg.ziwei.quote.tianfu">「天府惟寅申二宫紫府同宫」</p>
 <p><span data-i18n="pg.ziwei.legend.hua">禄、权、科、忌为四化，由出生年干决定：</span></p><p class="mh-quote" data-i18n="pg.ziwei.quote.hua">「如甲生人廉贞化禄、破军化权、武曲化科、太阳化忌是也」</p>
+<p><span data-i18n="pg.ziwei.legend.daxian">大限依本书「安大限诀」。年龄按虚岁计（出生即一岁）；第一限从局数起，水二局二岁起，至火六局六岁起。</span></p><p class="mh-quote" data-i18n="pg.ziwei.quote.daxian">「阳男阴女从命前一宫起顺行」</p><p class="mh-quote" data-i18n="pg.ziwei.quote.daxian2">「阴男阳女从命后一宫起逆行」</p>
+<p data-i18n="pg.ziwei.legend.daxian.other">其他书说法不同：道藏本《紫微斗数》从命宫本身起（阴男阳女从申宫起），今日不少排盘也从命宫起，因此别处的命盘大限可能不同。本页依《紫微斗数全书》。</p>
 <p data-i18n="pg.ziwei.legend.kuiyue">魁钺：原书歌诀只说出这一对星的两个宫位，没有说哪个是天魁、哪个是天钺，故两处都标作「魁钺」。</p>
 </div>
 <div class="source-panel zw-legend"><h3 data-i18n="pg.ziwei.omitted.title">未列出的部分及原因</h3>
 <p><span data-i18n="pg.ziwei.omitted.huoling">火星、铃星：歌诀只给出起始宫位，没有说顺数或逆数，故暂不排：</span> <span class="mh-quote-inline" data-i18n="pg.ziwei.quote.huoling">「寅午戌人丑卯方」</span></p>
-<p data-i18n="pg.ziwei.omitted.daxian">大限：本书从命宫前后一宫起，而道藏本《紫微斗数》从命宫起；两说未定之前暂不列出。</p>
 <p data-i18n="pg.ziwei.omitted.reading">星曜含义：本页只排盘；Fate Tutor 不把命盘变成预测。</p>
 </div>
 </div></section>
@@ -72,5 +75,5 @@
 <section class="band low"><div class="wrap about-cols"><div><span class="eyebrow jade" data-i18n="pg.ziwei.source.eyebrow">出处</span><h2 data-i18n="pg.ziwei.source.title">《紫微斗数全书》卷二</h2></div><div class="legal"><p data-i18n="pg.ziwei.source.p1">每条规则都出自中文维基文库上的《紫微斗数全书》（明代文本，清代刊本）卷二，为公有领域。引文照网上文本原样。</p><p data-i18n="pg.ziwei.source.p2">逐格核对：本引擎安紫微与书中五张局表 150 格完全一致。网上文本的两处错漏已在检查程序中列明：木三局表「初九」重出，金四局表漏了三十日。</p><p class="mh-quote" data-i18n="pg.ziwei.quote.leap">「又若闰月正月生者要在二月内起安身命」</p></div></div></section>
 <section class="band lowest"><div class="wrap about-cols"><div><span class="eyebrow jade" data-i18n="lesson.about">关于这个传统</span><h2 data-i18n="pg.ziwei.about.title">十二宫的命盘</h2></div><div class="legal"><p data-i18n="pg.ziwei.about.p1">紫微斗数相传与宋代道士陈抟有关。它把农历生日与时辰化为一圈十二宫，宫中各有星曜。</p><p data-i18n="pg.ziwei.about.p2">Fate Tutor 只排盘并注明出处，不把命盘变成预测、理财建议、医疗建议，也不替你做决定。</p><p data-i18n="legal.tradition">这些是传统的信仰体系。它们不是科学，也不预测未来。Fate Tutor 只用“倾向”的说法，展示每种传统说了什么、出自哪里。</p></div></div></section>
 </main><footer><div class="wrap"><p data-i18n="legal.credits">城市数据：GeoNames (geonames.org)，CC BY 4.0。古籍原文取自中文维基文库。计算程序已与 NASA JPL Horizons 核对。</p><p><a href="../../third-party-notices.txt" data-i18n="footer.notices">开源声明</a></p><p data-i18n="footer.rights">Fate Tutor · www.fatetutor.com</p></div></footer>
-<script src="../../assets/js/ft-engine.js?v=ce9455bcdf"></script><script src="../../assets/js/ft-page-ziwei.js?v=16b34f0b2d"></script>
+<script src="../../assets/js/ft-engine.js?v=ce9455bcdf"></script><script src="../../assets/js/ft-page-ziwei.js?v=e9c93d96c5"></script>
 </body></html>

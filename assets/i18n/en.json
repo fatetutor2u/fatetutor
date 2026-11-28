@@ -1667,5 +1667,19 @@
   "pg.qizheng.source.p2": "Checked: the stars carried back to 1744 match 清史稿's printed positions within 3′; the planets agree with an independent ephemeris within a few arcseconds; the remainders are rebuilt from the constants read out of 清史稿 and agree within a second of arc.",
   "pg.qizheng.about.title": "Chinese star astrology",
   "pg.qizheng.about.p1": "Qi Zheng Si Yu grew from the Tang and Song dynasties and flourished in the Ming. It reads the actual sky at birth, divided by palaces and by the 28 lunar mansions of Chinese astronomy.",
-  "pg.qizheng.about.p2": "Fate Tutor sets out the sky and shows its sources. It does not turn a chart into a forecast, financial advice, medical advice or a decision made for you."
+  "pg.qizheng.about.p2": "Fate Tutor sets out the sky and shows its sources. It does not turn a chart into a forecast, financial advice, medical advice or a decision made for you.",
+  "pg.ziwei.form.sex.note": "Sex is used for one thing only: the ten-year periods (大限) run forward or backward depending on it. Leave it blank to skip them.",
+  "pg.ziwei.cell.age": "Ages {a}–{b}",
+  "pg.ziwei.kind.yang_male": "Yang year, man (陽男)",
+  "pg.ziwei.kind.yin_female": "Yin year, woman (陰女)",
+  "pg.ziwei.kind.yin_male": "Yin year, man (陰男)",
+  "pg.ziwei.kind.yang_female": "Yang year, woman (陽女)",
+  "pg.ziwei.dir.forward": "forward",
+  "pg.ziwei.dir.backward": "backward",
+  "pg.ziwei.step.daxian": "{kind}: the ten-year periods (大限) start in {pname} ({br}), the palace next to 命, and go {dir}, ten years a palace. The first covers ages {a}–{b}; ages are counted the Chinese way, 1 at birth.",
+  "pg.ziwei.step.daxian.none": "No sex was chosen, so the ten-year periods (大限) are not shown.",
+  "pg.ziwei.legend.daxian": "Ten-year periods (大限) follow the book's 安大限訣. Ages are counted the Chinese way, 1 at birth; the first period begins at the bureau's number, from 水二局 at 2 to 火六局 at 6.",
+  "pg.ziwei.quote.daxian": "「阳男阴女从命前一宫起顺行」",
+  "pg.ziwei.quote.daxian2": "「阴男阳女从命后一宫起逆行」",
+  "pg.ziwei.legend.daxian.other": "Other books differ. The Daoist-canon text 紫微斗數 starts them at 命 itself (or at 申 for 陰男陽女), and many charts made today also start at 命, so a chart from elsewhere may show different periods. This page follows 紫微斗數全書."
 }

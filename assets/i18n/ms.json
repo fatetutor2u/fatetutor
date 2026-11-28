@@ -1667,5 +1667,19 @@
   "pg.qizheng.source.p2": "Disemak: bintang yang dikira semula ke 1744 sepadan dengan kedudukan bercetak 清史稿 dalam 3′; planet sepadan dengan efemeris bebas dalam beberapa saat lengkok; baki dikira semula daripada pemalar 清史稿 dan sepadan dalam satu saat lengkok.",
   "pg.qizheng.about.title": "Astrologi bintang Cina",
   "pg.qizheng.about.p1": "Qi Zheng Si Yu berkembang sejak dinasti Tang dan Song dan memuncak pada zaman Ming. Ia membaca langit sebenar semasa lahir, dibahagi mengikut istana dan 28 rumah bulan astronomi Cina.",
-  "pg.qizheng.about.p2": "Fate Tutor menyusun langit dan menunjukkan sumbernya. Ia tidak mengubah carta menjadi ramalan, nasihat kewangan, nasihat perubatan, atau keputusan yang dibuat untuk anda."
+  "pg.qizheng.about.p2": "Fate Tutor menyusun langit dan menunjukkan sumbernya. Ia tidak mengubah carta menjadi ramalan, nasihat kewangan, nasihat perubatan, atau keputusan yang dibuat untuk anda.",
+  "pg.ziwei.form.sex.note": "Jantina hanya digunakan untuk satu perkara: tempoh sepuluh tahun (大限) bergerak ke hadapan atau ke belakang mengikutnya. Biarkan kosong untuk melangkauinya.",
+  "pg.ziwei.cell.age": "Umur {a}–{b}",
+  "pg.ziwei.kind.yang_male": "Tahun yang, lelaki (陽男)",
+  "pg.ziwei.kind.yin_female": "Tahun yin, perempuan (陰女)",
+  "pg.ziwei.kind.yin_male": "Tahun yin, lelaki (陰男)",
+  "pg.ziwei.kind.yang_female": "Tahun yang, perempuan (陽女)",
+  "pg.ziwei.dir.forward": "ke hadapan",
+  "pg.ziwei.dir.backward": "ke belakang",
+  "pg.ziwei.step.daxian": "{kind}: tempoh sepuluh tahun (大限) bermula di {pname} ({br}), istana di sebelah 命, lalu bergerak {dir}, sepuluh tahun setiap istana. Tempoh pertama meliputi umur {a}–{b}; umur dikira cara Cina, 1 semasa lahir.",
+  "pg.ziwei.step.daxian.none": "Jantina tidak dipilih, jadi tempoh sepuluh tahun (大限) tidak dipaparkan.",
+  "pg.ziwei.legend.daxian": "Tempoh sepuluh tahun (大限) mengikut 安大限訣 dalam kitab ini. Umur dikira cara Cina, 1 semasa lahir; tempoh pertama bermula pada nombor biro, dari 水二局 pada umur 2 hingga 火六局 pada umur 6.",
+  "pg.ziwei.quote.daxian": "「阳男阴女从命前一宫起顺行」",
+  "pg.ziwei.quote.daxian2": "「阴男阳女从命后一宫起逆行」",
+  "pg.ziwei.legend.daxian.other": "Kitab lain berbeza. Teks kanun Tao 紫微斗數 memulakannya di 命 sendiri (atau di 申 untuk 陰男陽女), dan banyak carta masa kini juga bermula di 命, jadi carta dari tempat lain mungkin menunjukkan tempoh berbeza. Halaman ini mengikut 紫微斗數全書."
 }
