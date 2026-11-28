@@ -631,6 +631,51 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/western/"/>
   </url>
   <url>
+    <loc>https://www.fatetutor.com/almanac/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fatetutor.com/almanac/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.fatetutor.com/zh-hans/almanac/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.fatetutor.com/zh-hant/almanac/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.fatetutor.com/id/almanac/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://www.fatetutor.com/ms/almanac/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/almanac/"/>
+  </url>
+  <url>
+    <loc>https://www.fatetutor.com/zh-hans/almanac/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fatetutor.com/almanac/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.fatetutor.com/zh-hans/almanac/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.fatetutor.com/zh-hant/almanac/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.fatetutor.com/id/almanac/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://www.fatetutor.com/ms/almanac/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/almanac/"/>
+  </url>
+  <url>
+    <loc>https://www.fatetutor.com/zh-hant/almanac/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fatetutor.com/almanac/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.fatetutor.com/zh-hans/almanac/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.fatetutor.com/zh-hant/almanac/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.fatetutor.com/id/almanac/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://www.fatetutor.com/ms/almanac/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/almanac/"/>
+  </url>
+  <url>
+    <loc>https://www.fatetutor.com/id/almanac/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fatetutor.com/almanac/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.fatetutor.com/zh-hans/almanac/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.fatetutor.com/zh-hant/almanac/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.fatetutor.com/id/almanac/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://www.fatetutor.com/ms/almanac/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/almanac/"/>
+  </url>
+  <url>
+    <loc>https://www.fatetutor.com/ms/almanac/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fatetutor.com/almanac/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.fatetutor.com/zh-hans/almanac/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.fatetutor.com/zh-hant/almanac/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.fatetutor.com/id/almanac/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://www.fatetutor.com/ms/almanac/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/almanac/"/>
+  </url>
+  <url>
     <loc>https://www.fatetutor.com/parallel-life/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.fatetutor.com/parallel-life/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.fatetutor.com/zh-hans/parallel-life/"/>
