@@ -406,6 +406,51 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/ziwei/"/>
   </url>
   <url>
+    <loc>https://www.fatetutor.com/liuren/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fatetutor.com/liuren/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.fatetutor.com/zh-hans/liuren/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.fatetutor.com/zh-hant/liuren/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.fatetutor.com/id/liuren/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://www.fatetutor.com/ms/liuren/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/liuren/"/>
+  </url>
+  <url>
+    <loc>https://www.fatetutor.com/zh-hans/liuren/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fatetutor.com/liuren/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.fatetutor.com/zh-hans/liuren/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.fatetutor.com/zh-hant/liuren/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.fatetutor.com/id/liuren/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://www.fatetutor.com/ms/liuren/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/liuren/"/>
+  </url>
+  <url>
+    <loc>https://www.fatetutor.com/zh-hant/liuren/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fatetutor.com/liuren/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.fatetutor.com/zh-hans/liuren/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.fatetutor.com/zh-hant/liuren/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.fatetutor.com/id/liuren/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://www.fatetutor.com/ms/liuren/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/liuren/"/>
+  </url>
+  <url>
+    <loc>https://www.fatetutor.com/id/liuren/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fatetutor.com/liuren/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.fatetutor.com/zh-hans/liuren/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.fatetutor.com/zh-hant/liuren/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.fatetutor.com/id/liuren/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://www.fatetutor.com/ms/liuren/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/liuren/"/>
+  </url>
+  <url>
+    <loc>https://www.fatetutor.com/ms/liuren/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.fatetutor.com/liuren/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.fatetutor.com/zh-hans/liuren/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://www.fatetutor.com/zh-hant/liuren/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.fatetutor.com/id/liuren/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://www.fatetutor.com/ms/liuren/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/liuren/"/>
+  </url>
+  <url>
     <loc>https://www.fatetutor.com/parallel-life/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.fatetutor.com/parallel-life/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.fatetutor.com/zh-hans/parallel-life/"/>

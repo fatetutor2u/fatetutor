@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zh-Hant" data-lang="zh-hant">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i18n="pg.liuren.meta.title">大六壬：排出某一時刻的課式 — Fate Tutor</title>
+<meta name="description" content="為任一時刻排出大六壬課式：月將加時、四課、三傳與十二天將，每一步都附《六壬大全》原文。" data-i18n-content="pg.liuren.meta.description">
+<!-- ft:head — written by engine/ft_build_pages.py, do not edit by hand -->
+<link rel="canonical" href="https://www.fatetutor.com/zh-hant/liuren/">
+<link rel="alternate" hreflang="en" href="https://www.fatetutor.com/liuren/">
+<link rel="alternate" hreflang="zh-Hans" href="https://www.fatetutor.com/zh-hans/liuren/">
+<link rel="alternate" hreflang="zh-Hant" href="https://www.fatetutor.com/zh-hant/liuren/">
+<link rel="alternate" hreflang="id" href="https://www.fatetutor.com/id/liuren/">
+<link rel="alternate" hreflang="ms" href="https://www.fatetutor.com/ms/liuren/">
+<link rel="alternate" hreflang="x-default" href="https://www.fatetutor.com/liuren/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Fate Tutor">
+<meta property="og:title" content="大六壬：排出某一時刻的課式 — Fate Tutor">
+<meta property="og:description" content="為任一時刻排出大六壬課式：月將加時、四課、三傳與十二天將，每一步都附《六壬大全》原文。">
+<meta property="og:url" content="https://www.fatetutor.com/zh-hant/liuren/">
+<meta property="og:locale" content="zh_TW">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+<!-- /ft:head -->
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500&display=swap">
+<link rel="stylesheet" href="../../assets/css/ft.css?v=5fbfdcb895"><link rel="stylesheet" href="../../assets/css/ft-iching.css?v=cfabaa2689"><link rel="stylesheet" href="../../assets/css/ft-meihua.css?v=39bdb8ac52"><link rel="stylesheet" href="../../assets/css/ft-ziwei.css?v=3143b6de17"><link rel="stylesheet" href="../../assets/css/ft-liuren.css?v=2b9b6cda0d">
+</head>
+<body class="lesson iching-page ziwei-page liuren-page">
+<header class="topbar"><div class="wrap"><a class="brand" href="../" data-page=""><img class="brand-mark" src="../../assets/img/fate-turtle.png" alt="" aria-hidden="true"><b>Fate Tutor</b><span data-i18n="brand.tagline">全球人生智慧平台</span></a><nav class="topnav"><a href="../bazi/" data-page="bazi/" data-i18n="nav.bazi">八字</a><a href="../numerology/" data-page="numerology/" data-i18n="nav.numerology">數字命理</a><a href="../zodiac/" data-page="zodiac/" data-i18n="nav.zodiac">生肖</a><a href="../weton/" data-page="weton/" data-i18n="nav.weton">爪哇 Weton</a><a href="../iching/" data-page="iching/">I Ching</a><a href="../meihua/" data-page="meihua/" data-i18n="nav.meihua">梅花易數</a><a href="../liuyao/" data-page="liuyao/" data-i18n="nav.liuyao">六爻</a><a href="../ziwei/" data-page="ziwei/" data-i18n="nav.ziwei">紫微斗數</a><a class="here" aria-current="page" href="../liuren/" data-page="liuren/" data-i18n="nav.liuren">大六壬</a><a href="../parallel-life/" data-page="parallel-life/" data-i18n="nav.parallel">平行人生</a><select id="lang" class="lang" aria-label="語言" data-i18n-aria-label="nav.language"><option value="en">English</option><option value="zh-hans">简体中文</option><option value="zh-hant" selected>繁體中文</option><option value="id">Bahasa Indonesia</option><option value="ms">Bahasa Melayu</option></select></nav></div></header>
+<main>
+<section class="lhero"><div class="wrap"><nav class="crumbs"><a href="../" data-page="" data-i18n="lesson.crumb.home">Fate Tutor</a> / <a href="../#traditions" data-page="#traditions" data-i18n="nav.traditions">傳統</a> / <span>大六壬</span></nav><span class="eyebrow" data-i18n="pg.liuren.eyebrow">天地盤 · 四課 · 三傳</span><h1 data-i18n="pg.liuren.title">大六壬：起課排盤</h1><p class="lead" data-i18n="pg.liuren.lead">大六壬是「三式」之一。以月將加時轉動十二支，再由日干支取四課、發三傳。本頁依明代《六壬大全》排出某一時刻的課式，並在每一步旁列出所據之法。</p></div></section>
+
+<section class="band low"><div class="wrap iching-layout">
+<form class="cast-panel" id="lr-form" novalidate>
+<div class="cast-head"><div><span class="eyebrow jade" data-i18n="pg.liuren.form.eyebrow">起課時刻</span><h2 data-i18n="pg.liuren.form.title">何時起課？</h2></div></div>
+<div class="mh-fields"><label class="field"><span data-i18n="pg.liuren.field.date">日期</span><input class="input" type="date" id="lr-date" min="1901-03-01" max="2099-12-31"></label><label class="field"><span data-i18n="pg.liuren.field.time">時間</span><input class="input" type="time" id="lr-time"></label></div>
+<p class="soft small"><span id="lr-tz"></span> · <span data-i18n="pg.liuren.moment.note">日干支自23:00子時起換日；月將交中氣即換。打開頁面時預設為此刻。</span> <button id="lr-now" class="linkbtn" type="button" data-i18n="pg.liuren.now">用此刻</button></p>
+<fieldset class="lr-daynight"><legend data-i18n="pg.liuren.daynight.label">晝貴或夜貴</legend><div class="mh-methods" role="radiogroup">
+<label><input type="radio" name="daynight" value="auto" checked><span data-i18n="pg.liuren.daynight.auto">按時辰（卯至申為晝）</span></label>
+<label><input type="radio" name="daynight" value="day"><span data-i18n="pg.liuren.daynight.day">日在天上</span></label>
+<label><input type="radio" name="daynight" value="night"><span data-i18n="pg.liuren.daynight.night">日已入地</span></label>
+</div><p class="soft small"><span data-i18n="pg.liuren.daynight.note">書中主張按四季實際的日出日入定晝夜，而非固定時辰：</span> <span class="mh-quote-inline" data-i18n="pg.liuren.quote.daynight">「尤宜逐季推尋日出日入之時」</span></p></fieldset>
+<div class="cast-actions"><button class="btn" type="submit" data-i18n="pg.liuren.go">起課</button></div>
+<details class="ly-manual" id="lr-manual"><summary data-i18n="pg.liuren.manual">自行輸入日、月將與時</summary><p class="soft small" data-i18n="pg.liuren.manual.hint">用於核對書中或老師給出的課：選日干支、月將與時辰。</p>
+<div class="mh-fields lr-manual-fields"><label class="field"><span data-i18n="pg.liuren.field.day">日干支</span><select class="input" id="lr-m-day"></select></label><label class="field"><span data-i18n="pg.liuren.field.general">月將</span><select class="input" id="lr-m-general"></select></label><label class="field"><span data-i18n="pg.liuren.field.hour">時辰</span><select class="input" id="lr-m-hour"></select></label></div>
+<button id="lr-manual-go" class="ghost" type="button" data-i18n="pg.liuren.manual.go">排出此課</button></details>
+<p class="mh-error" id="lr-error" role="alert" hidden></p>
+<p class="bp-privacy" data-i18n="pg.liuren.privacy">課式在本機計算，不會傳送給我們。</p>
+</form>
+<aside class="iching-note"><span class="eyebrow jade" data-i18n="pg.liuren.rule.eyebrow">起課之法，書中原文</span>
+<p class="soft small" data-i18n="pg.liuren.rule.general">月將逢中氣而換，雨水後為亥將：</p><p class="mh-quote" data-i18n="pg.liuren.quote.general">「雨水後日躔娵訾，正月將」</p>
+<p class="soft small" data-i18n="pg.liuren.rule.lodge">十干寄宮：</p><p class="mh-quote" data-i18n="pg.liuren.quote.lodge">「甲課寅兮乙課辰，丙戊課巳不須論。丁己課未庚申上，辛戌壬亥是其真。癸課原來丑宮坐，分明不用四正神。」</p>
+<p class="soft small" data-i18n="pg.liuren.rule.zeike">先取剋賊發用，中末循天盤而下：</p><p class="mh-quote" data-i18n="pg.liuren.quote.zeike">「取課先從下賊呼，如無下賊上剋初。初傳之上名中次，中上加臨是末居。」</p>
+<p class="soft small" data-i18n="pg.liuren.rule.noble">貴人歌，前者為晝貴：</p><p class="mh-quote" data-i18n="pg.liuren.quote.noble">「甲戊庚牛羊丑未，乙己鼠猴鄉子申，丙丁豬雞位亥酉，壬癸蛇兔藏巳卯」</p><p class="soft small" data-i18n="pg.liuren.rule.noble_xin">辛日：晝午夜寅（網上本此句作「六壬」，當為「六辛」之誤）。</p>
+<p class="soft small" data-i18n="pg.liuren.rule.order">諸將隨貴人而行，貴人臨亥至辰順布，臨巳至戌逆布：</p><p class="mh-quote" data-i18n="pg.liuren.quote.order">「前有五位：一蛇、二雀、三合、四勾、五龍」</p>
+<p class="soft small" data-i18n="pg.liuren.rule.note">引自《六壬大全》（維基文庫），原文照錄，屬公有領域。</p></aside>
+</div></section>
+
+<section class="band" id="result" hidden><div class="wrap">
+<div class="result-head"><div><span class="eyebrow jade" data-i18n="pg.liuren.result.eyebrow">課式（只列事實）</span><h2 id="result-title">—</h2></div></div>
+<dl class="ly-facts lr-facts"><div><dt data-i18n="pg.liuren.fact.day">日</dt><dd id="lr-f-day"></dd></div><div><dt data-i18n="pg.liuren.fact.general">月將</dt><dd id="lr-f-general"></dd></div><div><dt data-i18n="pg.liuren.fact.hour">時</dt><dd id="lr-f-hour"></dd></div><div><dt data-i18n="pg.liuren.fact.noble">貴人</dt><dd id="lr-f-noble"></dd></div><div><dt data-i18n="pg.liuren.fact.empty">旬空</dt><dd id="lr-f-empty"></dd></div></dl>
+
+<div class="lr-top">
+<div class="source-panel lr-lessons-panel"><h3 data-i18n="pg.liuren.lessons.title">四課</h3>
+<div class="lr-lessons" id="lr-lessons"></div>
+<p class="soft small" data-i18n="pg.liuren.lessons.note">依書中右起左行：第一課為日干寄宮上神，第二課為其上神；第三、四課由日支同法取之。</p></div>
+<div class="source-panel lr-three-panel"><h3 data-i18n="pg.liuren.three.title">三傳</h3><ol class="lr-three" id="lr-three"></ol></div>
+</div>
+
+<div class="source-panel"><h3 data-i18n="pg.liuren.how.title">如何發用</h3><ol class="lr-steps" id="lr-steps"></ol><p class="mh-quote" id="lr-way-quote"></p></div>
+
+<h3 class="lr-plate-title" data-i18n="pg.liuren.plate.title">天地盤</h3>
+<div class="zw-board lr-board" id="lr-board"><div class="zw-center lr-center" id="lr-center"></div></div>
+<p class="soft small" data-i18n="pg.liuren.plate.note">每格小字為地盤（固定不動），大字為加臨其上的天盤，並註所乘天將。</p>
+
+<div class="source-panel"><h3 data-i18n="pg.liuren.legend.title">看懂課式</h3>
+<p data-i18n="pg.liuren.legend.p1">地盤不動，天盤隨月將加時而轉；以下各項皆從天地相加處讀出。</p>
+<p data-i18n="pg.liuren.legend.p2">十二天將乘於天盤，以貴人為首。</p>
+<p><span data-i18n="pg.liuren.legend.p3">旬空為本旬所缺二支；傳逢之則註「空」。</span> <span class="mh-quote-inline" data-i18n="pg.liuren.quote.empty">「甲戌旬中用酉申」</span></p>
+<p class="soft small" data-i18n="pg.liuren.not_forecast">以上只是書中據以推斷的事實，Fate Tutor 不據此作任何預測。</p>
+</div>
+<div class="source-panel"><h3 data-i18n="pg.liuren.left.title">本頁未收之項及原因</h3>
+<p data-i18n="pg.liuren.left.p1">本命、行年、遁干、諸神煞及書中各課體的斷語均未列出：這些是把事實化為論斷的部分，其中一些涉及 Fate Tutor 不討論的話題。</p>
+<p><span data-i18n="pg.liuren.left.p2">貴人依書中貴人歌。1781年四庫館臣在提要中指出此書所用為俗例：</span> <span class="mh-quote-inline" data-i18n="pg.liuren.quote.suli">「是書所取天乙尚沿俗例」</span></p>
+<p data-i18n="pg.liuren.left.p3">書中前後不一處，本頁依其明文之法：卷九一例庚辰日午時辰將以午發用，而卷七涉害之法當取寅。</p>
+</div>
+</div></section>
+
+<section class="band low"><div class="wrap about-cols"><div><span class="eyebrow jade" data-i18n="pg.liuren.source.eyebrow">出處</span><h2 data-i18n="pg.liuren.source.title">《六壬大全》</h2></div><div class="legal"><p data-i18n="pg.liuren.source.p1">全部規則出自《六壬大全》：明代十二卷，不著撰人，收入1781年《四庫全書》，維基文庫所載屬公有領域。卷一為起課之法，卷二為月將與十二天將，卷四為貴人歌，卷七為各發用之法的課例。</p><p data-i18n="pg.liuren.source.p2">已逐項核對：引擎重現書中課例，並在全部720課中得出書中所說之數（昴星十六課、所列九課別責、獨足一課、井欄六日）。網上本有少數誤字，如寅將作「大雪」當為「小雪」，核對程式逐一列出。</p></div></div></section>
+<section class="band lowest"><div class="wrap about-cols"><div><span class="eyebrow jade" data-i18n="lesson.about">關於這個傳統</span><h2 data-i18n="pg.liuren.about.title">三式之一</h2></div><div class="legal"><p data-i18n="pg.liuren.about.p1">大六壬與奇門遁甲、太乙合稱「三式」。它是為提問那一刻所起的課，只用日干支、時辰與太陽所處的節氣。</p><p data-i18n="pg.liuren.about.p2">Fate Tutor 只排出課式並註明出處，不據此作預測、理財建議、醫療建議，也不替你作決定。</p><p data-i18n="legal.tradition">這些是傳統的信仰體系。它們不是科學，也不預測未來。Fate Tutor 只用「傾向」的說法，呈現每種傳統說了什麼、出自哪裡。</p></div></div></section>
+</main><footer><div class="wrap"><p data-i18n="legal.credits">城市資料：GeoNames (geonames.org)，CC BY 4.0。古籍原文取自中文維基文庫。計算程式已與 NASA JPL Horizons 核對。</p><p><a href="../../third-party-notices.txt" data-i18n="footer.notices">開源聲明</a></p><p data-i18n="footer.rights">Fate Tutor · www.fatetutor.com</p></div></footer>
+<script src="../../assets/js/ft-engine.js?v=ce9455bcdf"></script><script src="../../assets/js/ft-page-liuren.js?v=f0583788a2"></script>
+</body></html>
